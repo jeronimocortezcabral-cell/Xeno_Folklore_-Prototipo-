@@ -49,10 +49,13 @@ TagManager:
     uniqueID: 2629483173
     locked: 0
   - name: Player
-    uniqueID: 1724168755
+    uniqueID: 1276827711
+    locked: 0
+  - name: 'ForeGRound '
+    uniqueID: 1435973359
     locked: 0
   - name: UI
-    uniqueID: 842431689
+    uniqueID: 2347236143
     locked: 0
   m_RenderingLayers:
   - Default

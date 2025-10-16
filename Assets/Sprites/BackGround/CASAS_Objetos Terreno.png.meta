@@ -1,0 +1,2106 @@
+fileFormatVersion: 2
+guid: be4e3e5c7008d4847958b2b43e3d3766
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6151687594340320329
+    second: CASAS_Objetos Terreno_0
+  - first:
+      213: -3485159381184273761
+    second: CASAS_Objetos Terreno_1
+  - first:
+      213: -4267578638692075396
+    second: CASAS_Objetos Terreno_2
+  - first:
+      213: -8557221173211706235
+    second: CASAS_Objetos Terreno_3
+  - first:
+      213: 5429262808481073830
+    second: CASAS_Objetos Terreno_4
+  - first:
+      213: 1216906357387740965
+    second: CASAS_Objetos Terreno_5
+  - first:
+      213: -5133430387229317177
+    second: CASAS_Objetos Terreno_6
+  - first:
+      213: 1048226647529452236
+    second: CASAS_Objetos Terreno_7
+  - first:
+      213: -2369014939147416209
+    second: CASAS_Objetos Terreno_8
+  - first:
+      213: -1677235472641866404
+    second: CASAS_Objetos Terreno_9
+  - first:
+      213: -2184426828450497534
+    second: CASAS_Objetos Terreno_10
+  - first:
+      213: 5452924909142729501
+    second: CASAS_Objetos Terreno_11
+  - first:
+      213: 3810988296974325907
+    second: CASAS_Objetos Terreno_12
+  - first:
+      213: 3827384485772550928
+    second: CASAS_Objetos Terreno_13
+  - first:
+      213: 5560739422160017633
+    second: CASAS_Objetos Terreno_14
+  - first:
+      213: -4205540717792031445
+    second: CASAS_Objetos Terreno_15
+  - first:
+      213: 4215372543791781828
+    second: CASAS_Objetos Terreno_16
+  - first:
+      213: 8762385359248817909
+    second: CASAS_Objetos Terreno_17
+  - first:
+      213: 2079393533756925095
+    second: CASAS_Objetos Terreno_18
+  - first:
+      213: -5953016726848366824
+    second: CASAS_Objetos Terreno_19
+  - first:
+      213: -6308692624426893170
+    second: CASAS_Objetos Terreno_20
+  - first:
+      213: 656834626365778815
+    second: CASAS_Objetos Terreno_21
+  - first:
+      213: -6268162538289103370
+    second: CASAS_Objetos Terreno_22
+  - first:
+      213: -117638781372775871
+    second: CASAS_Objetos Terreno_23
+  - first:
+      213: 7344860006299166492
+    second: CASAS_Objetos Terreno_24
+  - first:
+      213: 9200139469018737141
+    second: CASAS_Objetos Terreno_25
+  - first:
+      213: -1896154948565469601
+    second: CASAS_Objetos Terreno_26
+  - first:
+      213: -954915394587198953
+    second: CASAS_Objetos Terreno_27
+  - first:
+      213: -4465848865686369611
+    second: CASAS_Objetos Terreno_28
+  - first:
+      213: 1539976539538022415
+    second: CASAS_Objetos Terreno_29
+  - first:
+      213: 445542493160494235
+    second: CASAS_Objetos Terreno_30
+  - first:
+      213: -6418613877075248789
+    second: CASAS_Objetos Terreno_31
+  - first:
+      213: -1617245638015836503
+    second: CASAS_Objetos Terreno_32
+  - first:
+      213: -2264801989811241000
+    second: CASAS_Objetos Terreno_33
+  - first:
+      213: -5824048145253947522
+    second: CASAS_Objetos Terreno_34
+  - first:
+      213: -5287964931294194976
+    second: CASAS_Objetos Terreno_35
+  - first:
+      213: 7985409704693269702
+    second: CASAS_Objetos Terreno_36
+  - first:
+      213: 4989335607653324375
+    second: CASAS_Objetos Terreno_37
+  - first:
+      213: 2896475014149357369
+    second: CASAS_Objetos Terreno_38
+  - first:
+      213: -6616049518629472488
+    second: CASAS_Objetos Terreno_39
+  - first:
+      213: -8145031449664265739
+    second: CASAS_Objetos Terreno_40
+  - first:
+      213: 4439012792877076094
+    second: CASAS_Objetos Terreno_41
+  - first:
+      213: 6950670695418667716
+    second: CASAS_Objetos Terreno_42
+  - first:
+      213: -5618404194440841908
+    second: CASAS_Objetos Terreno_43
+  - first:
+      213: -4061868366700448446
+    second: CASAS_Objetos Terreno_44
+  - first:
+      213: 7956900885102550836
+    second: CASAS_Objetos Terreno_45
+  - first:
+      213: 5444501663869264891
+    second: CASAS_Objetos Terreno_46
+  - first:
+      213: 6762172025866267061
+    second: CASAS_Objetos Terreno_47
+  - first:
+      213: 1843789819169998176
+    second: CASAS_Objetos Terreno_48
+  - first:
+      213: 805714918947896943
+    second: CASAS_Objetos Terreno_49
+  - first:
+      213: -5145130134789443047
+    second: CASAS_Objetos Terreno_50
+  - first:
+      213: 5866916036075042211
+    second: CASAS_Objetos Terreno_51
+  - first:
+      213: -2069086500360691606
+    second: CASAS_Objetos Terreno_52
+  - first:
+      213: -196047698367509258
+    second: CASAS_Objetos Terreno_53
+  - first:
+      213: -5449853330345169413
+    second: CASAS_Objetos Terreno_54
+  - first:
+      213: 7773829339763688892
+    second: CASAS_Objetos Terreno_55
+  - first:
+      213: 4988160499019055476
+    second: CASAS_Objetos Terreno_56
+  - first:
+      213: 5751660182414671119
+    second: CASAS_Objetos Terreno_57
+  - first:
+      213: -2946846482444078368
+    second: CASAS_Objetos Terreno_58
+  - first:
+      213: 4093145785748484196
+    second: CASAS_Objetos Terreno_59
+  - first:
+      213: -7457706732035156065
+    second: CASAS_Objetos Terreno_60
+  - first:
+      213: 6547631274235388961
+    second: CASAS_Objetos Terreno_61
+  - first:
+      213: -140392080036917827
+    second: CASAS_Objetos Terreno_62
+  - first:
+      213: -6907270586299884561
+    second: CASAS_Objetos Terreno_63
+  - first:
+      213: -1521954492834496924
+    second: CASAS_Objetos Terreno_64
+  - first:
+      213: -4278312584186612099
+    second: CASAS_Objetos Terreno_65
+  - first:
+      213: -1072312370010124983
+    second: CASAS_Objetos Terreno_66
+  - first:
+      213: 9142048577655618017
+    second: CASAS_Objetos Terreno_67
+  - first:
+      213: 2620401733914225498
+    second: CASAS_Objetos Terreno_68
+  - first:
+      213: 6518659179426579330
+    second: CASAS_Objetos Terreno_69
+  - first:
+      213: -6651372987604872483
+    second: CASAS_Objetos Terreno_70
+  - first:
+      213: -6213695175489135901
+    second: CASAS_Objetos Terreno_71
+  - first:
+      213: -901179071493897238
+    second: CASAS_Objetos Terreno_72
+  - first:
+      213: 523257009216927030
+    second: CASAS_Objetos Terreno_73
+  - first:
+      213: -7407055819855134820
+    second: CASAS_Objetos Terreno_74
+  - first:
+      213: -3743267978175665608
+    second: CASAS_Objetos Terreno_75
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 10
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_0
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1691
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bbfa2ad9b0d0aaa0800000000000000
+      internalID: -6151687594340320329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_1
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 1687
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9224ea020a32afc0800000000000000
+      internalID: -3485159381184273761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_2
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 1575
+        width: 129
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c78b6b5b6d386c4c0800000000000000
+      internalID: -4267578638692075396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_3
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1594
+        width: 65
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58cc34a5ea4ae3980800000000000000
+      internalID: -8557221173211706235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_4
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 1590
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aa01c342cd985b40800000000000000
+      internalID: 5429262808481073830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_5
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1527
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 527c20572e153e010800000000000000
+      internalID: 1216906357387740965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_6
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1464
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c7200ac24462c8b0800000000000000
+      internalID: -5133430387229317177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_7
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 1432
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc2771a059c0c8e00800000000000000
+      internalID: 1048226647529452236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_8
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1360
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6d4684e6719f1fd0800000000000000
+      internalID: -2369014939147416209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_9
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 1256
+        width: 34
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c554f78593349b8e0800000000000000
+      internalID: -1677235472641866404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_10
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 1298
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20cff548f5b5fa1e0800000000000000
+      internalID: -2184426828450497534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_11
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 1200
+        width: 34
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d13e454605eacab40800000000000000
+      internalID: 5452924909142729501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_12
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1232
+        width: 25
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39853542aa953e430800000000000000
+      internalID: 3810988296974325907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_13
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 1260
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 013605559e99d1530800000000000000
+      internalID: 3827384485772550928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_14
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1155
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e8db5ada07bb2d40800000000000000
+      internalID: 5560739422160017633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_15
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 1160
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2d8093cffae2a5c0800000000000000
+      internalID: -4205540717792031445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_16
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 1178
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c7d4ac9ef2008a30800000000000000
+      internalID: 4215372543791781828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_17
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 1128
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fefb132f0f3a9970800000000000000
+      internalID: 8762385359248817909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_18
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1143
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a463dfd66d7bdc10800000000000000
+      internalID: 2079393533756925095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_19
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 1128
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8179e3ec3d2a26da0800000000000000
+      internalID: -5953016726848366824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_20
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 1129
+        width: 64
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8088e3ab750378a0800000000000000
+      internalID: -6308692624426893170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_21
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1096
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7b65b4dc9b8d1900800000000000000
+      internalID: 656834626365778815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_22
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 1111
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fdfddea1630309a0800000000000000
+      internalID: -6268162538289103370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_23
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1084
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1424770d6201e5ef0800000000000000
+      internalID: -117638781372775871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_24
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 1033
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c176f60d24f2ee560800000000000000
+      internalID: 7344860006299166492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_25
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 1039
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f9a9e64a167daf70800000000000000
+      internalID: 9200139469018737141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_26
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 999
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f56f7abde118fa5e0800000000000000
+      internalID: -1896154948565469601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_27
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1016
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71af31b02857fb2f0800000000000000
+      internalID: -954915394587198953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_28
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 1000
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bace242e1e1602c0800000000000000
+      internalID: -4465848865686369611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_29
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 978
+        width: 65
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f006999e0881f5510800000000000000
+      internalID: 1539976539538022415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_30
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 984
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b945c257982ee2600800000000000000
+      internalID: 445542493160494235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_31
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 968
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b697982afa08ce6a0800000000000000
+      internalID: -6418613877075248789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_32
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 951
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae148729a36e89e0800000000000000
+      internalID: -1617245638015836503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_33
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 944
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dff3b6f69ec190e0800000000000000
+      internalID: -2264801989811241000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_34
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 873
+        width: 47
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e77ad5ba113dc2fa0800000000000000
+      internalID: -5824048145253947522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_35
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 869
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e29c7d69ef5d96b0800000000000000
+      internalID: -5287964931294194976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_36
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 909
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c4033261dfd1de60800000000000000
+      internalID: 7985409704693269702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_37
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 906
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 756526fec4ead3540800000000000000
+      internalID: 4989335607653324375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_38
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 828
+        width: 39
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93fba2fdda8523820800000000000000
+      internalID: 2896475014149357369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_39
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 829
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81732b124021f24a0800000000000000
+      internalID: -6616049518629472488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_40
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 853
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f1606efc0907fe80800000000000000
+      internalID: -8145031449664265739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_41
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 811
+        width: 65
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7e4ad0cd9a8a9d30800000000000000
+      internalID: 4439012792877076094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_42
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 778
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c2a527db2eb57060800000000000000
+      internalID: 6950670695418667716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_43
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 704
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45f9c9172b6702b0800000000000000
+      internalID: -5618404194440841908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_44
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 727
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2457c6ebd3851a7c0800000000000000
+      internalID: -4061868366700448446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_45
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 621
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43f578192379c6e60800000000000000
+      internalID: 7956900885102550836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_46
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 535
+        width: 112
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf363f5ca61ce8b40800000000000000
+      internalID: 5444501663869264891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_47
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 581
+        width: 65
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b9a7d741af08dd50800000000000000
+      internalID: 6762172025866267061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_48
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 620
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0650c1c5215769910800000000000000
+      internalID: 1843789819169998176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_49
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 451
+        width: 163
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e3f1e23797e2b00800000000000000
+      internalID: 805714918947896943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_50
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 597
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 912b7b80763d898b0800000000000000
+      internalID: -5145130134789443047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_51
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 573
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a5bb41fc097b6150800000000000000
+      internalID: 5866916036075042211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_52
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 562
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a60e1785ac02943e0800000000000000
+      internalID: -2069086500360691606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_53
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 502
+        width: 45
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fc85c338af774df0800000000000000
+      internalID: -196047698367509258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_54
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 518
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfdebc6454b3e54b0800000000000000
+      internalID: -5449853330345169413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_55
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 495
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb5cf15d89032eb60800000000000000
+      internalID: 7773829339763688892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_56
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 433
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4718aa2ab81893540800000000000000
+      internalID: 4988160499019055476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_57
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 443
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0db599567002df40800000000000000
+      internalID: 5751660182414671119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_58
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 457
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2bf4ebcb2ba17d0800000000000000
+      internalID: -2946846482444078368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_59
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 430
+        width: 50
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 460fc6dd766cdc830800000000000000
+      internalID: 4093145785748484196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_60
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 424
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9751066d37e08890800000000000000
+      internalID: -7457706732035156065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_61
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 424
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 124e90df3fbddda50800000000000000
+      internalID: 6547631274235388961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_62
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 376
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbd0f14a52a3d0ef0800000000000000
+      internalID: -140392080036917827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_63
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 357
+        width: 56
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feb57108ff17420a0800000000000000
+      internalID: -6907270586299884561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_64
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 373
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e3a42d37ee0eae0800000000000000
+      internalID: -1521954492834496924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_65
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 294
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7639754f5160a4c0800000000000000
+      internalID: -4278312584186612099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_66
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 294
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d0a41b4916e11f0800000000000000
+      internalID: -1072312370010124983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_67
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 217
+        width: 84
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e93786aeb41fde70800000000000000
+      internalID: 9142048577655618017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_68
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 288
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5b66c65e798d5420800000000000000
+      internalID: 2620401733914225498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_69
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 192
+        width: 133
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2838f818cfde67a50800000000000000
+      internalID: 6518659179426579330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_70
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 230
+        width: 55
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2de2d128391b3a0800000000000000
+      internalID: -6651372987604872483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_71
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 264
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ea5962d82584c9a0800000000000000
+      internalID: -6213695175489135901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_72
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 199
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae3079cb86e5e73f0800000000000000
+      internalID: -901179071493897238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_73
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 207
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 635bb904a7bf24700800000000000000
+      internalID: 523257009216927030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_74
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 119
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9f7b02e9f9d43990800000000000000
+      internalID: -7407055819855134820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CASAS_Objetos Terreno_75
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 119
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83aaeb54b9d3d0cc0800000000000000
+      internalID: -3743267978175665608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CASAS_Objetos Terreno_0: -6151687594340320329
+      CASAS_Objetos Terreno_1: -3485159381184273761
+      CASAS_Objetos Terreno_10: -2184426828450497534
+      CASAS_Objetos Terreno_11: 5452924909142729501
+      CASAS_Objetos Terreno_12: 3810988296974325907
+      CASAS_Objetos Terreno_13: 3827384485772550928
+      CASAS_Objetos Terreno_14: 5560739422160017633
+      CASAS_Objetos Terreno_15: -4205540717792031445
+      CASAS_Objetos Terreno_16: 4215372543791781828
+      CASAS_Objetos Terreno_17: 8762385359248817909
+      CASAS_Objetos Terreno_18: 2079393533756925095
+      CASAS_Objetos Terreno_19: -5953016726848366824
+      CASAS_Objetos Terreno_2: -4267578638692075396
+      CASAS_Objetos Terreno_20: -6308692624426893170
+      CASAS_Objetos Terreno_21: 656834626365778815
+      CASAS_Objetos Terreno_22: -6268162538289103370
+      CASAS_Objetos Terreno_23: -117638781372775871
+      CASAS_Objetos Terreno_24: 7344860006299166492
+      CASAS_Objetos Terreno_25: 9200139469018737141
+      CASAS_Objetos Terreno_26: -1896154948565469601
+      CASAS_Objetos Terreno_27: -954915394587198953
+      CASAS_Objetos Terreno_28: -4465848865686369611
+      CASAS_Objetos Terreno_29: 1539976539538022415
+      CASAS_Objetos Terreno_3: -8557221173211706235
+      CASAS_Objetos Terreno_30: 445542493160494235
+      CASAS_Objetos Terreno_31: -6418613877075248789
+      CASAS_Objetos Terreno_32: -1617245638015836503
+      CASAS_Objetos Terreno_33: -2264801989811241000
+      CASAS_Objetos Terreno_34: -5824048145253947522
+      CASAS_Objetos Terreno_35: -5287964931294194976
+      CASAS_Objetos Terreno_36: 7985409704693269702
+      CASAS_Objetos Terreno_37: 4989335607653324375
+      CASAS_Objetos Terreno_38: 2896475014149357369
+      CASAS_Objetos Terreno_39: -6616049518629472488
+      CASAS_Objetos Terreno_4: 5429262808481073830
+      CASAS_Objetos Terreno_40: -8145031449664265739
+      CASAS_Objetos Terreno_41: 4439012792877076094
+      CASAS_Objetos Terreno_42: 6950670695418667716
+      CASAS_Objetos Terreno_43: -5618404194440841908
+      CASAS_Objetos Terreno_44: -4061868366700448446
+      CASAS_Objetos Terreno_45: 7956900885102550836
+      CASAS_Objetos Terreno_46: 5444501663869264891
+      CASAS_Objetos Terreno_47: 6762172025866267061
+      CASAS_Objetos Terreno_48: 1843789819169998176
+      CASAS_Objetos Terreno_49: 805714918947896943
+      CASAS_Objetos Terreno_5: 1216906357387740965
+      CASAS_Objetos Terreno_50: -5145130134789443047
+      CASAS_Objetos Terreno_51: 5866916036075042211
+      CASAS_Objetos Terreno_52: -2069086500360691606
+      CASAS_Objetos Terreno_53: -196047698367509258
+      CASAS_Objetos Terreno_54: -5449853330345169413
+      CASAS_Objetos Terreno_55: 7773829339763688892
+      CASAS_Objetos Terreno_56: 4988160499019055476
+      CASAS_Objetos Terreno_57: 5751660182414671119
+      CASAS_Objetos Terreno_58: -2946846482444078368
+      CASAS_Objetos Terreno_59: 4093145785748484196
+      CASAS_Objetos Terreno_6: -5133430387229317177
+      CASAS_Objetos Terreno_60: -7457706732035156065
+      CASAS_Objetos Terreno_61: 6547631274235388961
+      CASAS_Objetos Terreno_62: -140392080036917827
+      CASAS_Objetos Terreno_63: -6907270586299884561
+      CASAS_Objetos Terreno_64: -1521954492834496924
+      CASAS_Objetos Terreno_65: -4278312584186612099
+      CASAS_Objetos Terreno_66: -1072312370010124983
+      CASAS_Objetos Terreno_67: 9142048577655618017
+      CASAS_Objetos Terreno_68: 2620401733914225498
+      CASAS_Objetos Terreno_69: 6518659179426579330
+      CASAS_Objetos Terreno_7: 1048226647529452236
+      CASAS_Objetos Terreno_70: -6651372987604872483
+      CASAS_Objetos Terreno_71: -6213695175489135901
+      CASAS_Objetos Terreno_72: -901179071493897238
+      CASAS_Objetos Terreno_73: 523257009216927030
+      CASAS_Objetos Terreno_74: -7407055819855134820
+      CASAS_Objetos Terreno_75: -3743267978175665608
+      CASAS_Objetos Terreno_8: -2369014939147416209
+      CASAS_Objetos Terreno_9: -1677235472641866404
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

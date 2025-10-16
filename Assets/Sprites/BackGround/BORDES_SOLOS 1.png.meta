@@ -1,0 +1,2236 @@
+fileFormatVersion: 2
+guid: 70540d41b4f162b488349d03cf1ea8ff
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7289634089502107201
+    second: BORDES_SOLOS 1_0
+  - first:
+      213: 2001051697981065588
+    second: BORDES_SOLOS 1_1
+  - first:
+      213: 4694914185976702607
+    second: BORDES_SOLOS 1_2
+  - first:
+      213: -43272255340080490
+    second: BORDES_SOLOS 1_3
+  - first:
+      213: 4336959656201570360
+    second: BORDES_SOLOS 1_4
+  - first:
+      213: -4254601074158658797
+    second: BORDES_SOLOS 1_5
+  - first:
+      213: -8899285654137159783
+    second: BORDES_SOLOS 1_6
+  - first:
+      213: 5597073393148486
+    second: BORDES_SOLOS 1_7
+  - first:
+      213: 4683199052947065403
+    second: BORDES_SOLOS 1_8
+  - first:
+      213: 4154660498297987615
+    second: BORDES_SOLOS 1_9
+  - first:
+      213: 2468495262827267757
+    second: BORDES_SOLOS 1_10
+  - first:
+      213: 4292646951012612575
+    second: BORDES_SOLOS 1_11
+  - first:
+      213: -1881368652613635637
+    second: BORDES_SOLOS 1_12
+  - first:
+      213: -7854384867944863938
+    second: BORDES_SOLOS 1_13
+  - first:
+      213: 6813255263008001559
+    second: BORDES_SOLOS 1_14
+  - first:
+      213: 7739902666871855277
+    second: BORDES_SOLOS 1_15
+  - first:
+      213: 1207510411698611342
+    second: BORDES_SOLOS 1_16
+  - first:
+      213: 4714915097727040481
+    second: BORDES_SOLOS 1_17
+  - first:
+      213: -1559085703621511985
+    second: BORDES_SOLOS 1_18
+  - first:
+      213: -1669023178986625546
+    second: BORDES_SOLOS 1_19
+  - first:
+      213: -2331147850745828217
+    second: BORDES_SOLOS 1_20
+  - first:
+      213: 8917082792168057457
+    second: BORDES_SOLOS 1_21
+  - first:
+      213: -7092377556203397481
+    second: BORDES_SOLOS 1_22
+  - first:
+      213: 3888520000564560
+    second: BORDES_SOLOS 1_23
+  - first:
+      213: 563954549289622310
+    second: BORDES_SOLOS 1_24
+  - first:
+      213: -2239925411124403430
+    second: BORDES_SOLOS 1_25
+  - first:
+      213: -5632794714011188884
+    second: BORDES_SOLOS 1_26
+  - first:
+      213: -7489940431986894963
+    second: BORDES_SOLOS 1_27
+  - first:
+      213: 3314063736722554441
+    second: BORDES_SOLOS 1_28
+  - first:
+      213: 2817927367722170
+    second: BORDES_SOLOS 1_29
+  - first:
+      213: -2586656786069251978
+    second: BORDES_SOLOS 1_30
+  - first:
+      213: -1870231557632937059
+    second: BORDES_SOLOS 1_31
+  - first:
+      213: 8486037331596078737
+    second: BORDES_SOLOS 1_32
+  - first:
+      213: 4023409046120757446
+    second: BORDES_SOLOS 1_33
+  - first:
+      213: -7031053686552967911
+    second: BORDES_SOLOS 1_34
+  - first:
+      213: 7951964110154778472
+    second: BORDES_SOLOS 1_35
+  - first:
+      213: -8251168992037947699
+    second: BORDES_SOLOS 1_36
+  - first:
+      213: -3772004960967349338
+    second: BORDES_SOLOS 1_37
+  - first:
+      213: 2659209516215740114
+    second: BORDES_SOLOS 1_38
+  - first:
+      213: -2332931096762662709
+    second: BORDES_SOLOS 1_39
+  - first:
+      213: -2392162731134474066
+    second: BORDES_SOLOS 1_40
+  - first:
+      213: -7971153391482822662
+    second: BORDES_SOLOS 1_41
+  - first:
+      213: 2388964532584727790
+    second: BORDES_SOLOS 1_42
+  - first:
+      213: 3497066618365943572
+    second: BORDES_SOLOS 1_43
+  - first:
+      213: -2145249704604462166
+    second: BORDES_SOLOS 1_44
+  - first:
+      213: -5667467511991525337
+    second: BORDES_SOLOS 1_45
+  - first:
+      213: 4164933241676053038
+    second: BORDES_SOLOS 1_46
+  - first:
+      213: -4220590371526334833
+    second: BORDES_SOLOS 1_47
+  - first:
+      213: -5370394060503512661
+    second: BORDES_SOLOS 1_48
+  - first:
+      213: 354468856963924700
+    second: BORDES_SOLOS 1_49
+  - first:
+      213: 636218709027550764
+    second: BORDES_SOLOS 1_50
+  - first:
+      213: -4910699243815293572
+    second: BORDES_SOLOS 1_51
+  - first:
+      213: 6762614115892636609
+    second: BORDES_SOLOS 1_52
+  - first:
+      213: 2111824438106165459
+    second: BORDES_SOLOS 1_53
+  - first:
+      213: -4674383897687560517
+    second: BORDES_SOLOS 1_54
+  - first:
+      213: -7952702422635127182
+    second: BORDES_SOLOS 1_55
+  - first:
+      213: 8245619194146367721
+    second: BORDES_SOLOS 1_56
+  - first:
+      213: 7605236572649097209
+    second: BORDES_SOLOS 1_57
+  - first:
+      213: 1419456011544887740
+    second: BORDES_SOLOS 1_58
+  - first:
+      213: -9104336023103908333
+    second: BORDES_SOLOS 1_59
+  - first:
+      213: -8630948246315125113
+    second: BORDES_SOLOS 1_60
+  - first:
+      213: -4475192165953402910
+    second: BORDES_SOLOS 1_61
+  - first:
+      213: 8252361705375298691
+    second: BORDES_SOLOS 1_62
+  - first:
+      213: 8340660343216115049
+    second: BORDES_SOLOS 1_63
+  - first:
+      213: -5434331898825015841
+    second: BORDES_SOLOS 1_64
+  - first:
+      213: -3924119122834271075
+    second: BORDES_SOLOS 1_65
+  - first:
+      213: 8331641832195385778
+    second: BORDES_SOLOS 1_66
+  - first:
+      213: 2143985924601745723
+    second: BORDES_SOLOS 1_67
+  - first:
+      213: 4756265045977024536
+    second: BORDES_SOLOS 1_68
+  - first:
+      213: -5516363376504579005
+    second: BORDES_SOLOS 1_69
+  - first:
+      213: -4797334213061350560
+    second: BORDES_SOLOS 1_70
+  - first:
+      213: 4463467194279411843
+    second: BORDES_SOLOS 1_71
+  - first:
+      213: -6417949193676774697
+    second: BORDES_SOLOS 1_72
+  - first:
+      213: -686480824462799281
+    second: BORDES_SOLOS 1_73
+  - first:
+      213: 5828692847415052411
+    second: BORDES_SOLOS 1_74
+  - first:
+      213: -2164894131146868689
+    second: BORDES_SOLOS 1_75
+  - first:
+      213: 1073387593929627119
+    second: BORDES_SOLOS 1_76
+  - first:
+      213: -1203260181312715379
+    second: BORDES_SOLOS 1_77
+  - first:
+      213: -461314028934935659
+    second: BORDES_SOLOS 1_78
+  - first:
+      213: 6219723890205960974
+    second: BORDES_SOLOS 1_79
+  - first:
+      213: -8847382965804251641
+    second: BORDES_SOLOS 1_80
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 3
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 10
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_0
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1620
+        width: 85
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb916a0fa6406da90800000000000000
+      internalID: -7289634089502107201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_1
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 1656
+        width: 162
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4798a53dae925cb10800000000000000
+      internalID: 2001051697981065588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_2
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1395
+        width: 243
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f866512d39fa72140800000000000000
+      internalID: 4694914185976702607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_3
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1428
+        width: 155
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69213dfec14466ff0800000000000000
+      internalID: -43272255340080490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_4
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1428
+        width: 139
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 838481144d9ff2c30800000000000000
+      internalID: 4336959656201570360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_5
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 1395
+        width: 258
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31b17c96dde94f4c0800000000000000
+      internalID: -4254601074158658797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_6
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 1556
+        width: 105
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99fbc6619d26f7480800000000000000
+      internalID: -8899285654137159783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_7
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 1476
+        width: 146
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64261633282e31000800000000000000
+      internalID: 5597073393148486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_8
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 1460
+        width: 112
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a0b5bd9b01ef040800000000000000
+      internalID: 4683199052947065403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_9
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 1273
+        width: 279
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f12266bf5b158a930800000000000000
+      internalID: 4154660498297987615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_10
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 1364
+        width: 169
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6cd86ec5bd14220800000000000000
+      internalID: 2468495262827267757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_11
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 1395
+        width: 131
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd9354598ab829b30800000000000000
+      internalID: 4292646951012612575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_12
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1395
+        width: 97
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc1b869ad2904e5e0800000000000000
+      internalID: -1881368652613635637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_13
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 1444
+        width: 113
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3761f0b39e9ff290800000000000000
+      internalID: -7854384867944863938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_14
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 616
+        width: 610
+        height: 754
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71e07a3409b8d8e50800000000000000
+      internalID: 6813255263008001559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_15
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 1363
+        width: 81
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da8defeb778a96b60800000000000000
+      internalID: 7739902666871855277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_16
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 1123
+        width: 378
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e84a1ef5250f1c010800000000000000
+      internalID: 1207510411698611342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_17
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 904
+        width: 322
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eb752afc4ebe6140800000000000000
+      internalID: 4714915097727040481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_18
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 1124
+        width: 49
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc4ff3d10d30d5ae0800000000000000
+      internalID: -1559085703621511985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_19
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 1160
+        width: 34
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f5eb96f24076d8e0800000000000000
+      internalID: -1669023178986625546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_20
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 1064
+        width: 34
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c2165716916afd0800000000000000
+      internalID: -2331147850745828217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_21
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 1000
+        width: 66
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17aece30e87dfbb70800000000000000
+      internalID: 8917082792168057457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_22
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 904
+        width: 187
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79e1b8d8030d29d90800000000000000
+      internalID: -7092377556203397481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_23
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 936
+        width: 418
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05de55d9690dd0000800000000000000
+      internalID: 3888520000564560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_24
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 787
+        width: 130
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62b9fd3bca193d700800000000000000
+      internalID: 563954549289622310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_25
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 852
+        width: 153
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a132f8ac4bf2ae0e0800000000000000
+      internalID: -2239925411124403430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_26
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 809
+        width: 407
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c614aaa2d0b44d1b0800000000000000
+      internalID: -5632794714011188884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_27
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 552
+        width: 153
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d87d59a4cd26e0890800000000000000
+      internalID: -7489940431986894963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_28
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 372
+        width: 330
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ef95ee86bedfd20800000000000000
+      internalID: 3314063736722554441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_29
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 681
+        width: 194
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab481c7d3e20a0000800000000000000
+      internalID: 2817927367722170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_30
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 744
+        width: 400
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6781d769b595a1cd0800000000000000
+      internalID: -2586656786069251978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_31
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 696
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d933097ae4a9b06e0800000000000000
+      internalID: -1870231557632937059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_32
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 419
+        width: 193
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19eec7cfdf574c570800000000000000
+      internalID: 8486037331596078737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_33
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 632
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c8fe14e53506d730800000000000000
+      internalID: 4023409046120757446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_34
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 584
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9154f489cedac6e90800000000000000
+      internalID: -7031053686552967911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_35
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 408
+        width: 42
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8674e641a3d0b5e60800000000000000
+      internalID: 7951964110154778472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_36
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 548
+        width: 81
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc63cdfa485fd7d80800000000000000
+      internalID: -8251168992037947699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_37
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 504
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aba782197527abc0800000000000000
+      internalID: -3772004960967349338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_38
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 520
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d6a06547f867e420800000000000000
+      internalID: 2659209516215740114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_39
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 420
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc0cff32783cf9fd0800000000000000
+      internalID: -2332931096762662709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_40
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 408
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea82dc59ba45dced0800000000000000
+      internalID: -2392162731134474066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_41
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 456
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aff14823936c06190800000000000000
+      internalID: -7971153391482822662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_42
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 428
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee448b9c59e472120800000000000000
+      internalID: 2388964532584727790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_43
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 423
+        width: 62
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f1497af83188030800000000000000
+      internalID: 3497066618365943572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_44
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 392
+        width: 60
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa31a8a72ca8a32e0800000000000000
+      internalID: -2145249704604462166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_45
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 392
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 720adab435c1951b0800000000000000
+      internalID: -5667467511991525337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_46
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 88
+        width: 493
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2a315f67b0dcc930800000000000000
+      internalID: 4164933241676053038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_47
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 360
+        width: 81
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f862db23b637d65c0800000000000000
+      internalID: -4220590371526334833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_48
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 344
+        width: 81
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba902d73e078875b0800000000000000
+      internalID: -5370394060503512661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_49
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 355
+        width: 97
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd2064f1c835be400800000000000000
+      internalID: 354468856963924700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_50
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 312
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c267b078b8d44d800800000000000000
+      internalID: 636218709027550764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_51
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 312
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d2c954e01b9dbb0800000000000000
+      internalID: -4910699243815293572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_52
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 360
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cba2d265b1a9dd50800000000000000
+      internalID: 6762614115892636609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_53
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 360
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d09e453325be4d10800000000000000
+      internalID: 2111824438106165459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_54
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 372
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbee68a6c90412fb0800000000000000
+      internalID: -4674383897687560517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_55
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 372
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27ed176284352a190800000000000000
+      internalID: -7952702422635127182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_56
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 372
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e8ac3c48f25e6270800000000000000
+      internalID: 8245619194146367721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_57
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 372
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f70f895e5a3b8960800000000000000
+      internalID: 7605236572649097209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_58
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 372
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb10d6ec8bbe2b310800000000000000
+      internalID: 1419456011544887740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_59
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 372
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3165913bf96e6a180800000000000000
+      internalID: -9104336023103908333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_60
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 372
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7863b977c46b83880800000000000000
+      internalID: -8630948246315125113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_61
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 372
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e78cb68f6ce4e1c0800000000000000
+      internalID: -4475192165953402910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_62
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 372
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3847ee68f37468270800000000000000
+      internalID: 8252361705375298691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_63
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 354
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d8595346affb370800000000000000
+      internalID: 8340660343216115049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_64
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 310
+        width: 66
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fddf5fa2eef5594b0800000000000000
+      internalID: -5434331898825015841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_65
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 312
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d94552bd27aba89c0800000000000000
+      internalID: -3924119122834271075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_66
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 0
+        width: 393
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b96acb7a10ff9370800000000000000
+      internalID: 8331641832195385778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_67
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 248
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b31135fc6d7f0cd10800000000000000
+      internalID: 2143985924601745723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_68
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 248
+        width: 50
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 818411b0cd5a10240800000000000000
+      internalID: 4756265045977024536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_69
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 233
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34c587b6cb0f173b0800000000000000
+      internalID: -5516363376504579005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_70
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 199
+        width: 98
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06b66a953f17c6db0800000000000000
+      internalID: -4797334213061350560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_71
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 216
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38042a5c3cb61fd30800000000000000
+      internalID: 4463467194279411843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_72
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 200
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d2246c463ddee6a0800000000000000
+      internalID: -6417949193676774697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_73
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 204
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4e07c8c3512976f0800000000000000
+      internalID: -686480824462799281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_74
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 204
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b78c803534da3e050800000000000000
+      internalID: 5828692847415052411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_75
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 200
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28b9a00240c4f1e0800000000000000
+      internalID: -2164894131146868689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_76
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 126
+        width: 56
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe59c72645075ee00800000000000000
+      internalID: 1073387593929627119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_77
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 153
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d85cb708d392d4fe0800000000000000
+      internalID: -1203260181312715379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_78
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 153
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59bcd67b5551999f0800000000000000
+      internalID: -461314028934935659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_79
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 168
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0bacb4bce5e05650800000000000000
+      internalID: 6219723890205960974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_SOLOS 1_80
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 104
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 706456b6118c73580800000000000000
+      internalID: -8847382965804251641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BORDES_SOLOS 1_0: -7289634089502107201
+      BORDES_SOLOS 1_1: 2001051697981065588
+      BORDES_SOLOS 1_10: 2468495262827267757
+      BORDES_SOLOS 1_11: 4292646951012612575
+      BORDES_SOLOS 1_12: -1881368652613635637
+      BORDES_SOLOS 1_13: -7854384867944863938
+      BORDES_SOLOS 1_14: 6813255263008001559
+      BORDES_SOLOS 1_15: 7739902666871855277
+      BORDES_SOLOS 1_16: 1207510411698611342
+      BORDES_SOLOS 1_17: 4714915097727040481
+      BORDES_SOLOS 1_18: -1559085703621511985
+      BORDES_SOLOS 1_19: -1669023178986625546
+      BORDES_SOLOS 1_2: 4694914185976702607
+      BORDES_SOLOS 1_20: -2331147850745828217
+      BORDES_SOLOS 1_21: 8917082792168057457
+      BORDES_SOLOS 1_22: -7092377556203397481
+      BORDES_SOLOS 1_23: 3888520000564560
+      BORDES_SOLOS 1_24: 563954549289622310
+      BORDES_SOLOS 1_25: -2239925411124403430
+      BORDES_SOLOS 1_26: -5632794714011188884
+      BORDES_SOLOS 1_27: -7489940431986894963
+      BORDES_SOLOS 1_28: 3314063736722554441
+      BORDES_SOLOS 1_29: 2817927367722170
+      BORDES_SOLOS 1_3: -43272255340080490
+      BORDES_SOLOS 1_30: -2586656786069251978
+      BORDES_SOLOS 1_31: -1870231557632937059
+      BORDES_SOLOS 1_32: 8486037331596078737
+      BORDES_SOLOS 1_33: 4023409046120757446
+      BORDES_SOLOS 1_34: -7031053686552967911
+      BORDES_SOLOS 1_35: 7951964110154778472
+      BORDES_SOLOS 1_36: -8251168992037947699
+      BORDES_SOLOS 1_37: -3772004960967349338
+      BORDES_SOLOS 1_38: 2659209516215740114
+      BORDES_SOLOS 1_39: -2332931096762662709
+      BORDES_SOLOS 1_4: 4336959656201570360
+      BORDES_SOLOS 1_40: -2392162731134474066
+      BORDES_SOLOS 1_41: -7971153391482822662
+      BORDES_SOLOS 1_42: 2388964532584727790
+      BORDES_SOLOS 1_43: 3497066618365943572
+      BORDES_SOLOS 1_44: -2145249704604462166
+      BORDES_SOLOS 1_45: -5667467511991525337
+      BORDES_SOLOS 1_46: 4164933241676053038
+      BORDES_SOLOS 1_47: -4220590371526334833
+      BORDES_SOLOS 1_48: -5370394060503512661
+      BORDES_SOLOS 1_49: 354468856963924700
+      BORDES_SOLOS 1_5: -4254601074158658797
+      BORDES_SOLOS 1_50: 636218709027550764
+      BORDES_SOLOS 1_51: -4910699243815293572
+      BORDES_SOLOS 1_52: 6762614115892636609
+      BORDES_SOLOS 1_53: 2111824438106165459
+      BORDES_SOLOS 1_54: -4674383897687560517
+      BORDES_SOLOS 1_55: -7952702422635127182
+      BORDES_SOLOS 1_56: 8245619194146367721
+      BORDES_SOLOS 1_57: 7605236572649097209
+      BORDES_SOLOS 1_58: 1419456011544887740
+      BORDES_SOLOS 1_59: -9104336023103908333
+      BORDES_SOLOS 1_6: -8899285654137159783
+      BORDES_SOLOS 1_60: -8630948246315125113
+      BORDES_SOLOS 1_61: -4475192165953402910
+      BORDES_SOLOS 1_62: 8252361705375298691
+      BORDES_SOLOS 1_63: 8340660343216115049
+      BORDES_SOLOS 1_64: -5434331898825015841
+      BORDES_SOLOS 1_65: -3924119122834271075
+      BORDES_SOLOS 1_66: 8331641832195385778
+      BORDES_SOLOS 1_67: 2143985924601745723
+      BORDES_SOLOS 1_68: 4756265045977024536
+      BORDES_SOLOS 1_69: -5516363376504579005
+      BORDES_SOLOS 1_7: 5597073393148486
+      BORDES_SOLOS 1_70: -4797334213061350560
+      BORDES_SOLOS 1_71: 4463467194279411843
+      BORDES_SOLOS 1_72: -6417949193676774697
+      BORDES_SOLOS 1_73: -686480824462799281
+      BORDES_SOLOS 1_74: 5828692847415052411
+      BORDES_SOLOS 1_75: -2164894131146868689
+      BORDES_SOLOS 1_76: 1073387593929627119
+      BORDES_SOLOS 1_77: -1203260181312715379
+      BORDES_SOLOS 1_78: -461314028934935659
+      BORDES_SOLOS 1_79: 6219723890205960974
+      BORDES_SOLOS 1_8: 4683199052947065403
+      BORDES_SOLOS 1_80: -8847382965804251641
+      BORDES_SOLOS 1_9: 4154660498297987615
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

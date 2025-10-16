@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,32 +6,37 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firePoint;
     [SerializeField] private float bulletSpeed = 10f;
-
-    private Vector2 shootDirection = Vector2.right;
-    private Rigidbody2D _rb;
-
-    private void Start()
-    {
-        _rb = GetComponent<Rigidbody2D>();
-    }
+    [SerializeField] private Camera mainCamera;
 
     private void Update()
     {
-        Vector2 moveVelocity = _rb.linearVelocity;
-        if (moveVelocity != Vector2.zero)
-            shootDirection = moveVelocity.normalized;
-
+        // Botón derecho del mouse (click derecho)
         if (Mouse.current.rightButton.wasPressedThisFrame)
         {
-            Shoot();
+            ShootTowardCursor();
         }
     }
 
-
-    private void Shoot()
+    private void ShootTowardCursor()
     {
+        // Seguridad: evita errores si la cámara no está asignada
+        if (mainCamera == null)
+        {
+            Debug.LogWarning("MainCamera no asignada en PlayerShooting.");
+            return;
+        }
+
+        // Obtener posición del mouse y convertirla a coordenadas del mundo
+        Vector3 mousePos = Mouse.current.position.ReadValue();
+        Vector3 worldPos = mainCamera.ScreenToWorldPoint(mousePos);
+        worldPos.z = 0f; // Importante en 2D: mantiene todo en el mismo plano
+
+        // Calcular dirección del disparo
+        Vector2 direction = (worldPos - firePoint.position).normalized;
+
+        // Instanciar bala
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         Rigidbody2D rbBullet = bullet.GetComponent<Rigidbody2D>();
-        rbBullet.linearVelocity = shootDirection * bulletSpeed;
+        rbBullet.linearVelocity = direction * bulletSpeed;
     }
 }

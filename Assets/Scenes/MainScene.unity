@@ -6970,6 +6970,7 @@ MonoBehaviour:
   cityMusic: {fileID: 472896083}
   outsideMusic: {fileID: 472896082}
   fadeDuration: 1
+  Volumen: 0.1
 --- !u!1 &512484840
 GameObject:
   m_ObjectHideFlags: 0

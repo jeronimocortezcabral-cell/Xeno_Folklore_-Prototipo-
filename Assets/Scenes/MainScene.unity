@@ -7122,7 +7122,7 @@ SpriteRenderer:
   m_Size: {x: 160.6, y: 172}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &756386054
@@ -8545,7 +8545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow2D
   target: {fileID: 130073651}
-  smoothSpeed: 1.2
+  smoothSpeed: 10
   offset: {x: 0, y: 0, z: -10}
 --- !u!4 &2085891625 stripped
 Transform:

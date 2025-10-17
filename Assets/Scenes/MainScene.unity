@@ -983,7 +983,9 @@ PolygonCollider2D:
       - {x: -16.9, y: -60.4}
       - {x: -16.9, y: -58.100002}
       - {x: -16.300001, y: -58.100002}
-      - {x: -16.1, y: -57.9}
+      - {x: -25.903315, y: -57.832855}
+      - {x: -26.004034, y: -55.92486}
+      - {x: -25.922258, y: -54.69189}
       - {x: -16.1, y: -54.9}
       - {x: -15.8, y: -55}
       - {x: -14.6, y: -53.8}
@@ -1765,7 +1767,7 @@ PolygonCollider2D:
       - {x: -15.2, y: -53}
       - {x: -16.1, y: -53.7}
       - {x: -16.5, y: -54.2}
-      - {x: -16.5, y: -54.5}
+      - {x: -16.63429, y: -54.567146}
       - {x: -25.9, y: -54.5}
       - {x: -26.1, y: -54.7}
       - {x: -26.1, y: -59.5}
@@ -7121,7 +7123,7 @@ SpriteRenderer:
   m_Size: {x: 160.6, y: 172}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &756386054
@@ -7169,7 +7171,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

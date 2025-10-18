@@ -359,10 +359,10 @@ GameObject:
   - component: {fileID: 130073650}
   - component: {fileID: 130073648}
   - component: {fileID: 130073647}
-  - component: {fileID: 130073652}
-  - component: {fileID: 130073653}
-  - component: {fileID: 130073654}
   - component: {fileID: 130073655}
+  - component: {fileID: 130073653}
+  - component: {fileID: 130073652}
+  - component: {fileID: 130073654}
   - component: {fileID: 130073657}
   - component: {fileID: 130073656}
   m_Layer: 0
@@ -388,6 +388,7 @@ MonoBehaviour:
   firePoint: {fileID: 1646388123}
   bulletSpeed: 15
   mainCamera: {fileID: 1897138708}
+  fireRate: 1
 --- !u!114 &130073648
 MonoBehaviour:
   m_ObjectHideFlags: 0

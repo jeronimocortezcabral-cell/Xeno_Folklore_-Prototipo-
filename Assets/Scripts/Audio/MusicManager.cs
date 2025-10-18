@@ -14,6 +14,8 @@ public class MusicManager : MonoBehaviour
 
     private AudioSource currentMusic;
     private AudioSource nextMusic;
+    public float Volumen;
+
 
     private void Awake()
     {
@@ -33,7 +35,7 @@ public class MusicManager : MonoBehaviour
     {
         // Arranca con música de ciudad
         currentMusic = cityMusic;
-        currentMusic.volume = 1f;
+        currentMusic.volume = Volumen;
         currentMusic.Play();
     }
 
@@ -62,8 +64,8 @@ public class MusicManager : MonoBehaviour
             timer += Time.deltaTime;
             float t = timer / fadeDuration;
 
-            currentMusic.volume = Mathf.Lerp(1f, 0f, t);
-            nextMusic.volume = Mathf.Lerp(0f, 1f, t);
+            currentMusic.volume = Mathf.Lerp(Volumen, 0f, t);
+            nextMusic.volume = Mathf.Lerp(0f, Volumen, t);
 
             yield return null;
         }

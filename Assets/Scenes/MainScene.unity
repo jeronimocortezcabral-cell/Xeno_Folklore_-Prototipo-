@@ -360,6 +360,7 @@ GameObject:
   - component: {fileID: 130073648}
   - component: {fileID: 130073647}
   - component: {fileID: 130073655}
+  - component: {fileID: 130073658}
   - component: {fileID: 130073653}
   - component: {fileID: 130073652}
   - component: {fileID: 130073654}
@@ -622,6 +623,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &130073658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130073645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35aacb5887672284b87a444b9559dcf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerDash
+  dashForce: 15
+  dashDuration: 0.5
+  dashCooldown: 0.5
+  iFrameDuration: 0.5
 --- !u!4 &152539999 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3652405518658758367, guid: a23c3e8cf0a94af4180231fd58ca251c, type: 3}

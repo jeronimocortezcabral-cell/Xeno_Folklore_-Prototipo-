@@ -10,27 +10,31 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 _moveInput;
     private Vector2 _lastNonZeroMove = Vector2.down; // por defecto mirando al frente (abajo)
 
-    private void Start() {
+    private void Start() 
+    {
         _rb = GetComponent<Rigidbody2D>();
         _anim = GetComponent<Animator>();
         if (_anim == null) Debug.LogWarning("No Animator found on Player.");
     }
 
-    private void OnMove(InputValue inputValue) {
+    private void OnMove(InputValue inputValue)
+    {
         _moveInput = inputValue.Get<Vector2>();
     }
 
     private void Update() {
         // Actualizo los par�metros del animator (m�s responsivo en Update)
         float speed = _moveInput.magnitude;
-        if (_anim != null) {
+        if (_anim != null) 
+        {
             // par�metros que usaremos en el Animator
             _anim.SetFloat("MoveX", _moveInput.x);
             _anim.SetFloat("MoveY", _moveInput.y);
             _anim.SetFloat("Speed", speed);
 
             // Guardar la �ltima direcci�n no nula (para idle facing)
-            if (_moveInput.sqrMagnitude > 0.001f) {
+            if (_moveInput.sqrMagnitude > 0.001f) 
+            {
                 _lastNonZeroMove = _moveInput.normalized;
                 _anim.SetFloat("LastMoveX", _lastNonZeroMove.x);
                 _anim.SetFloat("LastMoveY", _lastNonZeroMove.y);
@@ -38,7 +42,8 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void FixedUpdate() {
+    private void FixedUpdate() 
+    {
         // mover en FixedUpdate con velocity
         _rb.linearVelocity = _moveInput.normalized * _speed;
     }

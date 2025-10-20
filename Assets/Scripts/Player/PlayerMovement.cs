@@ -1,7 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour 
+{
     private Rigidbody2D _rb;
     private Animator _anim;
 

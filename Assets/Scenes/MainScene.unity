@@ -358,6 +358,7 @@ GameObject:
   - component: {fileID: 130073651}
   - component: {fileID: 130073650}
   - component: {fileID: 130073648}
+  - component: {fileID: 130073659}
   - component: {fileID: 130073647}
   - component: {fileID: 130073655}
   - component: {fileID: 130073658}
@@ -477,6 +478,7 @@ Transform:
   - {fileID: 1897138709}
   - {fileID: 1646388123}
   - {fileID: 512484841}
+  - {fileID: 314634975}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &130073652
@@ -639,6 +641,29 @@ MonoBehaviour:
   dashDuration: 0.15
   dashCooldown: 0.5
   iFrameDuration: 0.5
+--- !u!114 &130073659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130073645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83c949bd088c55a40a43db851c79605b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSmash
+  hitPoint: {fileID: 314634975}
+  attackRadius: 0.6
+  damage: 1
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 0
+  attackCooldown: 0.5
+  animator: {fileID: 0}
+  animatorTriggerName: Smash
+  useKnockback: 0
+  knockbackForce: 5
 --- !u!4 &152539999 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3652405518658758367, guid: a23c3e8cf0a94af4180231fd58ca251c, type: 3}
@@ -803,6 +828,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 472896084}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &314634974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 314634975}
+  m_Layer: 0
+  m_Name: HitPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &314634975
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314634974}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.002, y: 0.81, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 130073651}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &365066213
 PrefabInstance:
@@ -9066,7 +9122,7 @@ Transform:
   m_GameObject: {fileID: 1646388122}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: 0.81, z: 0}
+  m_LocalPosition: {x: 0.001, y: 0.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -103,37 +103,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Xenolita Dash Right3_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 55
-        width: 9
-        height: 10
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 367bec048f25dc6b0800000000000000
-      internalID: -5274468362388326557
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Xenolita Dash Right3_1
       rect:
         serializedVersion: 2
-        x: 15
+        x: 0
         y: 0
-        width: 122
+        width: 137
         height: 153
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.50306976, y: 0.057460926}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

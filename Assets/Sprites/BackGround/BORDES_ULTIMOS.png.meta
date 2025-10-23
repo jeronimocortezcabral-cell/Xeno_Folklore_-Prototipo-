@@ -1,0 +1,1404 @@
+fileFormatVersion: 2
+guid: 22d023abe9f04954fb52fb76015bc431
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1957468491649273170
+    second: BORDES_ULTIMOS_0
+  - first:
+      213: 6201239602116870356
+    second: BORDES_ULTIMOS_1
+  - first:
+      213: -5660156053050685559
+    second: BORDES_ULTIMOS_2
+  - first:
+      213: -6635858954232450275
+    second: BORDES_ULTIMOS_3
+  - first:
+      213: -7746694481646737872
+    second: BORDES_ULTIMOS_4
+  - first:
+      213: 4552079612049169882
+    second: BORDES_ULTIMOS_5
+  - first:
+      213: 8832370112609148275
+    second: BORDES_ULTIMOS_6
+  - first:
+      213: 3437384469117143923
+    second: BORDES_ULTIMOS_7
+  - first:
+      213: -2035304817921472063
+    second: BORDES_ULTIMOS_8
+  - first:
+      213: 9054736661009975259
+    second: BORDES_ULTIMOS_9
+  - first:
+      213: -3915719826517107885
+    second: BORDES_ULTIMOS_10
+  - first:
+      213: -2125630272367961650
+    second: BORDES_ULTIMOS_11
+  - first:
+      213: -3183726010951540420
+    second: BORDES_ULTIMOS_12
+  - first:
+      213: 4971997641250915373
+    second: BORDES_ULTIMOS_13
+  - first:
+      213: -258295100129877950
+    second: BORDES_ULTIMOS_14
+  - first:
+      213: -4025528743594925039
+    second: BORDES_ULTIMOS_15
+  - first:
+      213: 765441304639071634
+    second: BORDES_ULTIMOS_16
+  - first:
+      213: 3048404354583224557
+    second: BORDES_ULTIMOS_17
+  - first:
+      213: 8613663869395644961
+    second: BORDES_ULTIMOS_18
+  - first:
+      213: 8575585895023505090
+    second: BORDES_ULTIMOS_19
+  - first:
+      213: -6227260017608086087
+    second: BORDES_ULTIMOS_20
+  - first:
+      213: 1291015562303972355
+    second: BORDES_ULTIMOS_21
+  - first:
+      213: 4414684083663503834
+    second: BORDES_ULTIMOS_22
+  - first:
+      213: -4198965538216492420
+    second: BORDES_ULTIMOS_23
+  - first:
+      213: -8214332018756564280
+    second: BORDES_ULTIMOS_24
+  - first:
+      213: 7151482529513289883
+    second: BORDES_ULTIMOS_25
+  - first:
+      213: -1703254638879159580
+    second: BORDES_ULTIMOS_26
+  - first:
+      213: -4129595506693731084
+    second: BORDES_ULTIMOS_27
+  - first:
+      213: 1132456562851129358
+    second: BORDES_ULTIMOS_28
+  - first:
+      213: -233936034232505219
+    second: BORDES_ULTIMOS_29
+  - first:
+      213: 6786693407801456024
+    second: BORDES_ULTIMOS_30
+  - first:
+      213: 2772943915009558828
+    second: BORDES_ULTIMOS_31
+  - first:
+      213: 1989161181294336392
+    second: BORDES_ULTIMOS_32
+  - first:
+      213: 2850207977852428794
+    second: BORDES_ULTIMOS_33
+  - first:
+      213: -1299763995553048356
+    second: BORDES_ULTIMOS_34
+  - first:
+      213: 72191803817853292
+    second: BORDES_ULTIMOS_35
+  - first:
+      213: 5348240855512985153
+    second: BORDES_ULTIMOS_36
+  - first:
+      213: -7993816004160385063
+    second: BORDES_ULTIMOS_37
+  - first:
+      213: -8537913112442461337
+    second: BORDES_ULTIMOS_38
+  - first:
+      213: 3750209774243224233
+    second: BORDES_ULTIMOS_39
+  - first:
+      213: 943396884626243582
+    second: BORDES_ULTIMOS_40
+  - first:
+      213: -8031223457403796679
+    second: BORDES_ULTIMOS_41
+  - first:
+      213: -6010851541158540622
+    second: BORDES_ULTIMOS_42
+  - first:
+      213: -4668342384790004357
+    second: BORDES_ULTIMOS_43
+  - first:
+      213: -6869104469579032132
+    second: BORDES_ULTIMOS_44
+  - first:
+      213: 9029106311753754324
+    second: BORDES_ULTIMOS_45
+  - first:
+      213: 286442546359889082
+    second: BORDES_ULTIMOS_46
+  - first:
+      213: -4131630506114984564
+    second: BORDES_ULTIMOS_47
+  - first:
+      213: 277492438164602862
+    second: BORDES_ULTIMOS_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 10
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1084
+        width: 2048
+        height: 964
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d46c7d8335a2b10800000000000000
+      internalID: 1957468491649273170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1020
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d0c243009a3f0650800000000000000
+      internalID: 6201239602116870356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 796
+        width: 1906
+        height: 706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98703acfe061371b0800000000000000
+      internalID: -5660156053050685559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_3
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 572
+        width: 650
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d13316d7071b8e3a0800000000000000
+      internalID: -6635858954232450275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_4
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 812
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 036a7f5a9663e7490800000000000000
+      internalID: -7746694481646737872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_5
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 764
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add1d790a4c3c2f30800000000000000
+      internalID: 4552079612049169882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_6
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 684
+        width: 146
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37d58de42d1e29a70800000000000000
+      internalID: 8832370112609148275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_7
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 684
+        width: 18
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37b0c2e66fa04bf20800000000000000
+      internalID: 3437384469117143923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_8
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 748
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c946263d0521c3e0800000000000000
+      internalID: -2035304817921472063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_9
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 732
+        width: 110
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd7c436e403e8ad70800000000000000
+      internalID: 9054736661009975259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_10
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 700
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35b5e7c609198a9c0800000000000000
+      internalID: -3915719826517107885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_11
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 700
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec9d0b3878e3082e0800000000000000
+      internalID: -2125630272367961650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_12
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 702
+        width: 9
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c31ef07af0221d3d0800000000000000
+      internalID: -3183726010951540420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_13
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 460
+        width: 258
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2447de0385100540800000000000000
+      internalID: 4971997641250915373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_14
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 604
+        width: 82
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 240e88599f95a6cf0800000000000000
+      internalID: -258295100129877950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_15
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 470
+        width: 218
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11466e49fe27228c0800000000000000
+      internalID: -4025528743594925039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_16
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 670
+        width: 9
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2956c63afc46f9a00800000000000000
+      internalID: 765441304639071634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_17
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 638
+        width: 9
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de0efaefb9b1e4a20800000000000000
+      internalID: 3048404354583224557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_18
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 572
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 122b1fde6a1e98770800000000000000
+      internalID: 8613663869395644961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_19
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 572
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cee9b5afe9920770800000000000000
+      internalID: 8575585895023505090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_20
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 606
+        width: 9
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd2a76e1045499a0800000000000000
+      internalID: -6227260017608086087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_21
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 574
+        width: 9
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30421a650db9ae110800000000000000
+      internalID: 1291015562303972355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_22
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 508
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad1855ab8cb144d30800000000000000
+      internalID: 4414684083663503834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_23
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 368
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c72cf7e07174ab5c0800000000000000
+      internalID: -4198965538216492420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_24
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 363
+        width: 62
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cac5e2ec84d00e80800000000000000
+      internalID: -8214332018756564280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_25
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 140
+        width: 493
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b983d0d687b2f3360800000000000000
+      internalID: 7151482529513289883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_26
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 316
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ea429f1ee2dc58e0800000000000000
+      internalID: -1703254638879159580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_27
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 332
+        width: 60
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fc887524cab0b6c0800000000000000
+      internalID: -4129595506693731084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_28
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 332
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e082d407e3b47bf00800000000000000
+      internalID: 1132456562851129358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_29
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 0
+        width: 394
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7c68639a64e0ccf0800000000000000
+      internalID: -233936034232505219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_30
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 252
+        width: 98
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 895bd7b62bd2f2e50800000000000000
+      internalID: 6786693407801456024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_31
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 139
+        width: 210
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c29c93c8cc97b7620800000000000000
+      internalID: 2772943915009558828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_32
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 303
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8899b0c2e8bea9b10800000000000000
+      internalID: 1989161181294336392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_33
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 302
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af1e0e70e09fd8720800000000000000
+      internalID: 2850207977852428794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_34
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 236
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd8d731588f46fde0800000000000000
+      internalID: -1299763995553048356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_35
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 172
+        width: 130
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c610246201a700100800000000000000
+      internalID: 72191803817853292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_36
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 186
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14e251ec8b4c83a40800000000000000
+      internalID: 5348240855512985153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_37
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 108
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df003082b2401190800000000000000
+      internalID: -7993816004160385063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_38
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 156
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 763a7b1924d338980800000000000000
+      internalID: -8537913112442461337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_39
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 140
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aa17f29beb6b0430800000000000000
+      internalID: 3750209774243224233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_40
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 144
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eff7b5ed77e971d00800000000000000
+      internalID: 943396884626243582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_41
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 144
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93389a511dc5b8090800000000000000
+      internalID: -8031223457403796679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_42
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 66
+        width: 56
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bac2a3ce5a259ca0800000000000000
+      internalID: -6010851541158540622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_43
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 93
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d11b0c557b63fb0800000000000000
+      internalID: -4668342384790004357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_44
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 93
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb991b501e90ca0a0800000000000000
+      internalID: -6869104469579032132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_45
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d6e15f2a54dd4d70800000000000000
+      internalID: 9029106311753754324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_46
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 76
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abce6507af5a9f300800000000000000
+      internalID: 286442546359889082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_47
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 60
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8559dbe1ff79a6c0800000000000000
+      internalID: -4131630506114984564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BORDES_ULTIMOS_48
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 44
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eef78acf6e9d9d300800000000000000
+      internalID: 277492438164602862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BORDES_ULTIMOS_0: 1957468491649273170
+      BORDES_ULTIMOS_1: 6201239602116870356
+      BORDES_ULTIMOS_10: -3915719826517107885
+      BORDES_ULTIMOS_11: -2125630272367961650
+      BORDES_ULTIMOS_12: -3183726010951540420
+      BORDES_ULTIMOS_13: 4971997641250915373
+      BORDES_ULTIMOS_14: -258295100129877950
+      BORDES_ULTIMOS_15: -4025528743594925039
+      BORDES_ULTIMOS_16: 765441304639071634
+      BORDES_ULTIMOS_17: 3048404354583224557
+      BORDES_ULTIMOS_18: 8613663869395644961
+      BORDES_ULTIMOS_19: 8575585895023505090
+      BORDES_ULTIMOS_2: -5660156053050685559
+      BORDES_ULTIMOS_20: -6227260017608086087
+      BORDES_ULTIMOS_21: 1291015562303972355
+      BORDES_ULTIMOS_22: 4414684083663503834
+      BORDES_ULTIMOS_23: -4198965538216492420
+      BORDES_ULTIMOS_24: -8214332018756564280
+      BORDES_ULTIMOS_25: 7151482529513289883
+      BORDES_ULTIMOS_26: -1703254638879159580
+      BORDES_ULTIMOS_27: -4129595506693731084
+      BORDES_ULTIMOS_28: 1132456562851129358
+      BORDES_ULTIMOS_29: -233936034232505219
+      BORDES_ULTIMOS_3: -6635858954232450275
+      BORDES_ULTIMOS_30: 6786693407801456024
+      BORDES_ULTIMOS_31: 2772943915009558828
+      BORDES_ULTIMOS_32: 1989161181294336392
+      BORDES_ULTIMOS_33: 2850207977852428794
+      BORDES_ULTIMOS_34: -1299763995553048356
+      BORDES_ULTIMOS_35: 72191803817853292
+      BORDES_ULTIMOS_36: 5348240855512985153
+      BORDES_ULTIMOS_37: -7993816004160385063
+      BORDES_ULTIMOS_38: -8537913112442461337
+      BORDES_ULTIMOS_39: 3750209774243224233
+      BORDES_ULTIMOS_4: -7746694481646737872
+      BORDES_ULTIMOS_40: 943396884626243582
+      BORDES_ULTIMOS_41: -8031223457403796679
+      BORDES_ULTIMOS_42: -6010851541158540622
+      BORDES_ULTIMOS_43: -4668342384790004357
+      BORDES_ULTIMOS_44: -6869104469579032132
+      BORDES_ULTIMOS_45: 9029106311753754324
+      BORDES_ULTIMOS_46: 286442546359889082
+      BORDES_ULTIMOS_47: -4131630506114984564
+      BORDES_ULTIMOS_48: 277492438164602862
+      BORDES_ULTIMOS_5: 4552079612049169882
+      BORDES_ULTIMOS_6: 8832370112609148275
+      BORDES_ULTIMOS_7: 3437384469117143923
+      BORDES_ULTIMOS_8: -2035304817921472063
+      BORDES_ULTIMOS_9: 9054736661009975259
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -19,6 +19,7 @@ public class PlayerDash : MonoBehaviour
     private bool isDashing = false;
     private bool canDash = true;
     private bool isInvulnerable = false;
+    private Animator animator;
 
     private void Start()
     {
@@ -27,6 +28,8 @@ public class PlayerDash : MonoBehaviour
 
         if (rb == null) Debug.LogError("Falta Rigidbody2D en el jugador.");
         if (playerMovement == null) Debug.LogError("Falta PlayerMovement en el jugador.");
+        animator = GetComponent<Animator>();
+        if (animator == null) Debug.LogError("Falta Animator en el jugador.");
     }
 
     private void Update()
@@ -50,6 +53,7 @@ public class PlayerDash : MonoBehaviour
 
         // Aplicar velocidad
         rb.linearVelocity = dashDir * dashForce;
+        animator.SetBool("IsDashing", true);
 
         // Activar i-frames
         StartCoroutine(Invulnerability());
@@ -60,10 +64,12 @@ public class PlayerDash : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
         playerMovement.enabled = true;
         isDashing = false;
+        animator.SetBool("IsDashing", false);
 
         // Esperar cooldown
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
+       
     }
 
     private Vector2 GetDashDirection()

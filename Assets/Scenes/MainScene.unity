@@ -398,7 +398,7 @@ MonoBehaviour:
   firePoint: {fileID: 1646388123}
   bulletSpeed: 30
   mainCamera: {fileID: 1897138708}
-  fireRate: 0.2
+  fireRate: 0.4
 --- !u!114 &130073648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -662,14 +662,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSmash
   hitPoint: {fileID: 314634975}
-  attackRadius: 0.6
-  damage: 1
+  attackRadius: 1
+  damage: 2
   enemyMask:
     serializedVersion: 2
     m_Bits: 64
-  attackCooldown: 0.5
-  animator: {fileID: 0}
-  animatorTriggerName: Smash
+  mainCamera: {fileID: 1897138708}
+  attackCooldown: 0.25
   useKnockback: 0
   knockbackForce: 5
 --- !u!4 &152539999 stripped

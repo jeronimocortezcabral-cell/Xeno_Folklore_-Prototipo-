@@ -3,72 +3,75 @@ using UnityEngine.InputSystem;
 
 public class PlayerSmash : MonoBehaviour
 {
-    [Header("Attack")]
-    [SerializeField] private Transform hitPoint;         // Punto donde se origina el ataque melee
-    [SerializeField] private float attackRadius = 0.6f;  // Radio de impacto del golpe
-    [SerializeField] private float damage = 1f;          // Daño infligido al enemigo
-    [SerializeField] private LayerMask enemyMask;        // Capas que se consideran enemigos
+    [Header("Ataque")]
+    [SerializeField] private Transform hitPoint;         // Punto donde se origina el ataque
+    [SerializeField] private float attackRadius = 0.6f;  // Radio del área de golpe
+    [SerializeField] private float damage = 1f;          // Daño infligido
+    [SerializeField] private LayerMask enemyMask;        // Capas consideradas enemigos
 
-    [Header("Timing")]
-    [SerializeField] private float attackCooldown = 0.5f; // Tiempo entre ataques
+    [Header("Cámara")]
+    [SerializeField] private Camera mainCamera;          // Cámara principal (para calcular dirección del mouse)
+
+    [Header("Cooldown")]
+    [SerializeField] private float attackCooldown = 0.5f;
     private float nextAttackTime = 0f;
 
-    [Header("Optional")]
-    [SerializeField] private Animator animator;          // (Opcional) para animación de ataque
-    [SerializeField] private string animatorTriggerName = "Smash"; // Nombre del trigger en el Animator
-    [SerializeField] private bool useKnockback = false;  // Aplicar empuje (knockback) a los enemigos golpeados
-    [SerializeField] private float knockbackForce = 5f;  // Intensidad del empuje
+    [Header("Knockback (opcional)")]
+    [SerializeField] private bool useKnockback = false;
+    [SerializeField] private float knockbackForce = 5f;
 
-    private void Reset()
+    private void Start()
     {
-        // Si no hay un hitPoint asignado, se crea uno automáticamente como hijo del jugador
-        if (hitPoint == null)
-        {
-            var hp = new GameObject("HitPoint");
-            hp.transform.SetParent(transform);
-            hp.transform.localPosition = Vector3.right * 0.6f;
-            hitPoint = hp.transform;
-        }
+        // Si no se asignó manualmente la cámara, se usa la principal
+        if (mainCamera == null)
+            mainCamera = Camera.main;
     }
 
     private void Update()
     {
-        // Clic izquierdo del ratón -> ataque melee
+        // Clic izquierdo para atacar con cooldown
         if (Mouse.current.leftButton.wasPressedThisFrame && Time.time >= nextAttackTime)
         {
-            Attack();
+            AttackTowardMouse();
             nextAttackTime = Time.time + attackCooldown;
         }
     }
 
-    private void Attack()
+    private void AttackTowardMouse()
     {
-        // Reproduce la animación si hay un Animator asignado
-        if (animator != null && !string.IsNullOrEmpty(animatorTriggerName))
+        if (mainCamera == null)
         {
-            animator.SetTrigger(animatorTriggerName);
+            Debug.LogWarning("MainCamera no asignada en PlayerSmash.");
+            return;
         }
 
-        // Detecta colisionadores dentro del radio de ataque que estén en la capa enemyMask
+        // Obtener posición del mouse en el mundo
+        Vector3 mousePos = Mouse.current.position.ReadValue();
+        Vector3 worldPos = mainCamera.ScreenToWorldPoint(mousePos);
+        worldPos.z = 0f;
+
+        // Calcular dirección del jugador al mouse
+        Vector2 direction = (worldPos - transform.position).normalized;
+
+        // Colocar el punto de impacto frente al jugador (hacia el mouse)
+        hitPoint.position = transform.position + (Vector3)(direction * 0.6f);
+
+        // Detectar enemigos en el área del golpe
         Collider2D[] hits = Physics2D.OverlapCircleAll(hitPoint.position, attackRadius, enemyMask);
 
         foreach (var col in hits)
         {
-            if (col == null) continue;
-
-            // Busca el componente Enemy y aplica daño si lo encuentra
             var enemy = col.GetComponent<Enemy>();
             if (enemy != null)
             {
                 enemy.TakeDamage(damage);
 
-                // Aplica empuje (knockback) si está activado
                 if (useKnockback)
                 {
                     var rb = col.GetComponent<Rigidbody2D>();
                     if (rb != null)
                     {
-                        Vector2 knockDir = (col.transform.position - hitPoint.position).normalized;
+                        Vector2 knockDir = (col.transform.position - transform.position).normalized;
                         rb.AddForce(knockDir * knockbackForce, ForceMode2D.Impulse);
                     }
                 }
@@ -76,11 +79,10 @@ public class PlayerSmash : MonoBehaviour
         }
     }
 
-    // Dibuja una esfera de color en el editor para visualizar el rango del ataque
     private void OnDrawGizmosSelected()
     {
         if (hitPoint == null) return;
-        Gizmos.color = new Color(1f, 0.2f, 0.2f, 0.6f);
+        Gizmos.color = new Color(1f, 0.3f, 0.3f, 0.6f);
         Gizmos.DrawWireSphere(hitPoint.position, attackRadius);
     }
 }

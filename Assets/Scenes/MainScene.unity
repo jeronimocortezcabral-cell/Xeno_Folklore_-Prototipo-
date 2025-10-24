@@ -398,7 +398,7 @@ MonoBehaviour:
   firePoint: {fileID: 1646388123}
   bulletSpeed: 30
   mainCamera: {fileID: 1897138708}
-  fireRate: 0.4
+  fireRate: 0.3
 --- !u!114 &130073648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -647,7 +647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDash
   dashForce: 30
   dashDuration: 0.15
-  dashCooldown: 0.5
+  dashCooldown: 0.1
   iFrameDuration: 0.5
 --- !u!114 &130073659
 MonoBehaviour:

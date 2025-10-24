@@ -1,9 +1,8 @@
-using UnityEngine;
+using UnityEngine; 
 using UnityEngine.InputSystem;
 using System.Collections;
 
-public class PlayerDash : MonoBehaviour
-{
+public class PlayerDash : MonoBehaviour {
     [Header("Componentes")]
     private Rigidbody2D rb;
     private PlayerMovement playerMovement;
@@ -21,8 +20,7 @@ public class PlayerDash : MonoBehaviour
     private bool isInvulnerable = false;
     private Animator animator;
 
-    private void Start()
-    {
+    private void Start() {
         rb = GetComponent<Rigidbody2D>();
         playerMovement = GetComponent<PlayerMovement>();
 
@@ -32,16 +30,13 @@ public class PlayerDash : MonoBehaviour
         if (animator == null) Debug.LogError("Falta Animator en el jugador.");
     }
 
-    private void Update()
-    {
-        if (Keyboard.current.spaceKey.wasPressedThisFrame && canDash)
-        {
+    private void Update() {
+        if (Keyboard.current.spaceKey.wasPressedThisFrame && canDash) {
             StartCoroutine(PerformDash());
         }
     }
 
-    private IEnumerator PerformDash()
-    {
+    private IEnumerator PerformDash() {
         canDash = false;
         isDashing = true;
 
@@ -69,11 +64,10 @@ public class PlayerDash : MonoBehaviour
         // Esperar cooldown
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
-       
+
     }
 
-    private Vector2 GetDashDirection()
-    {
+    private Vector2 GetDashDirection() {
         var moveInputField = typeof(PlayerMovement).GetField("_moveInput", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
         var lastNonZeroMoveField = typeof(PlayerMovement).GetField("_lastNonZeroMove", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
 
@@ -83,8 +77,7 @@ public class PlayerDash : MonoBehaviour
         return moveInput.sqrMagnitude > 0.001f ? moveInput.normalized : lastDir;
     }
 
-    private IEnumerator Invulnerability()
-    {
+    private IEnumerator Invulnerability() {
         isInvulnerable = true;
         yield return new WaitForSeconds(iFrameDuration);
         isInvulnerable = false;

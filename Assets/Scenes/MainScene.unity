@@ -411,7 +411,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: effe6b17555a60843acd0afc59c14eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  _speed: 8
+  _walkSpeed: 10
+  _runMultiplier: 1.6
 --- !u!212 &130073650
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -647,8 +648,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDash
   dashForce: 30
   dashDuration: 0.15
-  dashCooldown: 0.1
-  iFrameDuration: 0.5
+  dashCooldown: 0.2
+  iFrameDuration: 0.15
 --- !u!114 &130073659
 MonoBehaviour:
   m_ObjectHideFlags: 0

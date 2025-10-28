@@ -15,7 +15,6 @@ public class PlayerDash : MonoBehaviour {
     [Header("I-Frames")]
     [SerializeField] private float iFrameDuration = 0.2f;
 
-    private bool isDashing = false;
     private bool canDash = true;
     private bool isInvulnerable = false;
     private Animator animator;
@@ -38,7 +37,6 @@ public class PlayerDash : MonoBehaviour {
 
     private IEnumerator PerformDash() {
         canDash = false;
-        isDashing = true;
 
         // Desactiva temporalmente el movimiento normal
         playerMovement.enabled = false;
@@ -58,7 +56,6 @@ public class PlayerDash : MonoBehaviour {
         // Detener dash
         rb.linearVelocity = Vector2.zero;
         playerMovement.enabled = true;
-        isDashing = false;
         animator.SetBool("IsDashing", false);
 
         // Esperar cooldown

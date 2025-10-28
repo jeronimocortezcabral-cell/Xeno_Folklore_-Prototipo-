@@ -16740,8 +16740,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HealthBar
   playerHealth: {fileID: 130073655}
   healthFill: {fileID: 676066252}
-  fullHealthColor: {r: 0, g: 1, b: 0, a: 1}
-  lowHealthColor: {r: 1, g: 0, b: 0, a: 1}
+  fullHealthColor: {r: 0.49411768, g: 0.49411768, b: 0.49411768, a: 1}
+  lowHealthColor: {r: 0.3137255, g: 0.3137255, b: 0.3137255, a: 1}
 --- !u!1 &1663019436 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7072035473582699903, guid: a23c3e8cf0a94af4180231fd58ca251c, type: 3}

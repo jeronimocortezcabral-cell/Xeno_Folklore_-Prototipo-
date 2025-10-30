@@ -409,7 +409,7 @@ MonoBehaviour:
   firePoint: {fileID: 1646388123}
   mainCamera: {fileID: 1897138708}
   animator: {fileID: 130073657}
-  bulletSpeed: 30
+  bulletSpeed: 35
   fireRate: 0.5
 --- !u!114 &130073648
 MonoBehaviour:

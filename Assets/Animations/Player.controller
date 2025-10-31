@@ -596,10 +596,10 @@ AnimatorStateMachine:
     m_Position: {x: 80, y: 250, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8212403731413454708}
-    m_Position: {x: 400, y: 80, z: 0}
+    m_Position: {x: 400, y: 40, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 557381249799273751}
-    m_Position: {x: 400, y: 200, z: 0}
+    m_Position: {x: 400, y: 250, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7056492352446245188}
     m_Position: {x: 1140, y: 460, z: 0}
@@ -614,7 +614,7 @@ AnimatorStateMachine:
     m_Position: {x: 1160, y: 610, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6667438589186703902}
-    m_Position: {x: 400, y: 120, z: 0}
+    m_Position: {x: 400, y: 110, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1521177688645150282}
     m_Position: {x: 1170, y: 670, z: 0}
@@ -633,6 +633,9 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: -966292051279458434}
     m_Position: {x: 1140, y: 400, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 2123190531613519659}
+    m_Position: {x: 1175, y: 465, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 2379412870868797557}
@@ -838,6 +841,32 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1102 &2123190531613519659
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hit_360
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: fd26d01d912c51a49ba20214eacfad50, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1101 &2379412870868797557
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

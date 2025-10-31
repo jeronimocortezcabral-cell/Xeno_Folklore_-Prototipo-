@@ -1,76 +1,80 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerSmash : MonoBehaviour
-{
+public class PlayerSmash : MonoBehaviour {
     [Header("Ataque")]
-    [SerializeField] private Transform hitPoint;         // Punto donde se origina el ataque
+    [Tooltip("Si dejás vacío, el hit se hará desde la posición del jugador.")]
+    [SerializeField] private Transform hitPoint;         // opcional: child vacío; si es null se usa transform.position
     [SerializeField] private float attackRadius = 0.6f;  // Radio del área de golpe
     [SerializeField] private float damage = 1f;          // Daño infligido
     [SerializeField] private LayerMask enemyMask;        // Capas consideradas enemigos
 
     [Header("Cámara")]
-    [SerializeField] private Camera mainCamera;          // Cámara principal (para calcular dirección del mouse)
+    [SerializeField] private Camera mainCamera;          // solo si necesitás mouse (no es necesario para 360°)
 
-    [Header("Cooldown")]
+    [Header("Cooldown y timing")]
     [SerializeField] private float attackCooldown = 0.5f;
+    [Tooltip("Si no usás Animation Event, el hit se hará después de este delay (segundos).")]
+    [SerializeField] private float attackDelay = 0.12f;
+    [SerializeField] private float smashDuration = 0.5f; // tiempo total de la animación (fallback)
     private float nextAttackTime = 0f;
 
     [Header("Knockback (opcional)")]
     [SerializeField] private bool useKnockback = false;
     [SerializeField] private float knockbackForce = 5f;
 
-    private void Start()
-    {
-        // Si no se asignó manualmente la cámara, se usa la principal
-        if (mainCamera == null)
-            mainCamera = Camera.main;
+    [Header("Animator")]
+    [SerializeField] private Animator animator;
+    private const string PARAM_SMASH = "Smash";         // trigger
+    private const string PARAM_IS_ATTACKING = "IsAttacking"; // bool (opcional para bloquear inputs)
+
+    private void Start() {
+        if (mainCamera == null) mainCamera = Camera.main;
+        if (animator == null) animator = GetComponent<Animator>();
+        if (hitPoint == null) {
+            // no es obligatorio, pero podemos crear un punto visual en tiempo de edición si querés
+        }
     }
 
-    private void Update()
-    {
-        // Clic izquierdo para atacar con cooldown
-        if (Mouse.current.leftButton.wasPressedThisFrame && Time.time >= nextAttackTime)
-        {
-            AttackTowardMouse();
+    private void Update() {
+        if (Mouse.current.leftButton.wasPressedThisFrame && Time.time >= nextAttackTime) {
+            StartSmash();
             nextAttackTime = Time.time + attackCooldown;
         }
     }
 
-    private void AttackTowardMouse()
-    {
-        if (mainCamera == null)
-        {
-            Debug.LogWarning("MainCamera no asignada en PlayerSmash.");
-            return;
+    private void StartSmash() {
+        if (animator != null) {
+            animator.SetBool(PARAM_IS_ATTACKING, true);
+            animator.SetTrigger(PARAM_SMASH);
         }
 
-        // Obtener posición del mouse en el mundo
-        Vector3 mousePos = Mouse.current.position.ReadValue();
-        Vector3 worldPos = mainCamera.ScreenToWorldPoint(mousePos);
-        worldPos.z = 0f;
+        // Si usás Animation Events en el clip, no necesitás el Invoke; el evento debe llamar a OnAttackHit().
+        // Fallback: si no usás Animation Event, ejecutamos el hit tras attackDelay y reset luego de smashDuration.
+        if (attackDelay <= 0f) {
+            OnAttackHit();
+            StartCoroutine(ResetAttackingAfter(smashDuration));
+        }
+        else {
+            Invoke(nameof(OnAttackHit), attackDelay);
+            StartCoroutine(ResetAttackingAfter(smashDuration));
+        }
+    }
 
-        // Calcular dirección del jugador al mouse
-        Vector2 direction = (worldPos - transform.position).normalized;
+    // Método público que puede llamarse desde Animation Event exactamente cuando querés que aplique el hit
+    public void OnAttackHit() {
+        Vector2 center = hitPoint != null ? (Vector2)hitPoint.position : (Vector2)transform.position;
+        Collider2D[] hits = Physics2D.OverlapCircleAll(center, attackRadius, enemyMask);
 
-        // Colocar el punto de impacto frente al jugador (hacia el mouse)
-        hitPoint.position = transform.position + (Vector3)(direction * 0.6f);
-
-        // Detectar enemigos en el área del golpe
-        Collider2D[] hits = Physics2D.OverlapCircleAll(hitPoint.position, attackRadius, enemyMask);
-
-        foreach (var col in hits)
-        {
+        foreach (var col in hits) {
             var enemy = col.GetComponent<Enemy>();
-            if (enemy != null)
-            {
+            if (enemy != null) {
                 enemy.TakeDamage(damage);
 
-                if (useKnockback)
-                {
+                if (useKnockback) {
                     var rb = col.GetComponent<Rigidbody2D>();
-                    if (rb != null)
-                    {
+                    if (rb != null) {
                         Vector2 knockDir = (col.transform.position - transform.position).normalized;
                         rb.AddForce(knockDir * knockbackForce, ForceMode2D.Impulse);
                     }
@@ -79,10 +83,14 @@ public class PlayerSmash : MonoBehaviour
         }
     }
 
-    private void OnDrawGizmosSelected()
-    {
-        if (hitPoint == null) return;
+    private IEnumerator ResetAttackingAfter(float seconds) {
+        yield return new WaitForSeconds(seconds);
+        if (animator != null) animator.SetBool(PARAM_IS_ATTACKING, false);
+    }
+
+    private void OnDrawGizmosSelected() {
+        Vector3 center = hitPoint != null ? hitPoint.position : transform.position;
         Gizmos.color = new Color(1f, 0.3f, 0.3f, 0.6f);
-        Gizmos.DrawWireSphere(hitPoint.position, attackRadius);
+        Gizmos.DrawWireSphere(center, attackRadius);
     }
 }

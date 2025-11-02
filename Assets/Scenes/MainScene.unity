@@ -498,8 +498,8 @@ Transform:
   m_Children:
   - {fileID: 1897138709}
   - {fileID: 1646388123}
-  - {fileID: 512484841}
   - {fileID: 314634975}
+  - {fileID: 512484841}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &130073652
@@ -675,7 +675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSmash
   hitPoint: {fileID: 314634975}
-  attackRadius: 1
+  attackRadius: 1.5
   damage: 2
   enemyMask:
     serializedVersion: 2
@@ -984,7 +984,7 @@ Transform:
   m_GameObject: {fileID: 314634974}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0.81, z: 0}
+  m_LocalPosition: {x: 0, y: 0.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16721,7 +16721,7 @@ Transform:
   m_GameObject: {fileID: 1646388122}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.001, y: 0.81, z: 0}
+  m_LocalPosition: {x: 0, y: 0.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16819,7 +16819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HealthBar
   playerHealth: {fileID: 130073655}
   healthFill: {fileID: 676066252}
-  fullHealthColor: {r: 0.07058823, g: 0.94509804, b: 0.106861286, a: 1}
+  fullHealthColor: {r: 0.21568629, g: 1, b: 1, a: 1}
   lowHealthColor: {r: 0.8773585, g: 0.2027857, b: 0.2027857, a: 1}
 --- !u!1 &1663019436 stripped
 GameObject:

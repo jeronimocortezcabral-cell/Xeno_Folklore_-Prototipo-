@@ -1,42 +1,40 @@
-using System.Collections;
+Ôªøusing System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerSmash : MonoBehaviour 
+public class PlayerSmash : MonoBehaviour
 {
     [Header("Ataque")]
-    [Tooltip("Si dej·s vacÌo, el hit se har· desde la posiciÛn del jugador.")]
-    [SerializeField] private Transform hitPoint;         
+    [Tooltip("Si dej√°s vac√≠o, el hit se har√° desde la posici√≥n del jugador.")]
+    [SerializeField] private Transform hitPoint;
     [SerializeField] private float attackRadius = 0.6f;
-    [SerializeField] private float damage = 1f;         
-    [SerializeField] private LayerMask enemyMask;      
+    [SerializeField] private float damage = 1f;
+    [SerializeField] private LayerMask enemyMask;
 
-    [Header("C·mara")]
-    [SerializeField] private Camera mainCamera;        
+    [Header("C√°mara")]
+    [SerializeField] private Camera mainCamera;
+
     [Header("Cooldown y timing")]
     [SerializeField] private float attackCooldown = 0.5f;
-    [Tooltip("Si no us·s Animation Event, el hit se har· despuÈs de este delay (segundos).")]
+    [Tooltip("Si no us√°s Animation Event, el hit se har√° despu√©s de este delay (segundos).")]
     [SerializeField] private float attackDelay = 0.12f;
-    [SerializeField] private float smashDuration = 0.5f; 
+    [SerializeField] private float smashDuration = 0.5f;
     private float nextAttackTime = 0f;
 
-    [Header("Knockback (opcional)")]
-    [SerializeField] private bool useKnockback = false;
+    [Header("Knockback")]
     [SerializeField] private float knockbackForce = 5f;
 
     [Header("Animator")]
     [SerializeField] private Animator animator;
-    private const string PARAM_SMASH = "Smash";         
-    private const string PARAM_IS_ATTACKING = "IsAttacking"; 
+    private const string PARAM_SMASH = "Smash";
+    private const string PARAM_IS_ATTACKING = "IsAttacking";
 
-    private void Start() 
+    private void Start()
     {
         if (mainCamera == null) mainCamera = Camera.main;
         if (animator == null) animator = GetComponent<Animator>();
-        if (hitPoint == null) 
-        {
-           
-        }
+        if (hitPoint == null)
+            Debug.LogWarning("No se asign√≥ un hitPoint. Se usar√° la posici√≥n del jugador.");
     }
 
     private void Update()
@@ -56,50 +54,52 @@ public class PlayerSmash : MonoBehaviour
             animator.SetTrigger(PARAM_SMASH);
         }
 
-        if (attackDelay <= 0f) 
+        if (attackDelay <= 0f)
         {
             OnAttackHit();
             StartCoroutine(ResetAttackingAfter(smashDuration));
         }
-        else 
+        else
         {
             Invoke(nameof(OnAttackHit), attackDelay);
             StartCoroutine(ResetAttackingAfter(smashDuration));
         }
     }
 
-    public void OnAttackHit() 
+    public void OnAttackHit()
     {
         Vector2 center = hitPoint != null ? (Vector2)hitPoint.position : (Vector2)transform.position;
         Collider2D[] hits = Physics2D.OverlapCircleAll(center, attackRadius, enemyMask);
 
-        foreach (var col in hits) 
+        foreach (var col in hits)
         {
             var enemy = col.GetComponent<Enemy>();
-            if (enemy != null) 
+            if (enemy != null)
             {
                 enemy.TakeDamage(damage);
 
-                if (useKnockback) 
+                // üîπ Aplica knockback en direcci√≥n del cursor
+                Rigidbody2D rb = col.GetComponent<Rigidbody2D>();
+                if (rb != null)
                 {
-                    var rb = col.GetComponent<Rigidbody2D>();
-                    if (rb != null)
-                    {
-                        Vector2 knockDir = (col.transform.position - transform.position).normalized;
-                        rb.AddForce(knockDir * knockbackForce, ForceMode2D.Impulse);
-                    }
+                    Vector3 mousePos = Mouse.current.position.ReadValue();
+                    Vector3 worldPos = mainCamera.ScreenToWorldPoint(mousePos);
+                    worldPos.z = 0f;
+
+                    Vector2 knockDir = ((Vector2)col.transform.position - (Vector2)transform.position).normalized;
+                    rb.AddForce(knockDir * knockbackForce, ForceMode2D.Impulse);
                 }
             }
         }
     }
 
-    private IEnumerator ResetAttackingAfter(float seconds) 
+    private IEnumerator ResetAttackingAfter(float seconds)
     {
         yield return new WaitForSeconds(seconds);
         if (animator != null) animator.SetBool(PARAM_IS_ATTACKING, false);
     }
 
-    private void OnDrawGizmosSelected() 
+    private void OnDrawGizmosSelected()
     {
         Vector3 center = hitPoint != null ? hitPoint.position : transform.position;
         Gizmos.color = new Color(1f, 0.3f, 0.3f, 0.6f);

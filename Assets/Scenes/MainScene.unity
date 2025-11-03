@@ -676,7 +676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSmash
   hitPoint: {fileID: 314634975}
-  attackRadius: 1.5
+  attackRadius: 2
   damage: 2
   enemyMask:
     serializedVersion: 2
@@ -685,7 +685,7 @@ MonoBehaviour:
   attackCooldown: 0.25
   attackDelay: 0.12
   smashDuration: 0.5
-  useKnockback: 0
+  useKnockback: 1
   knockbackForce: 5
   animator: {fileID: 0}
 --- !u!114 &130073660

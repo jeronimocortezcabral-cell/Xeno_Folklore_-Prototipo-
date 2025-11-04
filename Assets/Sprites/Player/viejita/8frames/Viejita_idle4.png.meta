@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5a3cfc5079a199340b532c042b95cf6a
+guid: 8b66c24440b19134e806ff585f320e98
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5552360879018721670
-    second: Viejita_idle2_0
+      213: 5312190354980562062
+    second: Viejita_idle4_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Viejita_idle2_0
+      name: Viejita_idle4_0
       rect:
         serializedVersion: 2
         x: 111
         y: 95
         width: 82
-        height: 138
+        height: 146
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a7e305db23d02f2b0800000000000000
-      internalID: -5552360879018721670
+      spriteID: e846fdf8bf0b8b940800000000000000
+      internalID: 5312190354980562062
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c4265c83ab799c041aa07fd5b516316f
+    spriteID: 7874af13abfbe6e4ab1bbeea3a32239c
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Viejita_idle2_0: -5552360879018721670
+      Viejita_idle4_0: 5312190354980562062
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

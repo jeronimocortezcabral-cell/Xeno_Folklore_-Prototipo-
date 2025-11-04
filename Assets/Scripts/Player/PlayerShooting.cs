@@ -1,101 +1,80 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System.Collections;
 
-public class PlayerShooting : MonoBehaviour
-{
-    [Header("Disparo")]
+public class PlayerShooting : MonoBehaviour {
+    [Header("References")]
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firePoint;
-    [SerializeField] private float bulletSpeed = 10f;
     [SerializeField] private Camera mainCamera;
-    [SerializeField] private float fireRate = 0.4f;
+    [SerializeField] private Animator animator; // asignar en inspector
 
-    [Header("Munición")]
-    [SerializeField] private int maxAmmo = 3;
-    [SerializeField] private float reloadInterval = 1f;
+    [Header("Bullet Settings")]
+    [SerializeField] private float bulletSpeed = 10f;
+    [SerializeField] private float fireRate = 0.5f; // segundos entre disparos
 
-    private int currentAmmo;
-    private bool isReloading = false;
-    private bool canShoot = true;
+    private float nextFireTime = 0f;
 
-    private void Start()
-    {
-        currentAmmo = maxAmmo;
-    }
+    // Animator parameter hashes (opcional para rendimiento)
+    private readonly int hashAimX = Animator.StringToHash("AimX");
+    private readonly int hashAimY = Animator.StringToHash("AimY");
+    private readonly int hashShoot = Animator.StringToHash("Shoot");
 
-    private void Update()
-    {
-        if (Mouse.current.rightButton.wasPressedThisFrame)
-        {
-            TryShoot();
-        }
-    }
-
-    private void TryShoot()
-    {
-        if (!canShoot || isReloading)
-        {
-            Debug.Log("No puedes disparar ahora (recargando o cooldown activo).");
-            return;
-        }
-
-        if (currentAmmo > 0)
-        {
-            ShootTowardCursor();
-            currentAmmo--;
-            Debug.Log($"Disparo realizado. Balas restantes: {currentAmmo}");
-
-            StartCoroutine(ShootCooldown());
-
-            if (currentAmmo <= 0)
-                StartCoroutine(ReloadRoutine());
-        }
-        else
-        {
-            Debug.Log("Sin munición. Esperando recarga...");
-        }
-    }
-
-    private void ShootTowardCursor()
-    {
+    private void Awake() {
         if (mainCamera == null)
-        {
+            mainCamera = Camera.main;
+
+        if (firePoint == null)
+            Debug.LogWarning("PlayerShooting: firePoint no asignado.");
+
+        if (animator == null)
+            Debug.LogWarning("PlayerShooting: animator no asignado.");
+    }
+
+    private void Update() {
+        // Disparo con click derecho y cooldown
+        if (Mouse.current.rightButton.wasPressedThisFrame && Time.time >= nextFireTime) {
+            ShootTowardCursor();
+            nextFireTime = Time.time + fireRate;
+        }
+    }
+
+    private void ShootTowardCursor() {
+        if (mainCamera == null) {
             Debug.LogWarning("MainCamera no asignada en PlayerShooting.");
             return;
         }
 
+        if (firePoint == null || bulletPrefab == null) {
+            Debug.LogWarning("PlayerShooting: firePoint o bulletPrefab no asignado.");
+            return;
+        }
+
+        // Posición del mouse en mundo
         Vector3 mousePos = Mouse.current.position.ReadValue();
         Vector3 worldPos = mainCamera.ScreenToWorldPoint(mousePos);
         worldPos.z = 0f;
 
+        // Dirección desde el firePoint hacia el mouse
         Vector2 direction = (worldPos - firePoint.position).normalized;
 
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
-        Rigidbody2D rbBullet = bullet.GetComponent<Rigidbody2D>();
-        rbBullet.linearVelocity = direction * bulletSpeed;
-    }
+        // ---- Actualizo animator antes de disparar ----
+        if (animator != null) {
+            // Puedes normalizar los valores para evitar magnitudes distintas
+            animator.SetFloat(hashAimX, direction.x);
+            animator.SetFloat(hashAimY, direction.y);
 
-    private IEnumerator ShootCooldown()
-    {
-        canShoot = false;
-        yield return new WaitForSeconds(fireRate);
-        canShoot = true;
-    }
-
-    private IEnumerator ReloadRoutine()
-    {
-        isReloading = true;
-        Debug.Log("Comenzando recarga...");
-
-        while (currentAmmo < maxAmmo)
-        {
-            yield return new WaitForSeconds(reloadInterval);
-            currentAmmo++;
-            Debug.Log($"Recargando... Balas actuales: {currentAmmo}");
+            // Trigger para reproducir la animación de disparo
+            animator.SetTrigger(hashShoot);
         }
 
-        Debug.Log("Recarga completa.");
-        isReloading = false;
+        // Instanciar y dar velocidad a la bala
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+        Rigidbody2D rbBullet = bullet.GetComponent<Rigidbody2D>();
+        if (rbBullet != null) {
+            rbBullet.linearVelocity = direction * bulletSpeed;
+        }
+        else {
+            Debug.LogWarning("Bullet prefab no tiene Rigidbody2D.");
+        }
     }
 }

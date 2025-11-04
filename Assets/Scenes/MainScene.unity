@@ -714,7 +714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 370ee9613121c1d45bc4fe83424fc744, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  maxHealth: 5
+  maxHealth: 10
 --- !u!111 &130073656
 Animation:
   m_ObjectHideFlags: 0
@@ -766,9 +766,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDash
   dashForce: 35
-  dashDuration: 0.15
+  dashDuration: 0.2
   dashCooldown: 1
-  iFrameDuration: 0.15
+  iFrameDuration: 0.2
 --- !u!114 &130073659
 MonoBehaviour:
   m_ObjectHideFlags: 0

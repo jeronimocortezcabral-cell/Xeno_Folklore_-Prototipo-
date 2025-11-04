@@ -513,11 +513,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerShooting
   bulletPrefab: {fileID: 1269140561162774291, guid: 55c1243b174574a42a3cde51c837beb7, type: 3}
   firePoint: {fileID: 1646388123}
-  bulletSpeed: 35
   mainCamera: {fileID: 1897138708}
+  animator: {fileID: 130073657}
+  bulletSpeed: 35
   fireRate: 0.2
-  maxAmmo: 3
-  reloadInterval: 1
 --- !u!114 &130073648
 MonoBehaviour:
   m_ObjectHideFlags: 0

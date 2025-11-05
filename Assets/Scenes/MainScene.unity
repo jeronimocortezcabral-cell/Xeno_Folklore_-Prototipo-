@@ -731,7 +731,7 @@ Transform:
   m_GameObject: {fileID: 130073645}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.85, y: -58.42, z: 0}
+  m_LocalPosition: {x: -2.92, y: -58.94, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11316,7 +11316,7 @@ GameObject:
   - component: {fileID: 419121423}
   - component: {fileID: 419121422}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Reanudar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11455,7 +11455,7 @@ GameObject:
   - component: {fileID: 422479361}
   - component: {fileID: 422479360}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Resume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11524,7 +11524,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 422479361}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2067521221}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Reanudar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &422479361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12388,7 +12400,7 @@ GameObject:
   - component: {fileID: 568949683}
   - component: {fileID: 568949682}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: HUD IN-Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14449,7 +14461,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1046113365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15339,7 +15351,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1272760271}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2067521221}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: VolverAlMenuPrincipal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1272760271
 MonoBehaviour:
   m_ObjectHideFlags: 0

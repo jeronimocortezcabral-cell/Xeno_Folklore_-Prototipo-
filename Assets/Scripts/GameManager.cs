@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    // --- FUNCIONES DE CONTROL DE PAUSA ---
+    
     public void Pausar() {
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour {
         isPaused = false;
     }
 
-    // --- FUNCIONES EXTRA DEL MENÚ ---
+    
     public void Reiniciar() {
         Debug.Log("Reiniciando...");
         Time.timeScale = 1f;
@@ -43,8 +43,8 @@ public class GameManager : MonoBehaviour {
 
     public void VolverAlMenuPrincipal() {
         Debug.Log("Volviendo al menú principal...");
-        Time.timeScale = 1f; // Reanuda el tiempo antes de cambiar de escena
-        SceneManager.LoadScene("MainMenu"); // Cambia a la escena del menú principal
+        Time.timeScale = 1f; 
+        SceneManager.LoadScene("MainMenu"); 
     }
 
     public void CerrarJuego() {

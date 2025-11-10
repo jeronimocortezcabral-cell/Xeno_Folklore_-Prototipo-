@@ -2,14 +2,16 @@ using UnityEngine;
 
 public class HealingItem : MonoBehaviour
 {
-    [SerializeField] private float healAmount = 1f;
+    [SerializeField] private int amount = 1;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        PlayerInventory playerInventory = collision.GetComponent<PlayerInventory>();
-        if (playerInventory != null)
+        if (!collision.CompareTag("Player")) return;
+
+        PlayerInventory inventory = collision.GetComponent<PlayerInventory>();
+        if (inventory != null)
         {
-            playerInventory.AddHealingItem(healAmount);
+            inventory.AddHealingItem(amount);
             Destroy(gameObject);
         }
     }

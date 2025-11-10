@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -20,28 +20,35 @@ public class PlayerHealth : MonoBehaviour
         currentHealth -= amount;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
 
-        Debug.Log("Jugador recibió daño. Salud actual: " + currentHealth);
+        Debug.Log($"Jugador recibiÃ³ daÃ±o. Salud actual: {currentHealth}");
 
         if (currentHealth <= 0)
-        {
             Die();
-        }
+    }
+
+    public void Heal(float amount)
+    {
+        currentHealth += amount;
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+
+        Debug.Log($"Jugador se curÃ³. Salud actual: {currentHealth}");
     }
 
     private void Die()
     {
         Debug.Log("Jugador ha muerto");
+
         if (playerRespawn != null)
-        {
+        { 
             playerRespawn.Respawn();
         }
         else
         {
-            Debug.LogWarning("No se encontró PlayerRespawn en el jugador.");
+            Debug.LogWarning("No se encontrÃ³ PlayerRespawn en el jugador.");
         }
+            
     }
 
-    // Nuevo: usado cuando respawnea
     public void ResetHealth()
     {
         currentHealth = maxHealth;

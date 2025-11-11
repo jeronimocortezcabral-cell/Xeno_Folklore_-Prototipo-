@@ -6,15 +6,20 @@ public class PlayerInventory : MonoBehaviour
 {
     [Header("UI")]
     [SerializeField] private TextMeshProUGUI healingItemsText;
+    [SerializeField] private TextMeshProUGUI keysText; // muestra cuántas llaves/partes tenés
 
     [Header("Curación")]
     [SerializeField] private int healingItems = 0;
     [SerializeField] private int maxHealingItems = 9;
     [SerializeField] private float healAmountPerItem = 1f;
-    [SerializeField] private float useCooldown = 0.5f; // opcional, evita spam
+    [SerializeField] private float useCooldown = 0.5f; // evita spam al usar curas
+    private float nextUseTime = 0f;
+
+    [Header("Keys / Ship Parts")]
+    [SerializeField] private int keys = 0;
+    [SerializeField] private int maxKeys = 99;
 
     private PlayerHealth playerHealth;
-    private float nextUseTime = 0f;
 
     private void Start()
     {
@@ -24,13 +29,16 @@ public class PlayerInventory : MonoBehaviour
 
     private void Update()
     {
-        // Usa una cura al PRESIONAR la rueda del mouse (botón medio)
+        // Usar una cura al PRESIONAR la rueda del mouse (botón medio)
         if (Mouse.current != null && Mouse.current.middleButton.wasPressedThisFrame && Time.time >= nextUseTime)
         {
             TryUseHealingItem();
         }
     }
 
+    // ----------------------
+    // Curación
+    // ----------------------
     public void AddHealingItem(int amount)
     {
         healingItems += amount;
@@ -57,14 +65,45 @@ public class PlayerInventory : MonoBehaviour
         playerHealth.Heal(healAmountPerItem);
         UpdateUI();
 
-        // cooldown
+        // cooldown para evitar spam
         nextUseTime = Time.time + useCooldown;
         Debug.Log($"Usó una cura. Curas restantes: {healingItems}");
     }
 
+    // ----------------------
+    // Keys / Ship Parts
+    // ----------------------
+    public void AddKey(int amount)
+    {
+        keys += amount;
+        keys = Mathf.Clamp(keys, 0, maxKeys);
+        UpdateUI();
+        Debug.Log($"Parts added: {amount}. Total parts: {keys}");
+    }
+
+    public bool HasEnoughKeys(int amount)
+    {
+        return keys >= amount;
+    }
+
+    public void UseKeys(int amount)
+    {
+        if (keys >= amount)
+        {
+            keys -= amount;
+            UpdateUI();
+        }
+    }
+
+    // ----------------------
+    // UI
+    // ----------------------
     private void UpdateUI()
     {
         if (healingItemsText != null)
             healingItemsText.text = healingItems.ToString();
+
+        if (keysText != null)
+            keysText.text = keys.ToString();
     }
 }

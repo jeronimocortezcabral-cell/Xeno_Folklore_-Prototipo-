@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement;
 public class SpaceShip : MonoBehaviour
 {
     [Header("Configuración de salida")]
-    [SerializeField] private int requiredParts = 4; // cantidad de llaves/partes necesarias
-    [SerializeField] private bool consumePartsOnUse = true; // si se consumen las partes al usar la nave
+    [SerializeField] private int requiredParts = 4;
+    [SerializeField] private bool consumePartsOnUse = true;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -26,7 +26,7 @@ public class SpaceShip : MonoBehaviour
                 if (consumePartsOnUse)
                     inventory.UseKeys(requiredParts);
 
-                SceneManager.LoadScene("EndScene"); // <-- cambia de escena
+                SceneManager.LoadScene("EndScene");
             }
             else
             {

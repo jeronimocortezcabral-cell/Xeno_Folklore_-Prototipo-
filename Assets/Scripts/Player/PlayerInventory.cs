@@ -6,13 +6,13 @@ public class PlayerInventory : MonoBehaviour
 {
     [Header("UI")]
     [SerializeField] private TextMeshProUGUI healingItemsText;
-    [SerializeField] private TextMeshProUGUI keysText; // muestra cuántas llaves/partes tenés
+    [SerializeField] private TextMeshProUGUI keysText;
 
     [Header("Curación")]
     [SerializeField] private int healingItems = 0;
     [SerializeField] private int maxHealingItems = 9;
     [SerializeField] private float healAmountPerItem = 1f;
-    [SerializeField] private float useCooldown = 0.5f; // evita spam al usar curas
+    [SerializeField] private float useCooldown = 0.5f;
     private float nextUseTime = 0f;
 
     [Header("Keys / Ship Parts")]
@@ -29,16 +29,12 @@ public class PlayerInventory : MonoBehaviour
 
     private void Update()
     {
-        // Usar una cura al PRESIONAR la rueda del mouse (botón medio)
         if (Mouse.current != null && Mouse.current.middleButton.wasPressedThisFrame && Time.time >= nextUseTime)
         {
             TryUseHealingItem();
         }
     }
 
-    // ----------------------
-    // Curación
-    // ----------------------
     public void AddHealingItem(int amount)
     {
         healingItems += amount;
@@ -60,19 +56,14 @@ public class PlayerInventory : MonoBehaviour
             return;
         }
 
-        // Usar la cura
         healingItems--;
         playerHealth.Heal(healAmountPerItem);
         UpdateUI();
 
-        // cooldown para evitar spam
         nextUseTime = Time.time + useCooldown;
         Debug.Log($"Usó una cura. Curas restantes: {healingItems}");
     }
 
-    // ----------------------
-    // Keys / Ship Parts
-    // ----------------------
     public void AddKey(int amount)
     {
         keys += amount;
@@ -95,9 +86,6 @@ public class PlayerInventory : MonoBehaviour
         }
     }
 
-    // ----------------------
-    // UI
-    // ----------------------
     private void UpdateUI()
     {
         if (healingItemsText != null)

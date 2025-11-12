@@ -1227,8 +1227,8 @@ MonoBehaviour:
   keysText: {fileID: 173246618}
   healingItems: 0
   maxHealingItems: 9
-  healAmountPerItem: 1
-  useCooldown: 0.5
+  healAmountPerItem: 2.5
+  useCooldown: 0.25
   keys: 0
   maxKeys: 99
 --- !u!61 &130073662
@@ -15604,7 +15604,7 @@ Transform:
   m_GameObject: {fileID: 765608081}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -32.47, y: -67.68, z: 0}
+  m_LocalPosition: {x: 19.68, y: -75.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -11,7 +11,7 @@ public class ShipParts : MonoBehaviour
         PlayerInventory inventory = collision.GetComponent<PlayerInventory>();
         if (inventory != null)
         {
-            inventory.AddKey(amount); // Usa el sistema de llaves existente
+            inventory.AddKey(amount);
             Destroy(gameObject);
         }
     }

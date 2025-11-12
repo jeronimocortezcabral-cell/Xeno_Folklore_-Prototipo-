@@ -1,35 +1,40 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Collider2D))]
 public class DialogueTrigger : MonoBehaviour {
-    public DialogueData dialogue;
+    [Header("Datos del diálogo")]
+    public DialogueData dialogue; // o DialogueSO si usás ScriptableObject
+
     private bool playerInRange = false;
 
-    private void Reset() {
-        // asegurar que el collider sea trigger por defecto al añadir el script
-        var col = GetComponent<Collider2D>();
-        if (col) col.isTrigger = true;
-    }
-
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.CompareTag("Player")) {
-            playerInRange = true;
-        }
+        if (!other.CompareTag("Player")) return;
+
+        Debug.Log("DialogueTrigger: Player entered range of " + gameObject.name);
+        playerInRange = true;
     }
 
     private void OnTriggerExit2D(Collider2D other) {
-        if (other.CompareTag("Player")) {
-            playerInRange = false;
-        }
+        if (!other.CompareTag("Player")) return;
+
+        Debug.Log("DialogueTrigger: Player left range of " + gameObject.name);
+        playerInRange = false;
     }
 
     private void Update() {
-        if (playerInRange && Input.GetKeyDown(KeyCode.B)) {
-            // Si ya hay un diálogo abierto y es este NPC quien lo tiene, avanço se hace en DialogueManager.
-            if (DialogueManager.Instance != null && !DialogueManager.Instance.IsOpen) {
+        if (!playerInRange) return;
+
+        // Si ya hay un diálogo abierto, no abrir otro
+        if (DialogueManager.Instance != null && DialogueManager.Instance.IsOpen)
+            return;
+
+        // Presionar B para iniciar diálogo
+        if (Input.GetKeyDown(KeyCode.B)) {
+            Debug.Log("DialogueTrigger: B pressed near " + gameObject.name);
+
+            if (DialogueManager.Instance != null)
                 DialogueManager.Instance.StartDialogue(dialogue);
-            }
-            // Si DialogueManager ya está abierto, la misma tecla B hará ShowNextLine (controlado por DialogueManager).
+            else
+                Debug.LogWarning("DialogueTrigger: No DialogueManager found in scene!");
         }
     }
 }

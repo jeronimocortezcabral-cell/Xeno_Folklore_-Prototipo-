@@ -932,10 +932,10 @@ GameObject:
   - component: {fileID: 130073661}
   - component: {fileID: 130073653}
   - component: {fileID: 130073652}
-  - component: {fileID: 130073654}
   - component: {fileID: 130073657}
   - component: {fileID: 130073656}
-  m_Layer: 0
+  - component: {fileID: 130073662}
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1108,42 +1108,6 @@ MonoBehaviour:
   m_DefaultActionMap: 
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!58 &130073654
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 130073645}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.0003335476, y: 0.12760353}
-  m_Radius: 0.26867104
 --- !u!114 &130073655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1267,6 +1231,52 @@ MonoBehaviour:
   useCooldown: 0.5
   keys: 0
   maxKeys: 99
+--- !u!61 &130073662
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130073645}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 1.0885714}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.6057143, y: 2.1771429}
+    newSize: {x: 1.6057143, y: 2.1771429}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.6057143, y: 2.1771429}
+  m_EdgeRadius: 0
 --- !u!4 &152539999 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3652405518658758367, guid: a23c3e8cf0a94af4180231fd58ca251c, type: 3}
@@ -1622,9 +1632,9 @@ GameObject:
   - component: {fileID: 225427841}
   - component: {fileID: 225427845}
   - component: {fileID: 225427846}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Npc_Viejito
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1800,8 +1810,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger
   dialogue:
-    npcName: 
-    lines: []
+    npcName: Npc_Viejito
+    lines:
+    - Hola Hola maquinola
+    - Hola Hola maquinola
 --- !u!1 &231495060
 GameObject:
   m_ObjectHideFlags: 0
@@ -2381,7 +2393,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 314634975}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: HitPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13275,7 +13287,7 @@ GameObject:
   m_Component:
   - component: {fileID: 512484841}
   - component: {fileID: 512484842}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15639,7 +15651,7 @@ GameObject:
   m_Component:
   - component: {fileID: 775010969}
   - component: {fileID: 775010970}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17555,7 +17567,7 @@ Transform:
   m_GameObject: {fileID: 1181436156}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1090.5591, y: 482.09833, z: 0}
+  m_LocalPosition: {x: -217, y: -42.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20231,7 +20243,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1646388123}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20765,7 +20777,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1836974576
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21019,7 +21031,7 @@ GameObject:
   - component: {fileID: 1897138707}
   - component: {fileID: 1897138710}
   - component: {fileID: 1897138711}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -21883,6 +21895,6 @@ SceneRoots:
   - {fileID: 1046113368}
   - {fileID: 2067521222}
   - {fileID: 1359269941}
+  - {fileID: 1181436157}
   - {fileID: 827849073}
   - {fileID: 1148030919}
-  - {fileID: 1181436157}

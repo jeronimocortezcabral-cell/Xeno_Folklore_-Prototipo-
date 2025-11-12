@@ -1621,6 +1621,7 @@ GameObject:
   - component: {fileID: 225427842}
   - component: {fileID: 225427841}
   - component: {fileID: 225427845}
+  - component: {fileID: 225427846}
   m_Layer: 0
   m_Name: Npc_Viejito
   m_TagString: Untagged
@@ -1770,7 +1771,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1786,6 +1787,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.1046238, y: 2.9870033}
   m_EdgeRadius: 0
+--- !u!114 &225427846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225427839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 312d001ab9bc79647b6e4cec2ca829ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger
+  dialogue:
+    npcName: 
+    lines: []
 --- !u!1 &231495060
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,6 +1849,7 @@ GameObject:
   - component: {fileID: 255887612}
   - component: {fileID: 255887611}
   - component: {fileID: 255887615}
+  - component: {fileID: 255887616}
   m_Layer: 0
   m_Name: Viejita3frames
   m_TagString: Untagged
@@ -1982,7 +1999,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1998,6 +2015,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.349286, y: 2.8957825}
   m_EdgeRadius: 0
+--- !u!114 &255887616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255887610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 312d001ab9bc79647b6e4cec2ca829ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger
+  dialogue:
+    npcName: 
+    lines: []
 --- !u!1 &275631852 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7072035473582699903, guid: a23c3e8cf0a94af4180231fd58ca251c, type: 3}
@@ -12422,6 +12454,8 @@ GameObject:
   - component: {fileID: 425016771}
   - component: {fileID: 425016770}
   - component: {fileID: 425016769}
+  - component: {fileID: 425016773}
+  - component: {fileID: 425016772}
   m_Layer: 0
   m_Name: Npc_Canchero
   m_TagString: Untagged
@@ -12541,6 +12575,67 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &425016772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425016767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 312d001ab9bc79647b6e4cec2ca829ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger
+  dialogue:
+    npcName: 
+    lines: []
+--- !u!61 &425016773
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425016767}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 1.3909091}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.4909091, y: 2.7818182}
+    newSize: {x: 0.82, y: 1.53}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.4909091, y: 2.7818182}
+  m_EdgeRadius: 0
 --- !u!1 &425726113
 GameObject:
   m_ObjectHideFlags: 0
@@ -13273,6 +13368,7 @@ GameObject:
   - component: {fileID: 551132885}
   - component: {fileID: 551132884}
   - component: {fileID: 551132888}
+  - component: {fileID: 551132889}
   m_Layer: 0
   m_Name: Npc_hombre
   m_TagString: Untagged
@@ -13422,7 +13518,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -13438,6 +13534,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.0036278, y: 2.7096481}
   m_EdgeRadius: 0
+--- !u!114 &551132889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551132883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 312d001ab9bc79647b6e4cec2ca829ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger
+  dialogue:
+    npcName: 
+    lines: []
 --- !u!1 &561174643 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7072035473582699903, guid: a23c3e8cf0a94af4180231fd58ca251c, type: 3}
@@ -15807,6 +15918,7 @@ GameObject:
   - component: {fileID: 879441409}
   - component: {fileID: 879441408}
   - component: {fileID: 879441412}
+  - component: {fileID: 879441413}
   m_Layer: 0
   m_Name: Viejita8frames
   m_TagString: Untagged
@@ -15882,7 +15994,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -15972,6 +16084,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &879441413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879441407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 312d001ab9bc79647b6e4cec2ca829ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger
+  dialogue:
+    npcName: 
+    lines: []
 --- !u!1 &917767655
 GameObject:
   m_ObjectHideFlags: 0
@@ -17146,6 +17273,7 @@ GameObject:
   - component: {fileID: 1164688626}
   - component: {fileID: 1164688625}
   - component: {fileID: 1164688624}
+  - component: {fileID: 1164688629}
   m_Layer: 0
   m_Name: Viejita8frames (1)
   m_TagString: Untagged
@@ -17279,7 +17407,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -17311,6 +17439,21 @@ Transform:
   - {fileID: 1087789830}
   m_Father: {fileID: 1307522798}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1164688629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164688623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 312d001ab9bc79647b6e4cec2ca829ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger
+  dialogue:
+    npcName: 
+    lines: []
 --- !u!1 &1176121184
 GameObject:
   m_ObjectHideFlags: 0
@@ -17395,6 +17538,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1181436157}
+  - component: {fileID: 1181436158}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -17417,6 +17561,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1181436158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181436156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: face78bf707866a469f81e5c20ae4484, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
+  dialogPanel: {fileID: 1836974575}
+  nameText: {fileID: 748132313}
+  dialogText: {fileID: 87293208}
+  continueIcon: {fileID: 2145018798}
 --- !u!1 &1223950097
 GameObject:
   m_ObjectHideFlags: 0
@@ -19588,6 +19748,7 @@ GameObject:
   - component: {fileID: 1578608147}
   - component: {fileID: 1578608146}
   - component: {fileID: 1578608145}
+  - component: {fileID: 1578608149}
   m_Layer: 0
   m_Name: Viejita8frames (2)
   m_TagString: Untagged
@@ -19737,7 +19898,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -19753,6 +19914,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.384972, y: 2.9761963}
   m_EdgeRadius: 0
+--- !u!114 &1578608149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578608143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 312d001ab9bc79647b6e4cec2ca829ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger
+  dialogue:
+    npcName: 
+    lines: []
 --- !u!1001 &1590408114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21694,11 +21870,15 @@ SceneRoots:
   - {fileID: 1112287361}
   - {fileID: 568949685}
   - {fileID: 1933044584}
+  - {fileID: 1344020104}
+  - {fileID: 1096538706}
+  - {fileID: 575542991}
+  - {fileID: 2030778894}
+  - {fileID: 572344511}
   - {fileID: 414127424}
   - {fileID: 296877476}
   - {fileID: 1259273337}
   - {fileID: 46212749}
-  - {fileID: 572344511}
   - {fileID: 1307522798}
   - {fileID: 1046113368}
   - {fileID: 2067521222}
@@ -21706,7 +21886,3 @@ SceneRoots:
   - {fileID: 827849073}
   - {fileID: 1148030919}
   - {fileID: 1181436157}
-  - {fileID: 1344020104}
-  - {fileID: 1096538706}
-  - {fileID: 575542991}
-  - {fileID: 2030778894}

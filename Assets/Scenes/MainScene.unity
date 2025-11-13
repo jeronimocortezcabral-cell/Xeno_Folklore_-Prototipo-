@@ -1265,7 +1265,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 1.0885714}
+  m_Offset: {x: 0, y: 0.7932167}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -1275,7 +1275,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.6057143, y: 2.1771429}
+  m_Size: {x: 1.6057143, y: 1.5864334}
   m_EdgeRadius: 0
 --- !u!4 &152539999 stripped
 Transform:
@@ -1744,7 +1744,7 @@ Transform:
   m_GameObject: {fileID: 225427839}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.21, y: 4.62, z: 0}
+  m_LocalPosition: {x: 13.67, y: 4.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12473,6 +12473,7 @@ GameObject:
   - component: {fileID: 425016769}
   - component: {fileID: 425016773}
   - component: {fileID: 425016772}
+  - component: {fileID: 425016774}
   m_Layer: 0
   m_Name: Npc_Canchero
   m_TagString: Untagged
@@ -12653,6 +12654,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.4909091, y: 2.7818182}
   m_EdgeRadius: 0
+--- !u!114 &425016774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425016767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 312d001ab9bc79647b6e4cec2ca829ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger
+  dialogue:
+    npcName: Npc Canchero
+    lines:
+    - "Yo lo vi! el lobiz\xF3n casi "
 --- !u!1 &425726113
 GameObject:
   m_ObjectHideFlags: 0

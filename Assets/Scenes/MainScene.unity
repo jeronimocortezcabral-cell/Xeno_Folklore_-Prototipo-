@@ -1275,7 +1275,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.6057143, y: 1.5864334}
+  m_Size: {x: 1.239418, y: 1.5864334}
   m_EdgeRadius: 0
 --- !u!4 &152539999 stripped
 Transform:
@@ -1813,11 +1813,11 @@ MonoBehaviour:
     npcName: 'Hector:'
     lines:
     - 
-    - "Bah, solo un tonto creer\xEDa en mitos y leyendas."
+    - "Bah, solo un tonto creer\xEDa en algo como la Luz Mala!"
     - Y yo no soy tonto!
     - Aunque...
     - "Si fuera vos ir\xEDa bien preparado, con un Hacha y Armas de fuego. El lobiz\xF3n
-      si es cosa seria."
+      si es cosa seria. Jajaja!"
     - Suerte!
 --- !u!1 &231495060
 GameObject:
@@ -2020,7 +2020,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0051546097, y: 0.5968437}
+  m_Offset: {x: 0.014746666, y: 0.9451065}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -2030,7 +2030,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.349286, y: 2.8957825}
+  m_Size: {x: 1.3940535, y: 2.199257}
   m_EdgeRadius: 0
 --- !u!114 &255887616
 MonoBehaviour:
@@ -12669,7 +12669,9 @@ MonoBehaviour:
   dialogue:
     npcName: Npc Canchero
     lines:
-    - "Yo lo vi! el lobiz\xF3n casi "
+    - "Eu brother! Vi las piezas de tu nave tiradas por la monta\xF1a. "
+    - Si las traes podemos arreglarla.
+    - 'Eso si. '
 --- !u!1 &425726113
 GameObject:
   m_ObjectHideFlags: 0
@@ -16094,7 +16096,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.009957314, y: 0.68325424}
+  m_Offset: {x: 0.019907534, y: 1.0414677}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -16104,7 +16106,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.384972, y: 2.9761963}
+  m_Size: {x: 1.3700377, y: 2.2597694}
   m_EdgeRadius: 0
 --- !u!4 &879441411
 Transform:
@@ -16193,8 +16195,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger
   dialogue:
-    npcName: 
-    lines: []
+    npcName: "Do\xF1a Patricia"
+    lines:
+    - "Desde que cay\xF3 la nave nadie viene a la iglesia. "
 --- !u!1 &917767655
 GameObject:
   m_ObjectHideFlags: 0
@@ -18733,13 +18736,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1344020100}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.95473, y: -62.35791, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.44540164, w: 0.8953309}
+  m_LocalPosition: {x: -35.7, y: -36.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -52.898}
 --- !u!1 &1351983705
 GameObject:
   m_ObjectHideFlags: 0

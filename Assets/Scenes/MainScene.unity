@@ -15530,6 +15530,7 @@ GameObject:
   - component: {fileID: 765608083}
   - component: {fileID: 765608082}
   - component: {fileID: 765608084}
+  - component: {fileID: 765608085}
   m_Layer: 0
   m_Name: OBJETOS IMPORTANTES MAPA_8
   m_TagString: Untagged
@@ -15604,7 +15605,7 @@ Transform:
   m_GameObject: {fileID: 765608081}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.68, y: -75.3, z: 0}
+  m_LocalPosition: {x: -32.27, y: -67.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15646,6 +15647,20 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 7.5
+--- !u!114 &765608085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765608081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db45204757a73e24b9a656fb61f55f69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpaceShip
+  requiredParts: 4
+  consumePartsOnUse: 1
 --- !u!1 &775010968
 GameObject:
   m_ObjectHideFlags: 0

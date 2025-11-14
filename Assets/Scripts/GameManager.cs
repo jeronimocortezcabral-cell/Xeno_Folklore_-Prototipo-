@@ -21,7 +21,6 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    
     public void Pausar() {
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
@@ -34,7 +33,13 @@ public class GameManager : MonoBehaviour {
         isPaused = false;
     }
 
-    
+    // Cambiado: ahora carga IntroScene
+    public void Jugar() {
+        Debug.Log("Cargando Intro...");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("IntroScene");
+    }
+
     public void Reiniciar() {
         Debug.Log("Reiniciando...");
         Time.timeScale = 1f;
@@ -43,8 +48,8 @@ public class GameManager : MonoBehaviour {
 
     public void VolverAlMenuPrincipal() {
         Debug.Log("Volviendo al menú principal...");
-        Time.timeScale = 1f; 
-        SceneManager.LoadScene("MainMenu"); 
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void CerrarJuego() {

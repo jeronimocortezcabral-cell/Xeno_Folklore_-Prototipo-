@@ -1125,6 +1125,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf7d73f43e7d09c40baea0662cf4e5df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameMenuManager
+  introSceneName: IntroScene
+  mainSceneName: MainScene
+  playButton: {fileID: 2109059303}
 --- !u!4 &1273383545
 Transform:
   m_ObjectHideFlags: 0

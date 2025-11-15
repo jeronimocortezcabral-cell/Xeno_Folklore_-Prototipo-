@@ -2,16 +2,28 @@ using UnityEngine;
 
 public class CameraFollow2D : MonoBehaviour
 {
-    public Transform target;   // el jugador
-    public float smoothSpeed = 5f;  // velocidad de suavizado
-    public Vector3 offset;     // desplazamiento opcional
+    public Transform target;
+    public float smoothTime = 0.2f;  // suavizado elegante (no usar Time.deltaTime)
+    public Vector3 offset;
 
-    private void LateUpdate()
+    private Vector3 velocity = Vector3.zero;
+
+    private void FixedUpdate()
     {
         if (target == null) return;
 
         Vector3 desiredPosition = target.position + offset;
-        Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
-        transform.position = new Vector3(smoothedPosition.x, smoothedPosition.y, transform.position.z);
+        Vector3 smoothedPosition = Vector3.SmoothDamp(
+            transform.position,
+            desiredPosition,
+            ref velocity,
+            smoothTime
+        );
+
+        transform.position = new Vector3(
+            smoothedPosition.x,
+            smoothedPosition.y,
+            transform.position.z
+        );
     }
 }

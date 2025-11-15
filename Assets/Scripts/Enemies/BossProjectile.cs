@@ -1,16 +1,31 @@
 using UnityEngine;
 
-public class BossProjectile : MonoBehaviour
+public class Projectile : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public float speed = 8f;
+    public float lifeTime = 4f;
+    public int damage = 1;
+
+    private Vector2 dir;
+
+    public void Init(Vector2 direction)
     {
-        
+        dir = direction;
+        Destroy(gameObject, lifeTime);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        transform.position += (Vector3)(dir * speed * Time.deltaTime);
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            other.GetComponent<PlayerHealth>()?.TakeDamage(damage);
+            Destroy(gameObject);
+        }
+    }
+
 }

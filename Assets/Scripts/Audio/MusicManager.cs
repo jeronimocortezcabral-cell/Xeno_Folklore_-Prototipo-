@@ -5,52 +5,57 @@ public class MusicManager : MonoBehaviour
 {
     public static MusicManager instance;
 
-    [Header("Audio Sources")]
+    [Header("Música de escenario")]
     public AudioSource cityMusic;
     public AudioSource outsideMusic;
 
-    [Header("Configuración de crossfade")]
-    public float fadeDuration = 2f; // segundos para transicionar
+    [Header("Música de combate")]
+    public AudioSource battleMusic;
+
+    [Header("Música de victoria")]
+    public AudioSource victoryMusic;
+
+    [Header("Crossfade")]
+    public float fadeDuration = 2f;
+    public float volumen = 1f;
 
     private AudioSource currentMusic;
     private AudioSource nextMusic;
-    public float Volumen;
-
 
     private void Awake()
     {
-        // Singleton para que persista entre escenas
         if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
-        else
-        {
-            Destroy(gameObject);
-        }
+        else Destroy(gameObject);
     }
 
     private void Start()
     {
-        // Arranca con música de ciudad
         currentMusic = cityMusic;
-        currentMusic.volume = Volumen;
+        currentMusic.volume = volumen;
         currentMusic.Play();
     }
 
-    public void PlayCityMusic()
+    // ---------------------------
+    // LLAMADAS PÚBLICAS
+    // ---------------------------
+    public void PlayCityMusic() => TryFade(cityMusic);
+    public void PlayOutsideMusic() => TryFade(outsideMusic);
+    public void PlayBattleMusic() => TryFade(battleMusic);
+    public void PlayVictoryMusic() => TryFade(victoryMusic);
+
+    private void TryFade(AudioSource target)
     {
-        if (currentMusic == cityMusic) return;
-        StartCoroutine(Crossfade(cityMusic));
+        if (currentMusic == target) return;
+        StartCoroutine(Crossfade(target));
     }
 
-    public void PlayOutsideMusic()
-    {
-        if (currentMusic == outsideMusic) return;
-        StartCoroutine(Crossfade(outsideMusic));
-    }
-
+    // ---------------------------
+    // CROSSFADE GENÉRICO
+    // ---------------------------
     private IEnumerator Crossfade(AudioSource newMusic)
     {
         nextMusic = newMusic;
@@ -63,10 +68,8 @@ public class MusicManager : MonoBehaviour
         {
             timer += Time.deltaTime;
             float t = timer / fadeDuration;
-
-            currentMusic.volume = Mathf.Lerp(Volumen, 0f, t);
-            nextMusic.volume = Mathf.Lerp(0f, Volumen, t);
-
+            currentMusic.volume = Mathf.Lerp(volumen, 0f, t);
+            nextMusic.volume = Mathf.Lerp(0f, volumen, t);
             yield return null;
         }
 

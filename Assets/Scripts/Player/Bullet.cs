@@ -6,10 +6,22 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy"))
+        // --------- ENEMY NORMAL ---------
+        Enemy enemy = other.GetComponentInParent<Enemy>();
+        if (enemy != null)
         {
-            other.GetComponent<Enemy>()?.TakeDamage(damage);
+            enemy.TakeDamage(damage);
             Destroy(gameObject);
+            return;
+        }
+
+        // --------- BOSS ---------
+        BossHealth boss = other.GetComponentInParent<BossHealth>();
+        if (boss != null)
+        {
+            boss.TakeDamage(damage);
+            Destroy(gameObject);
+            return;
         }
     }
 }

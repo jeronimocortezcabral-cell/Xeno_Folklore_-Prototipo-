@@ -29,12 +29,19 @@ public class PlayerSmash : MonoBehaviour
     private const string PARAM_SMASH = "Smash";
     private const string PARAM_IS_ATTACKING = "IsAttacking";
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;      // Debe estar en el Player
+    [SerializeField] private AudioClip smashSound;         // Sonido del golpe
+
     private void Start()
     {
         if (mainCamera == null) mainCamera = Camera.main;
         if (animator == null) animator = GetComponent<Animator>();
         if (hitPoint == null)
             Debug.LogWarning("No se asignó un hitPoint. Se usará la posición del jugador.");
+
+        if (audioSource == null)
+            Debug.LogWarning("PlayerSmash: No se asignó un AudioSource.");
     }
 
     private void Update()
@@ -54,6 +61,10 @@ public class PlayerSmash : MonoBehaviour
             animator.SetTrigger(PARAM_SMASH);
         }
 
+        // 🔊 Reproducir sonido del ataque
+        PlaySmashSound();
+
+        // Manejo del hit
         if (attackDelay <= 0f)
         {
             OnAttackHit();
@@ -66,6 +77,14 @@ public class PlayerSmash : MonoBehaviour
         }
     }
 
+    private void PlaySmashSound()
+    {
+        if (audioSource != null && smashSound != null)
+        {
+            audioSource.PlayOneShot(smashSound);
+        }
+    }
+
     public void OnAttackHit()
     {
         Vector2 center = hitPoint != null ? (Vector2)hitPoint.position : (Vector2)transform.position;
@@ -73,23 +92,33 @@ public class PlayerSmash : MonoBehaviour
 
         foreach (var col in hits)
         {
+            // Enemigos normales
             var enemy = col.GetComponent<Enemy>();
             if (enemy != null)
             {
                 enemy.TakeDamage(damage);
-
-                // 🔹 Aplica knockback en dirección del cursor
-                Rigidbody2D rb = col.GetComponent<Rigidbody2D>();
-                if (rb != null)
-                {
-                    Vector3 mousePos = Mouse.current.position.ReadValue();
-                    Vector3 worldPos = mainCamera.ScreenToWorldPoint(mousePos);
-                    worldPos.z = 0f;
-
-                    Vector2 knockDir = ((Vector2)col.transform.position - (Vector2)transform.position).normalized;
-                    rb.AddForce(knockDir * knockbackForce, ForceMode2D.Impulse);
-                }
+                ApplyKnockback(col);
+                continue;
             }
+
+            // Boss
+            var boss = col.GetComponent<BossHealth>();
+            if (boss != null)
+            {
+                boss.TakeDamage(damage);
+                ApplyKnockback(col);
+                continue;
+            }
+        }
+    }
+
+    private void ApplyKnockback(Collider2D col)
+    {
+        Rigidbody2D rb = col.GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            Vector2 knockDir = ((Vector2)col.transform.position - (Vector2)transform.position).normalized;
+            rb.AddForce(knockDir * knockbackForce, ForceMode2D.Impulse);
         }
     }
 

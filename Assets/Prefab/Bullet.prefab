@@ -182,4 +182,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2f14013d523cbf4f8616e9ef6d23cfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LifeTime
-  lifeTime: 1
+  lifeTime: 2

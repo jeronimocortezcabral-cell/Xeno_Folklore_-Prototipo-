@@ -2,62 +2,79 @@ using UnityEngine;
 
 public class WispBehavior : MonoBehaviour
 {
-    [Header("Movimiento aleatorio")]
-    [SerializeField] private float moveSpeed = 1.5f;
-    [SerializeField] private float changeDirectionInterval = 2f;
+    [Header("Movimiento")]
+    [SerializeField] private float moveSpeed = 2f;
 
-    [Header("Daño al jugador")]
+    [Header("Knockback recibido")]
+    [SerializeField] private float knockbackForce = 4f;
+    [SerializeField] private float knockbackDuration = 0.15f;
+
+    [Header("DaÃ±o al jugador")]
     [SerializeField] private float damageAmount = 1f;
-    [SerializeField] private float knockbackForce = 2f;
+    [SerializeField] private float knockbackToPlayer = 4f;
 
-    private Vector2 movementDirection;
-    private float timer;
-
+    private Transform player;
     private Rigidbody2D rb;
+    private bool isKnockback = false;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        ChooseNewDirection();
+        rb.isKinematic = false; // asegurado
+
+        player = GameObject.FindGameObjectWithTag("Player")?.transform;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        // Cambia de dirección cada cierto tiempo
-        timer += Time.deltaTime;
-        if (timer >= changeDirectionInterval)
+        if (player == null) return;
+        if (isKnockback) return;
+
+        // movimiento normal persiguiendo al jugador
+        Vector2 dir = (player.position - transform.position).normalized;
+        rb.linearVelocity = dir * moveSpeed;
+    }
+
+    // -----------------------------------------
+    // KNOCKBACK RECIBIDO POR DISPARO O ATAQUE
+    // -----------------------------------------
+    public void TakeDamage(float dmg, Vector3 hitSource)
+    {
+        StartCoroutine(DoKnockback(hitSource));
+    }
+
+    private System.Collections.IEnumerator DoKnockback(Vector3 hitSource)
+    {
+        isKnockback = true;
+
+        Vector2 dir = (transform.position - hitSource).normalized;
+
+        rb.linearVelocity = dir * knockbackForce;
+
+        yield return new WaitForSeconds(knockbackDuration);
+
+        rb.linearVelocity = Vector2.zero;
+        isKnockback = false;
+    }
+
+    // -----------------------------------------
+    // DAÃ‘O AL PLAYER + KNOCKBACK AL PLAYER
+    // -----------------------------------------
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Player"))
         {
-            ChooseNewDirection();
-            timer = 0f;
-        }
-
-        // Mueve el fuego fatuo suavemente
-        rb.MovePosition(rb.position + movementDirection * moveSpeed * Time.deltaTime);
-    }
-
-    private void ChooseNewDirection()
-    {
-        // Dirección aleatoria 2D normalizada
-        movementDirection = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            // Buscar componente de salud del jugador
-            PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
-            if (playerHealth != null)
+            PlayerHealth ph = collision.collider.GetComponent<PlayerHealth>();
+            if (ph != null)
             {
-                playerHealth.TakeDamage(damageAmount);
+                ph.TakeDamage(damageAmount);
             }
 
-            // Opcional: aplicar pequeño empuje (knockback)
-            Rigidbody2D playerRb = collision.GetComponent<Rigidbody2D>();
+            Rigidbody2D playerRb = collision.collider.GetComponent<Rigidbody2D>();
             if (playerRb != null)
             {
-                Vector2 knockbackDir = (collision.transform.position - transform.position).normalized;
-                playerRb.AddForce(knockbackDir * knockbackForce, ForceMode2D.Impulse);
+                Vector2 dir = (collision.collider.transform.position - transform.position).normalized;
+                playerRb.linearVelocity = dir * knockbackToPlayer;
             }
         }
     }

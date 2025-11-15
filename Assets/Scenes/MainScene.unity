@@ -1141,7 +1141,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &130073653
 MonoBehaviour:
@@ -20907,6 +20907,11 @@ MonoBehaviour:
   transformDelay: 1.5
   moveSpeedPhase1: 2
   moveSpeedPhase2: 4
+  projectilePrefab: {fileID: 2514130228135153571, guid: 5d1d9ba52856ca747ab5313f30c4d020, type: 3}
+  attackCooldown: 5
+  chargeDuration: 1.5
+  shootDelay: 0
+  projectileSpeed: 20
 --- !u!50 &1794494632
 Rigidbody2D:
   serializedVersion: 5
@@ -20993,8 +20998,8 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 7d4bc81b2e010e34f9ac329c43ffdb3b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1.85
+  m_Volume: 0.638
+  m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0

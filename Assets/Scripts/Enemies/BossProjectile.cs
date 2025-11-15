@@ -1,31 +1,38 @@
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class BossProjectile : MonoBehaviour
 {
-    public float speed = 8f;
-    public float lifeTime = 4f;
-    public int damage = 1;
+    public float damage = 1f;
+    public float lifetime = 4f;
 
-    private Vector2 dir;
-
-    public void Init(Vector2 direction)
+    private void Start()
     {
-        dir = direction;
-        Destroy(gameObject, lifeTime);
-    }
-
-    private void Update()
-    {
-        transform.position += (Vector3)(dir * speed * Time.deltaTime);
+        Destroy(gameObject, lifetime);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        // Evitar que el proyectil golpee al boss o sus hijos
+        if (other.CompareTag("Boss")) return;
+
+        // Golpea al Player
+        if (other.CompareTag("Player") || other.transform.root.CompareTag("Player"))
         {
-            other.GetComponent<PlayerHealth>()?.TakeDamage(damage);
+            PlayerHealth ph = other.GetComponent<PlayerHealth>();
+            if (ph == null)
+                ph = other.GetComponentInParent<PlayerHealth>();
+
+            if (ph != null)
+                ph.TakeDamage(damage);
+
+            Destroy(gameObject);
+            return;
+        }
+
+        // Golpea pared / mundo
+        if (other.gameObject.layer == LayerMask.NameToLayer("Solid"))
+        {
             Destroy(gameObject);
         }
     }
-
 }

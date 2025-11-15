@@ -15,9 +15,19 @@ public class BossControllerOficial : MonoBehaviour
     public float moveSpeedPhase1 = 2f;
     public float moveSpeedPhase2 = 4f;
 
+    [Header("Ataques")]
+    public GameObject projectilePrefab;
+    public float attackCooldown = 5f;
+    public float chargeDuration = 1f;
+    public float shootDelay = 0.3f;
+    public float projectileSpeed = 6f;
+
     private Rigidbody2D rb;
+
     private bool isPhase2 = false;
     private bool isDead = false;
+    private bool isAttacking = false;
+    private float attackTimer = 0f;
 
     private void Awake()
     {
@@ -40,7 +50,15 @@ public class BossControllerOficial : MonoBehaviour
 
     private void Update()
     {
-        if (isDead) return;
+        if (isDead || isAttacking) return;
+
+        attackTimer += Time.deltaTime;
+
+        if (attackTimer >= attackCooldown)
+        {
+            StartCoroutine(AttackRoutine());
+            return;
+        }
 
         if (!isPhase2)
             MovePhase1();
@@ -55,6 +73,7 @@ public class BossControllerOficial : MonoBehaviour
 
         Vector2 dir = (player.position - transform.position).normalized;
         rb.linearVelocity = dir * moveSpeedPhase1;
+        animator.SetBool("Moving", true);
     }
 
     private void MovePhase2()
@@ -63,23 +82,53 @@ public class BossControllerOficial : MonoBehaviour
 
         Vector2 dir = (player.position - transform.position).normalized;
         rb.linearVelocity = dir * moveSpeedPhase2;
+        animator.SetBool("Moving", true);
+    }
+
+    // ---------------------- ATAQUE ----------------------
+    private System.Collections.IEnumerator AttackRoutine()
+    {
+        isAttacking = true;
+        attackTimer = 0f;
+
+        // detener movimiento
+        rb.linearVelocity = Vector2.zero;
+        animator.SetBool("Moving", false);
+
+        // ANIMACIÓN DE CARGA
+        animator.SetTrigger("Charge");
+        yield return new WaitForSeconds(chargeDuration);
+
+        // ANIM DE DISPARO
+        animator.SetTrigger("Shoot");
+        yield return new WaitForSeconds(shootDelay);
+
+        ShootAtPlayer();
+
+        yield return new WaitForSeconds(0.4f);
+
+        isAttacking = false;
+    }
+
+    private void ShootAtPlayer()
+    {
+        if (player == null || projectilePrefab == null) return;
+
+        Vector2 dir = (player.position - transform.position).normalized;
+
+        GameObject proj = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+        proj.GetComponent<Rigidbody2D>().linearVelocity = dir * projectileSpeed;
     }
 
     // -------------------- MANEJO DE MUERTE --------------------
     private void HandleDeathEvent()
     {
-        if (isDead) return; // evita dobles disparos
+        if (isDead) return;
 
         if (!isPhase2)
-        {
-            // PRIMERA VEZ llegando a 0 → transformar a fase 2
             StartCoroutine(TransformToPhase2());
-        }
         else
-        {
-            // YA ESTABA EN FASE 2 → muerte real
             StartCoroutine(FinalDeath());
-        }
     }
 
     // ---------------------- TRANSFORMACIÓN ----------------------
@@ -100,12 +149,9 @@ public class BossControllerOficial : MonoBehaviour
     private System.Collections.IEnumerator FinalDeath()
     {
         isDead = true;
-
         rb.linearVelocity = Vector2.zero;
         animator.SetTrigger("Death");
-
         yield return new WaitForSeconds(1.5f);
-
         Destroy(gameObject);
     }
 }

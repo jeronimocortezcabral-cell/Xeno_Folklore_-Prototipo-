@@ -19060,6 +19060,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112287361}
     m_Modifications:
+    - target: {fileID: 2993821493130690097, guid: 895461e6c80784948a71b29b2693995f, type: 3}
+      propertyPath: m_Radius
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6724925363989515131, guid: 895461e6c80784948a71b29b2693995f, type: 3}
       propertyPath: m_Name
       value: Fernet c_ Coca
@@ -20021,6 +20025,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112287361}
     m_Modifications:
+    - target: {fileID: 2993821493130690097, guid: 895461e6c80784948a71b29b2693995f, type: 3}
+      propertyPath: m_Radius
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6724925363989515131, guid: 895461e6c80784948a71b29b2693995f, type: 3}
       propertyPath: m_Name
       value: Fernet c_ Coca
@@ -21281,6 +21289,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112287361}
     m_Modifications:
+    - target: {fileID: 2993821493130690097, guid: 895461e6c80784948a71b29b2693995f, type: 3}
+      propertyPath: m_Radius
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6724925363989515131, guid: 895461e6c80784948a71b29b2693995f, type: 3}
       propertyPath: m_Name
       value: Fernet c_ Coca
@@ -22515,6 +22527,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112287361}
     m_Modifications:
+    - target: {fileID: 2993821493130690097, guid: 895461e6c80784948a71b29b2693995f, type: 3}
+      propertyPath: m_Radius
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6724925363989515131, guid: 895461e6c80784948a71b29b2693995f, type: 3}
       propertyPath: m_Name
       value: Fernet c/ Coca

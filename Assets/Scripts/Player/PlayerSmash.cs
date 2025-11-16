@@ -30,8 +30,8 @@ public class PlayerSmash : MonoBehaviour
     private const string PARAM_IS_ATTACKING = "IsAttacking";
 
     [Header("Audio")]
-    [SerializeField] private AudioSource audioSource;      // Debe estar en el Player
-    [SerializeField] private AudioClip smashSound;         // Sonido del golpe
+    [SerializeField] private AudioSource audioSource;      
+    [SerializeField] private AudioClip smashSound;        
 
     private void Start()
     {
@@ -61,10 +61,8 @@ public class PlayerSmash : MonoBehaviour
             animator.SetTrigger(PARAM_SMASH);
         }
 
-        // 🔊 Reproducir sonido del ataque
         PlaySmashSound();
 
-        // Manejo del hit
         if (attackDelay <= 0f)
         {
             OnAttackHit();
@@ -92,7 +90,6 @@ public class PlayerSmash : MonoBehaviour
 
         foreach (var col in hits)
         {
-            // Enemigos normales
             var enemy = col.GetComponent<Enemy>();
             if (enemy != null)
             {
@@ -101,7 +98,6 @@ public class PlayerSmash : MonoBehaviour
                 continue;
             }
 
-            // Boss
             var boss = col.GetComponent<BossHealth>();
             if (boss != null)
             {

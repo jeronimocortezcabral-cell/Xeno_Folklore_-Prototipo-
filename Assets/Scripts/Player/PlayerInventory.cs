@@ -94,4 +94,8 @@ public class PlayerInventory : MonoBehaviour
         if (keysText != null)
             keysText.text = keys.ToString();
     }
+    public int GetTotalKeys()
+    {
+        return keys;
+    }
 }

@@ -14437,6 +14437,9 @@ MonoBehaviour:
   chargeDuration: 1.5
   shootDelay: 0
   projectileSpeed: 20
+  itemsRequiredToSpawn: 4
+  detectionRange: 17
+  itemDropPrefab: {fileID: 7209042556046779486, guid: 1c4619943d1c4e24e8c08a306932a342, type: 3}
 --- !u!50 &1794494632
 Rigidbody2D:
   serializedVersion: 5

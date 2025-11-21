@@ -7,32 +7,36 @@ public class BossProjectile : MonoBehaviour
 
     private void Start()
     {
+        // Destruir el proyectil automáticamente después de un tiempo si no choca con nada
         Destroy(gameObject, lifetime);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    // ------------------------------------------------------------------
+    // ACTUALIZADO: Usamos OnCollisionEnter2D (Igual que el Wisp)
+    // ------------------------------------------------------------------
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Evitar que el proyectil golpee al boss o sus hijos
-        if (other.CompareTag("Boss")) return;
+        // 1. Ignorar al propio Boss para que no se suicide con su bala
+        if (collision.gameObject.CompareTag("Boss")) return;
 
-        // Golpea al Player
-        if (other.CompareTag("Player") || other.transform.root.CompareTag("Player"))
+        // 2. Lógica si golpea al Player
+        if (collision.collider.CompareTag("Player"))
         {
-            PlayerHealth ph = other.GetComponent<PlayerHealth>();
-            if (ph == null)
-                ph = other.GetComponentInParent<PlayerHealth>();
+            // Buscamos la vida del player igual que en el script del Wisp
+            PlayerHealth ph = collision.collider.GetComponent<PlayerHealth>();
 
             if (ph != null)
+            {
                 ph.TakeDamage(damage);
+            }
 
+            // Destruimos el proyectil al impactar
             Destroy(gameObject);
             return;
         }
 
-        // Golpea pared / mundo
-        if (other.gameObject.layer == LayerMask.NameToLayer("Solid"))
-        {
-            Destroy(gameObject);
-        }
+        // 3. Si golpea con cualquier otra cosa (Paredes, Obstáculos)
+        // que NO sea el Player ni el Boss, se destruye.
+        Destroy(gameObject);
     }
 }

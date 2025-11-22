@@ -6,7 +6,6 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // --------- ENEMY NORMAL ---------
         Enemy enemy = other.GetComponentInParent<Enemy>();
         if (enemy != null)
         {
@@ -15,7 +14,6 @@ public class Bullet : MonoBehaviour
             return;
         }
 
-        // --------- BOSS ---------
         BossHealth boss = other.GetComponentInParent<BossHealth>();
         if (boss != null)
         {

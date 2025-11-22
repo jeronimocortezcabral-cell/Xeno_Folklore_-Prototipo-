@@ -21,5 +21,13 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+        // 3. Búsqueda de WerewolfHealth (para el lobizón)
+        WerewolfHealth werewolf = other.GetComponentInParent<WerewolfHealth>();
+        if (werewolf != null)
+        {
+            werewolf.TakeDamage(damage);
+            Destroy(gameObject);
+            return;
+        }
     }
 }

@@ -19,10 +19,23 @@ public class PlayerInventory : MonoBehaviour
     [SerializeField] private int keys = 0;
     [SerializeField] private int maxKeys = 99;
 
+    // --- NUEVA SECCIÓN DE AUDIO ---
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [Tooltip("Sonido al recolectar Piezas (Keys)")]
+    [SerializeField] private AudioClip keyCollectSound;
+    [Tooltip("Sonido al recolectar Ítems de Curación")]
+    [SerializeField] private AudioClip healingCollectSound;
+    // -------------------------------
+
     private PlayerHealth playerHealth;
 
     private void Start()
     {
+        // Si el AudioSource no está asignado, lo buscamos en el mismo objeto.
+        if (audioSource == null)
+            audioSource = GetComponent<AudioSource>();
+
         playerHealth = GetComponent<PlayerHealth>();
         UpdateUI();
     }
@@ -35,12 +48,45 @@ public class PlayerInventory : MonoBehaviour
         }
     }
 
+    // ------------------------------------
+    // LÓGICA DE COLECCIÓN (CON SONIDO)
+    // ------------------------------------
+
     public void AddHealingItem(int amount)
     {
         healingItems += amount;
         healingItems = Mathf.Clamp(healingItems, 0, maxHealingItems);
+
+        PlayCollectSound(healingCollectSound); // Reproducir sonido de Curación
+
         UpdateUI();
     }
+
+    public void AddKey(int amount)
+    {
+        keys += amount;
+        keys = Mathf.Clamp(keys, 0, maxKeys);
+
+        PlayCollectSound(keyCollectSound); // Reproducir sonido de Pieza/Key
+
+        UpdateUI();
+        Debug.Log($"Parts added: {amount}. Total parts: {keys}");
+    }
+
+    // ------------------------------------
+    // FUNCIÓN DE AUDIO
+    // ------------------------------------
+    private void PlayCollectSound(AudioClip clip)
+    {
+        if (audioSource != null && clip != null)
+        {
+            audioSource.PlayOneShot(clip);
+        }
+    }
+
+    // ------------------------------------
+    // RESTO DE FUNCIONES (SIN CAMBIOS)
+    // ------------------------------------
 
     private void TryUseHealingItem()
     {
@@ -62,14 +108,6 @@ public class PlayerInventory : MonoBehaviour
 
         nextUseTime = Time.time + useCooldown;
         Debug.Log($"Usó una cura. Curas restantes: {healingItems}");
-    }
-
-    public void AddKey(int amount)
-    {
-        keys += amount;
-        keys = Mathf.Clamp(keys, 0, maxKeys);
-        UpdateUI();
-        Debug.Log($"Parts added: {amount}. Total parts: {keys}");
     }
 
     public bool HasEnoughKeys(int amount)

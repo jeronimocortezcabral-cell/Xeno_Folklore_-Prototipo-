@@ -30,8 +30,8 @@ public class PlayerSmash : MonoBehaviour
     private const string PARAM_IS_ATTACKING = "IsAttacking";
 
     [Header("Audio")]
-    [SerializeField] private AudioSource audioSource;      
-    [SerializeField] private AudioClip smashSound;        
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip smashSound;
 
     private void Start()
     {
@@ -90,6 +90,7 @@ public class PlayerSmash : MonoBehaviour
 
         foreach (var col in hits)
         {
+            // 1. Búsqueda de Enemy (existente)
             var enemy = col.GetComponent<Enemy>();
             if (enemy != null)
             {
@@ -98,10 +99,22 @@ public class PlayerSmash : MonoBehaviour
                 continue;
             }
 
+            // 2. Búsqueda de BossHealth (existente)
             var boss = col.GetComponent<BossHealth>();
             if (boss != null)
             {
                 boss.TakeDamage(damage);
+                ApplyKnockback(col);
+                continue;
+            }
+
+            // 3. Búsqueda de WerewolfHealth (NUEVA LÍNEA)
+            // Esto asegura que si el lobizón es golpeado, recibirá daño sin
+            // interferir con las búsquedas anteriores.
+            var werewolf = col.GetComponent<WerewolfHealth>();
+            if (werewolf != null)
+            {
+                werewolf.TakeDamage(damage);
                 ApplyKnockback(col);
                 continue;
             }

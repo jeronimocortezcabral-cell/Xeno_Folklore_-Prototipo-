@@ -105,6 +105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3d3107904e4f4b4e83e1410a4920682, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Checkpoint
+  activationSound: {fileID: 8300000, guid: 582f2a70ae73a1d43b7a189abc42bab2, type: 3}
+  flashDuration: 0.4
 --- !u!61 &1137465330532776667
 BoxCollider2D:
   m_ObjectHideFlags: 0

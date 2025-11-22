@@ -58,6 +58,7 @@ public class PlayerShooting : MonoBehaviour
 
         Vector2 direction = (worldPos - firePoint.position).normalized;
 
+        // --- ANIMACIÓN ---
         if (animator != null)
         {
             animator.SetFloat(hashAimX, direction.x);
@@ -65,13 +66,19 @@ public class PlayerShooting : MonoBehaviour
             animator.SetTrigger(hashShoot);
         }
 
-        // 🔊 REPRODUCIR SONIDO
+        // --- SONIDO ---
         if (audioSource != null && shootSound != null)
         {
             audioSource.PlayOneShot(shootSound);
         }
 
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+        // --- ROTACIÓN DE LA BALA ---
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        Quaternion bulletRotation = Quaternion.Euler(0, 0, angle);
+
+        // Instanciar con la rotación correcta
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, bulletRotation);
+
         Rigidbody2D rbBullet = bullet.GetComponent<Rigidbody2D>();
 
         if (rbBullet != null)

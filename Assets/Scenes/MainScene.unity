@@ -6650,7 +6650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db45204757a73e24b9a656fb61f55f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpaceShip
-  requiredParts: 4
+  requiredParts: 5
   consumePartsOnUse: 1
 --- !u!1 &775010968
 GameObject:

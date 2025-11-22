@@ -8733,9 +8733,9 @@ MonoBehaviour:
   m_ComponentVersion: 2
   m_LightType: 1
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.4
+  m_FalloffIntensity: 0.66
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.6
+  m_Intensity: 1.1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 0000000047e0014aa5baba9c3fd81a4cef3697552ffbe78b
@@ -16349,6 +16349,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1336827139}
     m_Modifications:
+    - target: {fileID: -7904616881488604357, guid: a23c3e8cf0a94af4180231fd58ca251c, type: 3}
+      propertyPath: m_FalloffIntensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7904616881488604357, guid: a23c3e8cf0a94af4180231fd58ca251c, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -7904616881488604357, guid: a23c3e8cf0a94af4180231fd58ca251c, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[1]'
+      value: 1241636935
+      objectReference: {fileID: 0}
+    - target: {fileID: -7904616881488604357, guid: a23c3e8cf0a94af4180231fd58ca251c, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[2]'
+      value: -1665484123
+      objectReference: {fileID: 0}
+    - target: {fileID: -7904616881488604357, guid: a23c3e8cf0a94af4180231fd58ca251c, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[3]'
+      value: 1276827711
+      objectReference: {fileID: 0}
+    - target: {fileID: -7904616881488604357, guid: a23c3e8cf0a94af4180231fd58ca251c, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[4]'
+      value: 1435973359
+      objectReference: {fileID: 0}
+    - target: {fileID: -7904616881488604357, guid: a23c3e8cf0a94af4180231fd58ca251c, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[5]'
+      value: -1947731153
+      objectReference: {fileID: 0}
     - target: {fileID: 1036742484942590770, guid: a23c3e8cf0a94af4180231fd58ca251c, type: 3}
       propertyPath: m_SortingLayer
       value: 3

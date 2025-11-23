@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections; // Necesario para Coroutines
 
 public class BossControllerOficial : MonoBehaviour
 {
@@ -24,13 +25,11 @@ public class BossControllerOficial : MonoBehaviour
 
     [Header("Condiciones de Aparición y Detección")]
     public int itemsRequiredToSpawn = 4;
-    public float detectionRange = 5f;
+    public float detectionRange = 5f; // RANGO CLAVE PARA LA MÚSICA
 
     // ---------------------------------------------------------
-    // NUEVO: Referencia al objeto que caerá al morir
-    // ---------------------------------------------------------
     [Header("Recompensa (Loot)")]
-    public GameObject itemDropPrefab; // <-- ARRASTRA TU PREFAB AQUÍ EN EL INSPECTOR
+    public GameObject itemDropPrefab;
     // ---------------------------------------------------------
 
     private bool hasSpawned = false;
@@ -45,6 +44,11 @@ public class BossControllerOficial : MonoBehaviour
     private bool isDead = false;
     private bool isAttacking = false;
     private float attackTimer = 0f;
+
+    // **********************************************
+    // NUEVA VARIABLE DE AUDIO
+    // **********************************************
+    private bool combatMusicStarted = false; // Controla que la música de combate solo inicie/detenga una vez
 
     private void Awake()
     {
@@ -96,34 +100,65 @@ public class BossControllerOficial : MonoBehaviour
             SpawnBoss();
         }
 
-        // 2) LÓGICA DE DISTANCIA
+        // Si aún no ha aparecido (hasSpawned=false), el resto del código no se ejecuta.
+        if (!hasSpawned) return;
+
+        // 2) LÓGICA DE DETECCIÓN, COMBATE Y MÚSICA
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-        if (distanceToPlayer > detectionRange && !isAttacking)
+        // Si el jugador está en rango de detección:
+        if (distanceToPlayer <= detectionRange)
         {
+            // **********************************************
+            // INTEGRACIÓN DE AUDIO: INICIO DEL COMBATE
+            // **********************************************
+            if (MusicManager.instance != null && !combatMusicStarted)
+            {
+                MusicManager.instance.PlayChonchonMusic();
+                combatMusicStarted = true;
+                Debug.Log("Música de combate del Chonchón iniciada al entrar en rango.");
+            }
+            // **********************************************
+
+            // COMBATE
+            if (isAttacking) return;
+
+            attackTimer += Time.deltaTime;
+
+            if (attackTimer >= attackCooldown)
+            {
+                StartCoroutine(AttackRoutine());
+                return;
+            }
+
+            if (!isPhase2)
+                MovePhase1();
+            else
+                MovePhase2();
+        }
+        else // El jugador está fuera del rango de detección
+        {
+            // **********************************************
+            // INTEGRACIÓN DE AUDIO: FIN DEL COMBATE
+            // **********************************************
+            if (combatMusicStarted)
+            {
+                if (MusicManager.instance != null)
+                {
+                    MusicManager.instance.PlayOutsideMusic(); // Vuelve a la música de nivel
+                    combatMusicStarted = false;
+                    Debug.Log("Música de combate del Chonchón detenida al salir de rango.");
+                }
+            }
+            // **********************************************
+
+            // Detenemos el movimiento si estamos fuera de rango y no atacando
             rb.linearVelocity = Vector2.zero;
             animator.SetBool("Moving", false);
-            return;
         }
-
-        // COMBATE
-        if (isAttacking) return;
-
-        attackTimer += Time.deltaTime;
-
-        if (attackTimer >= attackCooldown)
-        {
-            StartCoroutine(AttackRoutine());
-            return;
-        }
-
-        if (!isPhase2)
-            MovePhase1();
-        else
-            MovePhase2();
     }
 
-    // ---------------------- FUNCIONES AUXILIARES ----------------------
+    // ---------------------- FUNCIONES AUXILIARES (Resto del script sin cambios) ----------------------
 
     private int GetPlayerItemCount()
     {
@@ -135,7 +170,6 @@ public class BossControllerOficial : MonoBehaviour
     {
         hasSpawned = true;
         ToggleBossVisibility(true);
-        // Debug.Log("¡El Boss ha aparecido!");
     }
 
     private void ToggleBossVisibility(bool state)
@@ -198,8 +232,11 @@ public class BossControllerOficial : MonoBehaviour
     private void HandleDeathEvent()
     {
         if (isDead) return;
-        if (!isPhase2) StartCoroutine(TransformToPhase2());
-        else StartCoroutine(FinalDeath());
+
+        if (!isPhase2)
+            StartCoroutine(TransformToPhase2());
+        else
+            StartCoroutine(FinalDeath());
     }
 
     private System.Collections.IEnumerator TransformToPhase2()
@@ -218,10 +255,19 @@ public class BossControllerOficial : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
         animator.SetTrigger("Death");
 
-        // Esperamos a que termine la animación de muerte
+        // **********************************************
+        // INTEGRACIÓN DE AUDIO: MUERTE (DEFEATED BOSS)
+        // **********************************************
+        if (MusicManager.instance != null)
+        {
+            // Llama a la función para la música de victoria
+            MusicManager.instance.DefeatedBoss();
+            Debug.Log("Chonchón derrotado. Transición musical de muerte/victoria activada.");
+        }
+        // **********************************************
+
         yield return new WaitForSeconds(1.5f);
 
-        // NUEVO: Instanciar el objeto (Loot)
         if (itemDropPrefab != null)
         {
             Instantiate(itemDropPrefab, transform.position, Quaternion.identity);

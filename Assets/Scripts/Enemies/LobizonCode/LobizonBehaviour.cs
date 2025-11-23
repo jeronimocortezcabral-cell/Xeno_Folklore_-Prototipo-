@@ -8,7 +8,7 @@ public enum WerewolfState
     Wait,
     Chase,
     Attack,
-    Dormant // ?? Nuevo estado: Inactivo, esperando activación
+    Dormant // Nuevo estado: Inactivo, esperando activación
 }
 
 public class WerewolfBehavior : MonoBehaviour
@@ -21,7 +21,7 @@ public class WerewolfBehavior : MonoBehaviour
     [SerializeField] private float nextPatrolActionTime = 2f;
 
     [Header("Configuración de Combate")]
-    [SerializeField] private float chaseRange = 6f;
+    [SerializeField] private float chaseRange = 6f; // RANGO CLAVE PARA LA MÚSICA
     [SerializeField] private float attackRange = 1.5f;
     [SerializeField] private float damageAmount = 1f;
     [SerializeField] private float attackCooldown = 1.5f;
@@ -42,7 +42,12 @@ public class WerewolfBehavior : MonoBehaviour
     private float stateTimer;
     private SpriteRenderer spriteRenderer;
     private Collider2D entityCollider;
-    public Animator anim; // El Animator debe ser público o estar en Awake/Start
+    public Animator anim;
+
+    // **********************************************
+    // NUEVA VARIABLE DE AUDIO
+    // **********************************************
+    private bool combatMusicStarted = false; // Controla que la música de combate solo inicie una vez
 
     private void Awake()
     {
@@ -73,14 +78,13 @@ public class WerewolfBehavior : MonoBehaviour
 
     private void Update()
     {
-        // ?? PRIORIDAD: Monitorear la activación si está inactivo
+        // PRIORIDAD: Monitorear la activación si está inactivo
         if (!isActivated)
         {
             CheckActivationCondition();
             return; // No ejecutamos la lógica de movimiento/ataque
         }
 
-        // Si el jugador no existe o está en estado Dormant (que no debería ocurrir si isActivated es true)
         if (player == null || currentState == WerewolfState.Dormant)
         {
             rb.linearVelocity = Vector2.zero;
@@ -95,15 +99,23 @@ public class WerewolfBehavior : MonoBehaviour
         if (distanceToPlayer <= attackRange)
         {
             SetState(WerewolfState.Attack);
+            StartWerewolfMusic(); // Asegura que la música esté activa
         }
         // Lógica de Persecución
         else if (distanceToPlayer <= chaseRange)
         {
             SetState(WerewolfState.Chase);
+            StartWerewolfMusic(); // Asegura que la música esté activa
         }
-        // Lógica de Patrulla
+        // Lógica de Patrulla / Jugador fuera de rango
         else
         {
+            // **********************************************
+            // NUEVO: DETENER MÚSICA AL SALIR DE RANGO CHASE
+            // **********************************************
+            StopWerewolfMusic();
+            // **********************************************
+
             // Mantiene el estado de Wait/Patrol si no estaba atacando o persiguiendo
             if (currentState == WerewolfState.Chase || currentState == WerewolfState.Attack)
             {
@@ -125,6 +137,33 @@ public class WerewolfBehavior : MonoBehaviour
     }
 
     // ----------------------------------------------------
+    // FUNCIÓN DE GESTIÓN DE AUDIO (INICIO)
+    // ----------------------------------------------------
+    private void StartWerewolfMusic()
+    {
+        if (MusicManager.instance != null && !combatMusicStarted)
+        {
+            MusicManager.instance.PlayWerewolfMusic();
+            combatMusicStarted = true; // Asegura que solo se inicie una vez hasta que se detenga
+            Debug.Log("Música de combate del Lobizón iniciada.");
+        }
+    }
+
+    // ----------------------------------------------------
+    // FUNCIÓN DE GESTIÓN DE AUDIO (FIN)
+    // ----------------------------------------------------
+    private void StopWerewolfMusic()
+    {
+        if (MusicManager.instance != null && combatMusicStarted)
+        {
+            // Asumiendo que PlayOutsideMusic() vuelve a la pista de fondo del nivel
+            MusicManager.instance.PlayOutsideMusic();
+            combatMusicStarted = false;
+            Debug.Log("Música de combate del Lobizón detenida, volviendo a música de nivel.");
+        }
+    }
+
+    // ----------------------------------------------------
     // FUNCIÓN DE ACTIVACIÓN
     // ----------------------------------------------------
     private void CheckActivationCondition()
@@ -134,7 +173,7 @@ public class WerewolfBehavior : MonoBehaviour
         // Condición de activación: 5 "keys" (Ship Parts)
         if (playerInventory.GetTotalKeys() >= activationKeysRequired)
         {
-            Debug.Log("¡El Lobizón se ha activado! El jugador recolectó 5 piezas. ??");
+            Debug.Log("¡El Lobizón se ha activado! El jugador recolectó 5 piezas.");
             SetWerewolfActive(true);
         }
     }
@@ -148,13 +187,13 @@ public class WerewolfBehavior : MonoBehaviour
         if (entityCollider != null) entityCollider.enabled = active;
 
         // 2. Control de Física
-        // Desactivamos el Rigidbody para que no aplique peso o empuje mientras está oculto.
         if (rb != null) rb.bodyType = active ? RigidbodyType2D.Dynamic : RigidbodyType2D.Static;
 
         // 3. Establecer estado inicial tras la activación
         if (active)
         {
             SetState(WerewolfState.Wait); // Empieza a esperar/patrullar en el lugar
+            // NOTA: La música se inicia en Update() cuando el jugador entra en el chaseRange por primera vez.
         }
         else
         {
@@ -163,8 +202,7 @@ public class WerewolfBehavior : MonoBehaviour
     }
 
     // ----------------------------------------------------
-    // LÓGICA DE MOVIMIENTO, ESTADOS Y ATAQUE
-    // (Asegúrate de que estas funciones estén presentes en tu script)
+    // LÓGICA DE MOVIMIENTO, ESTADOS Y ATAQUE (Resto del script sin cambios)
     // ----------------------------------------------------
 
     private void FixedUpdate()
@@ -198,13 +236,10 @@ public class WerewolfBehavior : MonoBehaviour
             float targetSign = Mathf.Sign(direction.x) * -1f;
 
             transform.localScale = new Vector3(targetSign * Mathf.Abs(transform.localScale.x),
-                                               transform.localScale.y,
-                                               transform.localScale.z);
+                                                 transform.localScale.y,
+                                                 transform.localScale.z);
         }
     }
-
-    // ... [Aquí deben ir las funciones SetState, HandlePatrolTimer, SetNewPatrolTarget,
-    // UpdateAnimation, TryAttack y ApplyDamageAfterDelay (coroutines)] ...
 
     private void SetState(WerewolfState newState)
     {
@@ -215,11 +250,13 @@ public class WerewolfBehavior : MonoBehaviour
     private void HandlePatrolTimer()
     {
         // Lógica de Patrulla y Espera
+        // ... (Tu lógica de temporizador de patrulla aquí) ...
     }
 
     private void SetNewPatrolTarget()
     {
         // Lógica para establecer nuevo punto de patrulla
+        // ... (Tu lógica de objetivo de patrulla aquí) ...
     }
 
     private void UpdateAnimation()

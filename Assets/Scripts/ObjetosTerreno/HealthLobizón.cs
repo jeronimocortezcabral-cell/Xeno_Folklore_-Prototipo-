@@ -1,5 +1,5 @@
 using UnityEngine;
-using System.Collections; // Necesario para Coroutines
+using System.Collections;
 
 public class WerewolfHealth : MonoBehaviour
 {
@@ -91,6 +91,16 @@ public class WerewolfHealth : MonoBehaviour
         if (isDead) return;
         isDead = true;
 
+        // **********************************************
+        // INTEGRACIÓN DE AUDIO: NOTIFICAR MUERTE AL MANAGER
+        // **********************************************
+        if (MusicManager.instance != null)
+        {
+            MusicManager.instance.DefeatedBoss();
+            Debug.Log("WerewolfHealth: Notificando derrota al MusicManager.");
+        }
+        // **********************************************
+
         // Desactivar el comportamiento y el collider para que deje de atacar
         if (behavior != null)
         {
@@ -114,8 +124,6 @@ public class WerewolfHealth : MonoBehaviour
         // Animación de muerte y destrucción (desaparecer)
         StartCoroutine(DeathSequence());
     }
-
-    // ... (El resto de las funciones Die, DeathSequence, DropReward y DamageFlash siguen igual) ...
 
     private IEnumerator DeathSequence()
     {

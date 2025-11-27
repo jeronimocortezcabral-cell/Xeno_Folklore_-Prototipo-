@@ -10,12 +10,20 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField] private Animator animator;
 
     [Header("Audio")]
-    [SerializeField] private AudioSource audioSource;  // debe estar en el player
-    [SerializeField] private AudioClip shootSound;     // sonido del disparo
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip shootSound;
 
     [Header("Bullet Settings")]
     [SerializeField] private float bulletSpeed = 10f;
     [SerializeField] private float fireRate = 0.5f;
+
+    [Header("Magazine Settings")]
+    [SerializeField] private int maxAmmo = 3;
+    [SerializeField] private float reloadDelayPerBullet = 1f; // 1 bala por segundo
+
+    private int currentAmmo;
+    private bool isReloading = false;
+    private float nextReloadTime = 0f;
 
     private float nextFireTime = 0f;
 
@@ -38,12 +46,57 @@ public class PlayerShooting : MonoBehaviour
             Debug.LogWarning("PlayerShooting: audioSource no asignado.");
     }
 
+    private void Start()
+    {
+        currentAmmo = maxAmmo;
+    }
+
     private void Update()
     {
+        // --- DISPARAR ---
         if (Mouse.current.rightButton.wasPressedThisFrame && Time.time >= nextFireTime)
         {
-            ShootTowardCursor();
-            nextFireTime = Time.time + fireRate;
+            TryShoot();
+        }
+
+        // --- RECARGA AUTOMÁTICA ---
+        HandleReload();
+    }
+
+    private void TryShoot()
+    {
+        if (currentAmmo <= 0)
+            return; // no hay balas, esperar recarga
+
+        ShootTowardCursor();
+        nextFireTime = Time.time + fireRate;
+
+        currentAmmo--;
+
+        // Si el cargador llegó a 0 → empieza la recarga
+        if (currentAmmo <= 0)
+        {
+            isReloading = true;
+            nextReloadTime = Time.time + reloadDelayPerBullet;
+        }
+    }
+
+    private void HandleReload()
+    {
+        if (!isReloading)
+            return;
+
+        if (Time.time >= nextReloadTime)
+        {
+            currentAmmo++;
+            nextReloadTime = Time.time + reloadDelayPerBullet;
+
+            // Cuando el cargador vuelve al máximo → deja de recargar
+            if (currentAmmo >= maxAmmo)
+            {
+                currentAmmo = maxAmmo;
+                isReloading = false;
+            }
         }
     }
 
@@ -58,7 +111,7 @@ public class PlayerShooting : MonoBehaviour
 
         Vector2 direction = (worldPos - firePoint.position).normalized;
 
-        // --- ANIMACIÓN ---
+        // --- ANIMACIONES ---
         if (animator != null)
         {
             animator.SetFloat(hashAimX, direction.x);
@@ -72,11 +125,10 @@ public class PlayerShooting : MonoBehaviour
             audioSource.PlayOneShot(shootSound);
         }
 
-        // --- ROTACIÓN DE LA BALA ---
+        // --- ROTAR BALA ---
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         Quaternion bulletRotation = Quaternion.Euler(0, 0, angle);
 
-        // Instanciar con la rotación correcta
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, bulletRotation);
 
         Rigidbody2D rbBullet = bullet.GetComponent<Rigidbody2D>();
@@ -84,10 +136,6 @@ public class PlayerShooting : MonoBehaviour
         if (rbBullet != null)
         {
             rbBullet.linearVelocity = direction * bulletSpeed;
-        }
-        else
-        {
-            Debug.LogWarning("Bullet prefab no tiene Rigidbody2D.");
         }
     }
 }

@@ -5,7 +5,6 @@ using UnityEngine.InputSystem;
 public class PlayerSmash : MonoBehaviour
 {
     [Header("Ataque")]
-    [Tooltip("Si dejás vacío, el hit se hará desde la posición del jugador.")]
     [SerializeField] private Transform hitPoint;
     [SerializeField] private float attackRadius = 0.6f;
     [SerializeField] private float damage = 1f;
@@ -16,7 +15,6 @@ public class PlayerSmash : MonoBehaviour
 
     [Header("Cooldown y timing")]
     [SerializeField] private float attackCooldown = 0.5f;
-    [Tooltip("Si no usás Animation Event, el hit se hará después de este delay (segundos).")]
     [SerializeField] private float attackDelay = 0.12f;
     [SerializeField] private float smashDuration = 0.5f;
     private float nextAttackTime = 0f;
@@ -33,15 +31,23 @@ public class PlayerSmash : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip smashSound;
 
+    // ---- NUEVO: referencia a PlayerHealth ----
+    private PlayerHealth playerHealth;
+
     private void Start()
     {
         if (mainCamera == null) mainCamera = Camera.main;
         if (animator == null) animator = GetComponent<Animator>();
         if (hitPoint == null)
-            Debug.LogWarning("No se asignó un hitPoint. Se usará la posición del jugador.");
+            Debug.LogWarning("No se asignó hitPoint.");
 
         if (audioSource == null)
-            Debug.LogWarning("PlayerSmash: No se asignó un AudioSource.");
+            Debug.LogWarning("PlayerSmash no tiene AudioSource.");
+
+        // Obtener PlayerHealth
+        playerHealth = GetComponent<PlayerHealth>();
+        if (playerHealth == null)
+            Debug.LogWarning("PlayerSmash: No se encontró PlayerHealth.");
     }
 
     private void Update()
@@ -55,6 +61,9 @@ public class PlayerSmash : MonoBehaviour
 
     private void StartSmash()
     {
+        // ---- ACTIVAR I-FRAMES ----
+        playerHealth?.StartMeleeIFrames();
+
         if (animator != null)
         {
             animator.SetBool(PARAM_IS_ATTACKING, true);
@@ -90,7 +99,6 @@ public class PlayerSmash : MonoBehaviour
 
         foreach (var col in hits)
         {
-            // 1. Búsqueda de Enemy (existente)
             var enemy = col.GetComponent<Enemy>();
             if (enemy != null)
             {
@@ -99,7 +107,6 @@ public class PlayerSmash : MonoBehaviour
                 continue;
             }
 
-            // 2. Búsqueda de BossHealth (existente)
             var boss = col.GetComponent<BossHealth>();
             if (boss != null)
             {
@@ -108,9 +115,6 @@ public class PlayerSmash : MonoBehaviour
                 continue;
             }
 
-            // 3. Búsqueda de WerewolfHealth (NUEVA LÍNEA)
-            // Esto asegura que si el lobizón es golpeado, recibirá daño sin
-            // interferir con las búsquedas anteriores.
             var werewolf = col.GetComponent<WerewolfHealth>();
             if (werewolf != null)
             {
@@ -126,15 +130,20 @@ public class PlayerSmash : MonoBehaviour
         Rigidbody2D rb = col.GetComponent<Rigidbody2D>();
         if (rb != null)
         {
-            Vector2 knockDir = ((Vector2)col.transform.position - (Vector2)transform.position).normalized;
-            rb.AddForce(knockDir * knockbackForce, ForceMode2D.Impulse);
+            Vector2 dir = ((Vector2)col.transform.position - (Vector2)transform.position).normalized;
+            rb.AddForce(dir * knockbackForce, ForceMode2D.Impulse);
         }
     }
 
     private IEnumerator ResetAttackingAfter(float seconds)
     {
         yield return new WaitForSeconds(seconds);
-        if (animator != null) animator.SetBool(PARAM_IS_ATTACKING, false);
+
+        if (animator != null)
+            animator.SetBool(PARAM_IS_ATTACKING, false);
+
+        // ---- DESACTIVAR I-FRAMES ----
+        playerHealth?.EndMeleeIFrames();
     }
 
     private void OnDrawGizmosSelected()

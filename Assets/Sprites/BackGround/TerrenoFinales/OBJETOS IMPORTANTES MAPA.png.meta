@@ -1,0 +1,1404 @@
+fileFormatVersion: 2
+guid: 49fbc59f53fa315459550e4a69afe77f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4631258142352895021
+    second: OBJETOS IMPORTANTES MAPA_0
+  - first:
+      213: -6861571349389418615
+    second: OBJETOS IMPORTANTES MAPA_1
+  - first:
+      213: 566723063705097812
+    second: OBJETOS IMPORTANTES MAPA_2
+  - first:
+      213: 7678855438651892498
+    second: OBJETOS IMPORTANTES MAPA_3
+  - first:
+      213: 3937444159175364790
+    second: OBJETOS IMPORTANTES MAPA_4
+  - first:
+      213: -4127945248478349671
+    second: OBJETOS IMPORTANTES MAPA_5
+  - first:
+      213: 1302460404137968769
+    second: OBJETOS IMPORTANTES MAPA_6
+  - first:
+      213: -3532848205779907720
+    second: OBJETOS IMPORTANTES MAPA_7
+  - first:
+      213: 191492013862487912
+    second: OBJETOS IMPORTANTES MAPA_8
+  - first:
+      213: 6960458224994398967
+    second: OBJETOS IMPORTANTES MAPA_9
+  - first:
+      213: -6231621795941465561
+    second: OBJETOS IMPORTANTES MAPA_10
+  - first:
+      213: 2283887991923220089
+    second: OBJETOS IMPORTANTES MAPA_11
+  - first:
+      213: 4793407675191471981
+    second: OBJETOS IMPORTANTES MAPA_12
+  - first:
+      213: -8351642453633190658
+    second: OBJETOS IMPORTANTES MAPA_13
+  - first:
+      213: -8684197187173127646
+    second: OBJETOS IMPORTANTES MAPA_14
+  - first:
+      213: 1350099601153296209
+    second: OBJETOS IMPORTANTES MAPA_15
+  - first:
+      213: -5058387662649420442
+    second: OBJETOS IMPORTANTES MAPA_16
+  - first:
+      213: 3998083776151509535
+    second: OBJETOS IMPORTANTES MAPA_17
+  - first:
+      213: -7923309606067870020
+    second: OBJETOS IMPORTANTES MAPA_18
+  - first:
+      213: -3208717336827701927
+    second: OBJETOS IMPORTANTES MAPA_19
+  - first:
+      213: -2620675547948536289
+    second: OBJETOS IMPORTANTES MAPA_20
+  - first:
+      213: -864817123700990602
+    second: OBJETOS IMPORTANTES MAPA_21
+  - first:
+      213: 2361453988368791732
+    second: OBJETOS IMPORTANTES MAPA_22
+  - first:
+      213: 4059294514525312143
+    second: OBJETOS IMPORTANTES MAPA_23
+  - first:
+      213: -8848783730882557623
+    second: OBJETOS IMPORTANTES MAPA_24
+  - first:
+      213: -8949055662630993784
+    second: OBJETOS IMPORTANTES MAPA_25
+  - first:
+      213: -6976946398024075361
+    second: OBJETOS IMPORTANTES MAPA_26
+  - first:
+      213: -7144175651798328251
+    second: OBJETOS IMPORTANTES MAPA_27
+  - first:
+      213: -1713063011807467800
+    second: OBJETOS IMPORTANTES MAPA_28
+  - first:
+      213: 4505540512271983990
+    second: OBJETOS IMPORTANTES MAPA_29
+  - first:
+      213: 712184632568819488
+    second: OBJETOS IMPORTANTES MAPA_30
+  - first:
+      213: 7035250184857840524
+    second: OBJETOS IMPORTANTES MAPA_31
+  - first:
+      213: 3770080635875547691
+    second: OBJETOS IMPORTANTES MAPA_32
+  - first:
+      213: 4088846771847538488
+    second: OBJETOS IMPORTANTES MAPA_33
+  - first:
+      213: 5410602672261086002
+    second: OBJETOS IMPORTANTES MAPA_34
+  - first:
+      213: -1831803382013268577
+    second: OBJETOS IMPORTANTES MAPA_35
+  - first:
+      213: 5899715888325722671
+    second: OBJETOS IMPORTANTES MAPA_36
+  - first:
+      213: -3860791646609672329
+    second: OBJETOS IMPORTANTES MAPA_37
+  - first:
+      213: -5372493768669417165
+    second: OBJETOS IMPORTANTES MAPA_38
+  - first:
+      213: 1184947716463372956
+    second: OBJETOS IMPORTANTES MAPA_39
+  - first:
+      213: 7253297707435111929
+    second: OBJETOS IMPORTANTES MAPA_40
+  - first:
+      213: 6072245762118889111
+    second: OBJETOS IMPORTANTES MAPA_41
+  - first:
+      213: -3482077807677444610
+    second: OBJETOS IMPORTANTES MAPA_42
+  - first:
+      213: -2219222075081355607
+    second: OBJETOS IMPORTANTES MAPA_43
+  - first:
+      213: -3659972862518799378
+    second: OBJETOS IMPORTANTES MAPA_44
+  - first:
+      213: -8770661406054783330
+    second: OBJETOS IMPORTANTES MAPA_45
+  - first:
+      213: -6673038006658178524
+    second: OBJETOS IMPORTANTES MAPA_46
+  - first:
+      213: -1174448583840309921
+    second: OBJETOS IMPORTANTES MAPA_47
+  - first:
+      213: 6249813697436985057
+    second: OBJETOS IMPORTANTES MAPA_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 10
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_0
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 1885
+        width: 129
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d39be9c1477abfb0800000000000000
+      internalID: -4631258142352895021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_1
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 1244
+        width: 34
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98f55ae363dc6c0a0800000000000000
+      internalID: -6861571349389418615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_2
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 1372
+        width: 34
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 456d922bf976dd700800000000000000
+      internalID: 566723063705097812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_3
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 1468
+        width: 34
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2132c6e4656c09a60800000000000000
+      internalID: 7678855438651892498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_4
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 1404
+        width: 34
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b0959ee99c94a630800000000000000
+      internalID: 3937444159175364790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_5
+      rect:
+        serializedVersion: 2
+        x: 2167
+        y: 1500
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 996bf24daa796b6c0800000000000000
+      internalID: -4127945248478349671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_6
+      rect:
+        serializedVersion: 2
+        x: 2215
+        y: 1452
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 184c7aa36d4431210800000000000000
+      internalID: 1302460404137968769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_7
+      rect:
+        serializedVersion: 2
+        x: 2311
+        y: 1500
+        width: 34
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87bcc11564dc8fec0800000000000000
+      internalID: -3532848205779907720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_8
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 1308
+        width: 34
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8670997d8f058a200800000000000000
+      internalID: 191492013862487912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_9
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 1372
+        width: 34
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f2bcb6a0e3889060800000000000000
+      internalID: 6960458224994398967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_10
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 1340
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 722c35e3ef4d489a0800000000000000
+      internalID: -6231621795941465561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_11
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 1388
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97e1d51370002bf10800000000000000
+      internalID: 2283887991923220089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_12
+      rect:
+        serializedVersion: 2
+        x: 2311
+        y: 1356
+        width: 34
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f2b6f42ea958240800000000000000
+      internalID: 4793407675191471981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_13
+      rect:
+        serializedVersion: 2
+        x: 2023
+        y: 1260
+        width: 34
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef43f14ff61091c80800000000000000
+      internalID: -8351642453633190658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_14
+      rect:
+        serializedVersion: 2
+        x: 2087
+        y: 1180
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22a691b4ba88b7780800000000000000
+      internalID: -8684197187173127646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_15
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 1196
+        width: 34
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15783222f648cb210800000000000000
+      internalID: 1350099601153296209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_16
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 1180
+        width: 34
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6651097a83ffcc9b0800000000000000
+      internalID: -5058387662649420442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_17
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 1196
+        width: 50
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1a53cbf20c0c7730800000000000000
+      internalID: 3998083776151509535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_18
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1116
+        width: 34
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb662ec84efba0290800000000000000
+      internalID: -7923309606067870020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_19
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 1084
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9555fb925985873d0800000000000000
+      internalID: -3208717336827701927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_20
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 1116
+        width: 194
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ea9fc597d71abd0800000000000000
+      internalID: -2620675547948536289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_21
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1100
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67d9022786d8ff3f0800000000000000
+      internalID: -864817123700990602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_22
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 1100
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b8b62214e195c020800000000000000
+      internalID: 2361453988368791732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_23
+      rect:
+        serializedVersion: 2
+        x: 2007
+        y: 1004
+        width: 34
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8419f89ad2855830800000000000000
+      internalID: 4059294514525312143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_24
+      rect:
+        serializedVersion: 2
+        x: 2087
+        y: 1068
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9494d72641ec23580800000000000000
+      internalID: -8848783730882557623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_25
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 1084
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8808ea9f9419ec380800000000000000
+      internalID: -8949055662630993784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_26
+      rect:
+        serializedVersion: 2
+        x: 2215
+        y: 1036
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9775d86738ec2f90800000000000000
+      internalID: -6976946398024075361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_27
+      rect:
+        serializedVersion: 2
+        x: 2247
+        y: 1116
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54cd09d981acadc90800000000000000
+      internalID: -7144175651798328251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_28
+      rect:
+        serializedVersion: 2
+        x: 2311
+        y: 1068
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e6ea57544af938e0800000000000000
+      internalID: -1713063011807467800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_29
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 1020
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6756a1b7935e68e30800000000000000
+      internalID: 4505540512271983990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_30
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 940
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02fa1c6662032e900800000000000000
+      internalID: 712184632568819488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_31
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 1004
+        width: 114
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8be37ec4ca32a160800000000000000
+      internalID: 7035250184857840524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_32
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 940
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ad0f31d54025430800000000000000
+      internalID: 3770080635875547691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_33
+      rect:
+        serializedVersion: 2
+        x: 1911
+        y: 940
+        width: 34
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837a9f0b9708eb830800000000000000
+      internalID: 4088846771847538488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_34
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 860
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23bb6ecb672561b40800000000000000
+      internalID: 5410602672261086002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_35
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 876
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9d6db487802496e0800000000000000
+      internalID: -1831803382013268577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_36
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 924
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f220267a75000e150800000000000000
+      internalID: 5899715888325722671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_37
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 812
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 777f808e376bb6ac0800000000000000
+      internalID: -3860791646609672329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_38
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 731
+        width: 155
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 331b570d1611175b0800000000000000
+      internalID: -5372493768669417165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_39
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 748
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9aa5358ba7c17010800000000000000
+      internalID: 1184947716463372956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_40
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 700
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f533d5d5d3e8a460800000000000000
+      internalID: 7253297707435111929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_41
+      rect:
+        serializedVersion: 2
+        x: 2183
+        y: 700
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ea7f73953f44450800000000000000
+      internalID: 6072245762118889111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_42
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 505
+        width: 163
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd6d19ceac2dafc0800000000000000
+      internalID: -3482077807677444610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_43
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 572
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae0219d74db331e0800000000000000
+      internalID: -2219222075081355607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_44
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 508
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee35ff9a21a253dc0800000000000000
+      internalID: -3659972862518799378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_45
+      rect:
+        serializedVersion: 2
+        x: 2183
+        y: 572
+        width: 34
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9660ee8be9584680800000000000000
+      internalID: -8770661406054783330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_46
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 411
+        width: 86
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4226578c94b9463a0800000000000000
+      internalID: -6673038006658178524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_47
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 258
+        width: 133
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5ddc394c3583bfe0800000000000000
+      internalID: -1174448583840309921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJETOS IMPORTANTES MAPA_48
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 275
+        width: 84
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e62a14e17ccbb650800000000000000
+      internalID: 6249813697436985057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      OBJETOS IMPORTANTES MAPA_0: -4631258142352895021
+      OBJETOS IMPORTANTES MAPA_1: -6861571349389418615
+      OBJETOS IMPORTANTES MAPA_10: -6231621795941465561
+      OBJETOS IMPORTANTES MAPA_11: 2283887991923220089
+      OBJETOS IMPORTANTES MAPA_12: 4793407675191471981
+      OBJETOS IMPORTANTES MAPA_13: -8351642453633190658
+      OBJETOS IMPORTANTES MAPA_14: -8684197187173127646
+      OBJETOS IMPORTANTES MAPA_15: 1350099601153296209
+      OBJETOS IMPORTANTES MAPA_16: -5058387662649420442
+      OBJETOS IMPORTANTES MAPA_17: 3998083776151509535
+      OBJETOS IMPORTANTES MAPA_18: -7923309606067870020
+      OBJETOS IMPORTANTES MAPA_19: -3208717336827701927
+      OBJETOS IMPORTANTES MAPA_2: 566723063705097812
+      OBJETOS IMPORTANTES MAPA_20: -2620675547948536289
+      OBJETOS IMPORTANTES MAPA_21: -864817123700990602
+      OBJETOS IMPORTANTES MAPA_22: 2361453988368791732
+      OBJETOS IMPORTANTES MAPA_23: 4059294514525312143
+      OBJETOS IMPORTANTES MAPA_24: -8848783730882557623
+      OBJETOS IMPORTANTES MAPA_25: -8949055662630993784
+      OBJETOS IMPORTANTES MAPA_26: -6976946398024075361
+      OBJETOS IMPORTANTES MAPA_27: -7144175651798328251
+      OBJETOS IMPORTANTES MAPA_28: -1713063011807467800
+      OBJETOS IMPORTANTES MAPA_29: 4505540512271983990
+      OBJETOS IMPORTANTES MAPA_3: 7678855438651892498
+      OBJETOS IMPORTANTES MAPA_30: 712184632568819488
+      OBJETOS IMPORTANTES MAPA_31: 7035250184857840524
+      OBJETOS IMPORTANTES MAPA_32: 3770080635875547691
+      OBJETOS IMPORTANTES MAPA_33: 4088846771847538488
+      OBJETOS IMPORTANTES MAPA_34: 5410602672261086002
+      OBJETOS IMPORTANTES MAPA_35: -1831803382013268577
+      OBJETOS IMPORTANTES MAPA_36: 5899715888325722671
+      OBJETOS IMPORTANTES MAPA_37: -3860791646609672329
+      OBJETOS IMPORTANTES MAPA_38: -5372493768669417165
+      OBJETOS IMPORTANTES MAPA_39: 1184947716463372956
+      OBJETOS IMPORTANTES MAPA_4: 3937444159175364790
+      OBJETOS IMPORTANTES MAPA_40: 7253297707435111929
+      OBJETOS IMPORTANTES MAPA_41: 6072245762118889111
+      OBJETOS IMPORTANTES MAPA_42: -3482077807677444610
+      OBJETOS IMPORTANTES MAPA_43: -2219222075081355607
+      OBJETOS IMPORTANTES MAPA_44: -3659972862518799378
+      OBJETOS IMPORTANTES MAPA_45: -8770661406054783330
+      OBJETOS IMPORTANTES MAPA_46: -6673038006658178524
+      OBJETOS IMPORTANTES MAPA_47: -1174448583840309921
+      OBJETOS IMPORTANTES MAPA_48: 6249813697436985057
+      OBJETOS IMPORTANTES MAPA_5: -4127945248478349671
+      OBJETOS IMPORTANTES MAPA_6: 1302460404137968769
+      OBJETOS IMPORTANTES MAPA_7: -3532848205779907720
+      OBJETOS IMPORTANTES MAPA_8: 191492013862487912
+      OBJETOS IMPORTANTES MAPA_9: 6960458224994398967
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

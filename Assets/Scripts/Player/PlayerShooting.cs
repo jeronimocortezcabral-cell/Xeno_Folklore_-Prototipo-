@@ -10,20 +10,12 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField] private Animator animator;
 
     [Header("Audio")]
-    [SerializeField] private AudioSource audioSource;
-    [SerializeField] private AudioClip shootSound;
+    [SerializeField] private AudioSource audioSource;  // debe estar en el player
+    [SerializeField] private AudioClip shootSound;     // sonido del disparo
 
     [Header("Bullet Settings")]
     [SerializeField] private float bulletSpeed = 10f;
     [SerializeField] private float fireRate = 0.5f;
-
-    [Header("Magazine Settings")]
-    [SerializeField] private int maxAmmo = 3;
-    [SerializeField] private float reloadDelayPerBullet = 1f;
-
-    private int currentAmmo;
-    private bool isReloading = false;
-    private float nextReloadTime = 0f;
 
     private float nextFireTime = 0f;
 
@@ -46,53 +38,12 @@ public class PlayerShooting : MonoBehaviour
             Debug.LogWarning("PlayerShooting: audioSource no asignado.");
     }
 
-    private void Start()
-    {
-        currentAmmo = maxAmmo;
-    }
-
     private void Update()
     {
         if (Mouse.current.rightButton.wasPressedThisFrame && Time.time >= nextFireTime)
         {
-            TryShoot();
-        }
-
-        HandleReload();
-    }
-
-    private void TryShoot()
-    {
-        if (currentAmmo <= 0)
-            return; 
-
-        ShootTowardCursor();
-        nextFireTime = Time.time + fireRate;
-
-        currentAmmo--;
-
-        if (currentAmmo <= 0)
-        {
-            isReloading = true;
-            nextReloadTime = Time.time + reloadDelayPerBullet;
-        }
-    }
-
-    private void HandleReload()
-    {
-        if (!isReloading)
-            return;
-
-        if (Time.time >= nextReloadTime)
-        {
-            currentAmmo++;
-            nextReloadTime = Time.time + reloadDelayPerBullet;
-
-            if (currentAmmo >= maxAmmo)
-            {
-                currentAmmo = maxAmmo;
-                isReloading = false;
-            }
+            ShootTowardCursor();
+            nextFireTime = Time.time + fireRate;
         }
     }
 
@@ -107,7 +58,7 @@ public class PlayerShooting : MonoBehaviour
 
         Vector2 direction = (worldPos - firePoint.position).normalized;
 
-        // --- ANIMACIONES ---
+        // --- ANIMACIÓN ---
         if (animator != null)
         {
             animator.SetFloat(hashAimX, direction.x);
@@ -121,10 +72,11 @@ public class PlayerShooting : MonoBehaviour
             audioSource.PlayOneShot(shootSound);
         }
 
-        // --- ROTAR BALA ---
+        // --- ROTACIÓN DE LA BALA ---
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         Quaternion bulletRotation = Quaternion.Euler(0, 0, angle);
 
+        // Instanciar con la rotación correcta
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, bulletRotation);
 
         Rigidbody2D rbBullet = bullet.GetComponent<Rigidbody2D>();
@@ -132,6 +84,10 @@ public class PlayerShooting : MonoBehaviour
         if (rbBullet != null)
         {
             rbBullet.linearVelocity = direction * bulletSpeed;
+        }
+        else
+        {
+            Debug.LogWarning("Bullet prefab no tiene Rigidbody2D.");
         }
     }
 }

@@ -885,6 +885,8 @@ MonoBehaviour:
   shootSound: {fileID: 8300000, guid: 5be14e99f2761084d8d85a6e198a639f, type: 3}
   bulletSpeed: 35
   fireRate: 0.35
+  maxAmmo: 3
+  reloadDelayPerBullet: 1
 --- !u!114 &130073648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1121,7 +1123,7 @@ MonoBehaviour:
     m_Bits: 64
   mainCamera: {fileID: 1897138708}
   attackCooldown: 0.25
-  attackDelay: 0.2
+  attackDelay: 0.3
   smashDuration: 0.5
   knockbackForce: 5
   animator: {fileID: 0}

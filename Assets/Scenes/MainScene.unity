@@ -1124,7 +1124,7 @@ MonoBehaviour:
   mainCamera: {fileID: 1897138708}
   attackCooldown: 0.25
   attackDelay: 0.3
-  smashDuration: 0.5
+  smashDuration: 0.3
   knockbackForce: 5
   animator: {fileID: 0}
   audioSource: {fileID: 130073664}

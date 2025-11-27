@@ -885,7 +885,7 @@ MonoBehaviour:
   shootSound: {fileID: 8300000, guid: 5be14e99f2761084d8d85a6e198a639f, type: 3}
   bulletSpeed: 35
   fireRate: 0.35
-  maxAmmo: 3
+  maxAmmo: 5
   reloadDelayPerBullet: 1
 --- !u!114 &130073648
 MonoBehaviour:

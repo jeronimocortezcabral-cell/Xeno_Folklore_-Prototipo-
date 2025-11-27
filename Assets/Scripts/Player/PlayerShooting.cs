@@ -19,7 +19,7 @@ public class PlayerShooting : MonoBehaviour
 
     [Header("Magazine Settings")]
     [SerializeField] private int maxAmmo = 3;
-    [SerializeField] private float reloadDelayPerBullet = 1f; // 1 bala por segundo
+    [SerializeField] private float reloadDelayPerBullet = 1f;
 
     private int currentAmmo;
     private bool isReloading = false;
@@ -53,27 +53,24 @@ public class PlayerShooting : MonoBehaviour
 
     private void Update()
     {
-        // --- DISPARAR ---
         if (Mouse.current.rightButton.wasPressedThisFrame && Time.time >= nextFireTime)
         {
             TryShoot();
         }
 
-        // --- RECARGA AUTOMÁTICA ---
         HandleReload();
     }
 
     private void TryShoot()
     {
         if (currentAmmo <= 0)
-            return; // no hay balas, esperar recarga
+            return; 
 
         ShootTowardCursor();
         nextFireTime = Time.time + fireRate;
 
         currentAmmo--;
 
-        // Si el cargador llegó a 0 → empieza la recarga
         if (currentAmmo <= 0)
         {
             isReloading = true;
@@ -91,7 +88,6 @@ public class PlayerShooting : MonoBehaviour
             currentAmmo++;
             nextReloadTime = Time.time + reloadDelayPerBullet;
 
-            // Cuando el cargador vuelve al máximo → deja de recargar
             if (currentAmmo >= maxAmmo)
             {
                 currentAmmo = maxAmmo;

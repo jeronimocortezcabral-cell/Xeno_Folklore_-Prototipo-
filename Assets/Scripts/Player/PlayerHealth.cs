@@ -16,13 +16,11 @@ public class PlayerHealth : MonoBehaviour
     private bool isDead = false;
     private bool isFlashing = false;
 
-    // ---- NUEVO: I-FRAMES PARA ATAQUE MELEE ----
     private bool isInvulnerable = false;
     public bool IsInvulnerable => isInvulnerable;
 
     public void StartMeleeIFrames() => isInvulnerable = true;
     public void EndMeleeIFrames() => isInvulnerable = false;
-    // -------------------------------------------
 
     public float MaxHealth => maxHealth;
     public float CurrentHealth => currentHealth;
@@ -44,9 +42,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (isDead) return;
 
-        // ---- NUEVO: NO RECIBIR DAÑO DURANTE I-FRAMES ----
         if (isInvulnerable) return;
-        // --------------------------------------------------
 
         currentHealth -= amount;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);

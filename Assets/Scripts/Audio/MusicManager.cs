@@ -5,16 +5,20 @@ public class MusicManager : MonoBehaviour
 {
     public static MusicManager instance;
 
+    // --- MÚSICAS DE ESCENARIO Y COMBATE ---
     [Header("Música de Escenario")]
     public AudioSource cityMusic;
     public AudioSource outsideMusic;
 
-    // --- MÚSICAS DE COMBATE ESPECÍFICAS ---
     [Header("Música de Combate")]
     [Tooltip("Música específica para la pelea contra el Chonchón.")]
     public AudioSource chonchonMusic;
+
+    // --- LOBIZÓN: CONFIGURACIÓN ACTUALIZADA ---
     [Tooltip("Música específica para la pelea contra el Lobizón.")]
     public AudioSource werewolfMusic;
+    [Tooltip("Volumen específico para la música del Lobizón (solución punto B).")]
+    [SerializeField] private float werewolfMusicVolume = 0.7f; // Valor por defecto ajustado para que se escuche mejor
     // ----------------------------------------
 
     [Header("Música de Victoria")]
@@ -23,7 +27,7 @@ public class MusicManager : MonoBehaviour
 
     [Header("Crossfade")]
     public float fadeDuration = 2f;
-    public float volumen = 1f;
+    public float volumen = 1f; // Volumen base para la mayoría de las pistas
 
     [Header("Progreso del Juego")]
     private int defeatedBosses = 0;
@@ -61,51 +65,51 @@ public class MusicManager : MonoBehaviour
     // LLAMADAS PÚBLICAS
     // ---------------------------
 
-    public void PlayCityMusic() => TryFade(cityMusic);
-    public void PlayOutsideMusic() => TryFade(outsideMusic);
+    public void PlayCityMusic() => TryFade(cityMusic, volumen);
+    public void PlayOutsideMusic() => TryFade(outsideMusic, volumen);
 
-    // NUEVAS LLAMADAS ESPECÍFICAS PARA CADA JEFE
-    public void PlayChonchonMusic() => TryFade(chonchonMusic);
-    public void PlayWerewolfMusic() => TryFade(werewolfMusic);
+    public void PlayChonchonMusic() => TryFade(chonchonMusic, volumen);
+    // MODIFICADO: Usa el volumen específico del Lobizón
+    public void PlayWerewolfMusic() => TryFade(werewolfMusic, werewolfMusicVolume);
     // ----------------------------------------------------
 
     /// <summary>
     /// Llamado al derrotar un jefe. Transiciona a la música de Victoria.
+    /// (SOLUCIÓN C)
     /// </summary>
     public void DefeatedBoss()
     {
+        // Detiene la música actual de inmediato (Lobizón, Chonchón o Nivel)
+        if (currentMusic != null)
+        {
+            currentMusic.Stop();
+            currentMusic.volume = 0f;
+        }
+
         // Detiene cualquier crossfade anterior para dar prioridad a la victoria
         StopAllCoroutines();
 
         defeatedBosses++;
 
         Debug.Log($"Jefes derrotados: {defeatedBosses} de {BOSSES_REQUIRED_FOR_VICTORY}. Iniciando secuencia de victoria.");
+
+        // La corrutina PlayVictorySequence() se encargará de reproducir la música de victoria y volver al nivel
         StartCoroutine(PlayVictorySequence(finalVictoryMusic));
     }
 
     // ******************************************************************
-    // CORRUTINA: MANEJA LA SECUENCIA DE MÚSICA DE VICTORIA (MODIFICADA)
+    // CORRUTINA: MANEJA LA SECUENCIA DE MÚSICA DE VICTORIA (SIN CAMBIOS)
     // ******************************************************************
     private IEnumerator PlayVictorySequence(AudioSource victoryTrack)
     {
-        // 1. Apagar la música de combate rápidamente (Fade out)
-        if (currentMusic != null)
-        {
-            float startVolume = currentMusic.volume;
-            float timer = 0f;
-            while (timer < 0.5f) // Fade out rápido
-            {
-                timer += Time.deltaTime;
-                currentMusic.volume = Mathf.Lerp(startVolume, 0f, timer / 0.5f);
-                yield return null;
-            }
-            currentMusic.Stop();
-        }
+        // 1. Apagar la música de combate rápidamente (ya se hizo en DefeatedBoss para asegurar la parada del Lobizón)
+        // Eliminado el fade out rápido de 0.5s porque ya se detuvo en DefeatedBoss()
 
         // 2. Reproducir la pista de victoria (SIN LOOP)
         if (victoryTrack != null && victoryTrack.clip != null)
         {
             currentMusic = victoryTrack;
+            // Usa el volumen base para la música de victoria
             currentMusic.volume = volumen;
             currentMusic.loop = false;
             currentMusic.Play();
@@ -117,40 +121,33 @@ public class MusicManager : MonoBehaviour
             yield return new WaitForSeconds(fadeOutStartDelay);
 
             // **********************************************
-            // NUEVO: FADE OUT SUAVE DE LA MÚSICA DE VICTORIA
+            // FADE OUT SUAVE DE LA MÚSICA DE VICTORIA
             // **********************************************
 
             float timer = 0f;
-            // Reducir el volumen mientras el tiempo restante (fadeDuration) lo permita
+            // Usar el volumen base para el inicio del fade
+            float startVolume = volumen;
+
             while (timer < fadeDuration && currentMusic.isPlaying)
             {
                 timer += Time.deltaTime;
-                currentMusic.volume = Mathf.Lerp(volumen, 0f, timer / fadeDuration);
+                currentMusic.volume = Mathf.Lerp(startVolume, 0f, timer / fadeDuration);
                 yield return null;
             }
 
             // Asegurar que se detiene y reinicia volumen para el siguiente uso
             currentMusic.Stop();
             currentMusic.volume = 0f;
-            // **********************************************
         }
 
         // 4. Volver a la música de nivel/exterior con Crossfade
-        if (defeatedBosses >= BOSSES_REQUIRED_FOR_VICTORY)
-        {
-            Debug.Log("Volviendo a la música exterior después de la victoria final.");
-            PlayOutsideMusic();
-        }
-        else
-        {
-            Debug.Log("Volviendo a la música exterior después de la victoria parcial.");
-            PlayOutsideMusic();
-        }
+        Debug.Log("Volviendo a la música exterior después de la secuencia de victoria.");
+        PlayOutsideMusic(); // Ya sea victoria final o parcial, volvemos al Exterior.
     }
     // ******************************************************************
 
-
-    private void TryFade(AudioSource target)
+    // MODIFICADO: Añadido parámetro 'targetVolume'
+    private void TryFade(AudioSource target, float targetVolume)
     {
         if (target == null)
         {
@@ -162,24 +159,23 @@ public class MusicManager : MonoBehaviour
         if (currentMusic == target || currentMusic == finalVictoryMusic && currentMusic.isPlaying) return;
 
         // Detener la corrutina de Crossfade anterior si existe para evitar conflictos
-        // NOTA: Esto detiene la corrutina PlayVictorySequence() si está en marcha.
         StopAllCoroutines();
 
         // Si ya está sonando la misma pista pero se detuvo por salir de rango, reinicia el volumen
         if (currentMusic == target && !currentMusic.isPlaying)
         {
             currentMusic.Play();
-            currentMusic.volume = volumen;
+            currentMusic.volume = targetVolume; // Usa el volumen específico
             return;
         }
 
-        StartCoroutine(Crossfade(target));
+        StartCoroutine(Crossfade(target, targetVolume));
     }
 
     // ---------------------------
-    // CROSSFADE GENÉRICO (Ligeramente ajustado para la limpieza)
+    // CROSSFADE GENÉRICO (MODIFICADO para usar targetVolume)
     // ---------------------------
-    private IEnumerator Crossfade(AudioSource newMusic)
+    private IEnumerator Crossfade(AudioSource newMusic, float targetVolume)
     {
         nextMusic = newMusic;
         nextMusic.volume = 0f;
@@ -190,6 +186,7 @@ public class MusicManager : MonoBehaviour
         nextMusic.Play();
 
         float timer = 0f;
+        float startVolumeCurrent = (currentMusic != null) ? currentMusic.volume : 0f; // Volumen inicial de la música actual
 
         while (timer < fadeDuration)
         {
@@ -198,9 +195,10 @@ public class MusicManager : MonoBehaviour
 
             if (currentMusic != null)
             {
-                currentMusic.volume = Mathf.Lerp(volumen, 0f, t);
+                currentMusic.volume = Mathf.Lerp(startVolumeCurrent, 0f, t);
             }
-            nextMusic.volume = Mathf.Lerp(0f, volumen, t);
+            // MODIFICADO: Usa targetVolume en lugar de la variable 'volumen' global
+            nextMusic.volume = Mathf.Lerp(0f, targetVolume, t);
             yield return null;
         }
 
@@ -214,7 +212,8 @@ public class MusicManager : MonoBehaviour
         currentMusic = nextMusic;
         nextMusic = null;
 
-        // Asegurarse de que el loop se activa en la nueva música si es necesario (ej: música de jefe/nivel)
+        // Asegurar que el volumen final es el correcto
+        currentMusic.volume = targetVolume;
         currentMusic.loop = true;
     }
 }
